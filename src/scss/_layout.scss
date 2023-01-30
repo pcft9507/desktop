@@ -1,0 +1,65 @@
+.l-footer {
+
+  .menu-row {
+    border-top: 1px solid #e6e6e6;
+
+    .inner {
+      height: 42px;
+    }
+
+    .menu-l {
+
+      .menu-item {
+        margin-right: 40px;
+      }
+
+      .menu-btn {
+        color: #939393;
+        font-size: 14px;
+      }
+    }
+
+    .menu-r {
+
+      .menu-item {
+        margin-left: 40px;
+      }
+
+      .menu-btn {
+        color: #939393;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .info-row {
+    background-color: #f7f7f7;
+    border-top: 1px solid #e6e6e6;
+
+    .inner {
+      height: 36px;
+    }    
+
+    .company-name {
+      color: #939393;
+      font-size: 12px;
+    }
+
+    address {
+      margin-left: 47px;
+      color: #939393;
+      font-size: 12px;
+    }
+  }
+
+  .copyright-row {
+    height: 30px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #e6e6e6;
+
+    .copyright {
+      color: #c1c1c1;
+      font-size: 10px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.labels {
+  display: flex;
+
+  &__label {
+    display: flex;
+    margin-left: 10px;
+    padding: 6px 16px;
+    color: $themeColor01;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &.lawyer {
+      background-color: #0b2b5c;
+    }
+
+    &.da {
+      background-color: #003535;
+    }
+
+    &.detective {
+      background-color: #4c0a15;
+    }
+  }
+}
