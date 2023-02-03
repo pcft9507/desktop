@@ -721,4 +721,123 @@
       background: url($imgCommon + 'more-bg.png') 100% 50%/20px no-repeat;
     }
   }
+
+  .contact-us {
+    padding-bottom: 80px;
+    background-color: #f1f2f5;
+
+    .cu-head {
+      height: 360px;
+      text-align: center;
+      background: url($imgMain + 'bg-contact-us.jpg') 50% 0/cover;
+
+      .section-head {
+        padding-top: 80px;
+
+        .section-title,
+        .section-title-after {
+          color: #fff;
+
+          strong {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .cu-cont {
+      margin-top: -90px;
+
+      .cu-cs {
+        padding: 64px 60px;
+        box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        border-radius: 10px;
+
+        & + .cu-cs {
+          margin-top: 40px;
+        }
+      }
+
+      .cu-tit {
+        color: #152131;
+        font-family: 'rokaf-slab';
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 1;
+        text-align: center;
+      }
+
+      .cu-btn-row {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+
+        .btn-link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 84px;
+          color: #152131;
+          font-weight: 700;
+          font-size: 22px;
+          border-radius: 8px;
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+          border: solid 1px #e6e6e6;
+          background-color: #f1f2f5;
+
+          & + .btn-link {
+            margin-left: 40px;
+          }
+        }
+      }
+
+      .guide-txt {
+        margin-top: 40px;
+        color: #939393;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+      }
+
+      .cu-app {
+        display: flex;
+        justify-content: center;
+        margin-top: 64px;
+        padding-top: 40px;
+        border-top: 1px solid #e6e6e6;
+
+        dl {
+          display: flex;
+          align-items: center;
+          margin: 0 56px;
+        }
+
+        dt {
+          position: relative;
+          top: -5px;
+          margin-right: 20px;
+          color: #152131;
+          font-family: 'rokaf-slab';
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 30px;
+          text-align: center;
+        }
+
+        dd {
+          display: flex;
+          
+          figure {
+            margin-left: 40px;
+
+            &:first-child {
+              width: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
