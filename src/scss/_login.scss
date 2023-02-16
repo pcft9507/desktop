@@ -1,0 +1,275 @@
+.eLogin {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+  padding: 80px 60px 89px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px #e6e6e6;
+  background-color: #f7f7f7;
+
+  &__title {
+    color: #152131;
+    font-family: ROKAF Slab Serif;
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    line-height: 1;
+  }
+
+  &__inpBox {
+    margin-top: 60px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px #e6e6e6;
+    background-color: #fff;
+  }
+
+  &__inpBoxTop {
+    padding: 60px 40px 40px;
+
+    .inpTxt {
+      margin-top: 12px;
+    }
+  }
+
+  &__formGuide {
+    margin-bottom: 40px;
+    color: $themeColor01;
+    font-family: ROKAF Slab Serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+  }
+
+  &__confirm {
+    margin-top: 40px;
+  }
+
+  &__inpBoxBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+    padding: 0 40px;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  &__findIdPw {
+    color: #939393;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  &__help {
+    margin-top: 60px;
+
+    &Txt1 {
+      position: relative;
+      text-align: center;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: #e6e6e6;
+      }
+    }
+
+    &Txt2 {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      padding: 0 25px;
+      color: #939393;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      background-color: #f7f7f7;
+    }
+
+    &GuideTxt {
+      margin-top: 20px;
+      color: #939393;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+    }
+
+    &Row {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    &Link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 400px;
+      height: 48px;
+      font-family: ROKAF Slab Serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: #939393;
+      border-radius: 80px;
+      border: solid 1px #e6e6e6;
+      background-color: #fff;
+    }
+  }
+
+  &__btnClose {
+    position: absolute;
+    top: 0;
+    right: -62px;
+    width: 42px;
+    height: 42px;
+    background: url($imgCommon + 'btn-close-login.png') 0/100% no-repeat;
+  }
+}
+
+.uLogin {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+  padding: 106px 60px 55px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px #e6e6e6;
+  background-color: #f7f7f7;
+
+  &__title {
+    color: #152131;
+    font-family: ROKAF Slab Serif;
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    line-height: 1;
+  }
+
+  &__box {
+    margin-top: 106px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px #e6e6e6;
+    background-color: #fff;
+  }
+
+  &__boxTop {
+    padding: 60px 0;
+  }
+
+  &__loginGuide {
+    margin-bottom: 40px;
+    color: $themeColor01;
+    font-family: ROKAF Slab Serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+  }
+
+  &__snsLogin {
+    display: flex;
+    justify-content: center;
+
+    &Item {
+      margin: 0 16px;
+    }
+  }
+
+  &__help {
+    padding-bottom: 60px;
+
+    &Txt1 {
+      position: relative;
+      text-align: center;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: #e6e6e6;
+      }
+    }
+
+    &Txt2 {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      padding: 0 25px;
+      color: #939393;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      background-color: #fff;
+    }
+
+    &GuideTxt {
+      margin-top: 40px;
+      color: #939393;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+    }
+
+    &Row {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    &Link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 400px;
+      height: 48px;
+      font-family: ROKAF Slab Serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: #525b6b;
+      border-radius: 80px;
+      background-color: #f7f7f7;
+    }
+  }
+
+  &__cs {
+    margin-top: 54px;
+
+    &Txt {
+      color: #939393;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1;
+      text-align: center;
+    }
+
+    &Num {
+      margin-top: 20px;
+      color: #939393;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1;
+      text-align: center;
+    }
+  }
+
+  &__btnClose {
+    position: absolute;
+    top: 0;
+    right: -62px;
+    width: 42px;
+    height: 42px;
+    background: url($imgCommon + 'btn-close-login.png') 0/100% no-repeat;
+  }
+}

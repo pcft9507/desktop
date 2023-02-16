@@ -1,0 +1,26 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+
+  &__label {
+    order: 2;
+    margin-left: 10px;
+    color: #939393;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  &__chkbox {
+    order: 1;
+    width: 18px;
+    height: 18px;
+    background-size: 18px;
+    background-image: url($imgCommon + 'checkbox.png');
+    appearance: none;
+
+    &:checked {
+      background-image: url($imgCommon + 'checkbox-checked.png');
+    }
+  }
+}

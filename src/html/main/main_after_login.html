@@ -1,95 +1,8 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/css/common.css">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <script src="../assets/js/jquery-3.6.0.min.js"></script>
-  <script src="../assets/js/ui.js"></script>
-  <title>골고루 보상</title>
-</head>
+@@include('@@webRoot/include/head.html')
 
-
-<!-- header -->
-<header class="l-header">
-  <!-- header-top -->
-  <div class="header-top">
-    <div class="inner row-container">
-      <p class="intro-txt">사건사고 종합 솔루션 플랫폼, 골고루팀.</p>
-      
-        <ul class="top-side">
-          <li class="side-item"><a href="#">로그인</a></li>
-          <li class="side-item"><a href="#">마이페이지</a></li>
-        </ul>
-      
-      
-    </div>
-  </div>
-  <!-- header-top end -->
-
-  <!-- header-bot -->
-  <div class="header-bot">
-    <div class="inner row-container">
-      <h1 class="logo"><a href="#">Golgoru. Team</a></h1>
-
-      <nav class="gnb">
-        <ul class="main-menu">
-          <li class="mm-item"><a href="#" class="mm-btn">변호사 PICK</a></li>
-          <li class="mm-item"><a href="#" class="mm-btn">손해사정사 PICK</a></li>
-          <li class="mm-item"><a href="#" class="mm-btn">탐정 PICK</a></li>
-          <li class="mm-item"><a href="#" class="mm-btn">이벤트</a></li>
-          <li class="mm-item"><a href="#" class="mm-btn">서비스 소개</a></li>
-        </ul>
-      </nav>
-
-      <ul class="side-menu">
-        <li class="sm-item">
-          <a href="#" class="sm-btn search"><span class="is-blind">검색</span></a>
-        </li>
-        <li class="sm-item">
-          <a href="#" class="sm-btn all-menu"><span class="is-blind">전체메뉴</span></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- header-bot end -->
-</header>
-<!-- header end -->
-
-  <hr>
-
-  <div class="sideBar">
-
-  <a href="#" class="sideBar__rec">
-    <span class="sideBar__recTxt">24시 추천상담</span>
-  </a>
-
-  <ul class="sideBar__menu">
-    <li class="sideBar__menuItem">
-      <a href="#" class="sideBar__menuBtn">자주묻는질문</a>
-    </li>
-    <li class="sideBar__menuItem">
-      <a href="#" class="sideBar__menuBtn">상담사례</a>
-    </li>
-    <li class="sideBar__menuItem">
-      <a href="#" class="sideBar__menuBtn">찜한 전문가</a>
-    </li>
-  </ul>
-
-  <a href="#" class="sideBar__kakao">카카오톡 상담</a>
-
-  <div class="sideBar__cs">
-    <a href="#" class="ico-txt">고객센터</a>
-
-    <div class="call-num">
-      <span class="number">1670</span>
-      <span class="number">2456</span>
-    </div>
-  </div>
-
-</div>
-
+@@include('@@webRoot/include/header.html', {
+  login: true
+})
 
 <body>
   <div class="wrap">
@@ -134,7 +47,7 @@
             <p class="rec-text1">24시<br>추천상담<br>서비스</p>
             <p class="rec-text2">고객님의 상황과 분야, 지역, 상담내용에 적합한 전문가를 매칭해드립니다.</p>
             <div class="rec-dr">
-              <a href="#" role="button" class="rec-btn" title="추천상담 서비스 바로가기"><img src="../assets/images/main/arrow-main-top.png"></a>
+              <a href="#" role="button" class="rec-btn" title="추천상담 서비스 바로가기"><img src="@@webRoot/assets/images/main/arrow-main-top.png"></a>
             </div>
           </div>
 
@@ -189,7 +102,7 @@
                   <div class="thumb-name">
                     <figure class="thumb">
                       <figcaption>파트너사진</figcaption>
-                      <img src="../assets/images/sample/sample-someone.jpg">
+                      <img src="@@webRoot/assets/images/sample/sample-someone.jpg">
                     </figure>
                     <p class="name"><strong>홍길동</strong>변호사</p>
                   </div>
@@ -205,7 +118,7 @@
                   <div class="thumb-name">
                     <figure class="thumb">
                       <figcaption>파트너사진</figcaption>
-                      <img src="../assets/images/sample/sample-someone.jpg">
+                      <img src="@@webRoot/assets/images/sample/sample-someone.jpg">
                     </figure>
                     <p class="name"><strong>홍길동</strong>변호사</p>
                   </div>
@@ -221,7 +134,7 @@
                   <div class="thumb-name">
                     <figure class="thumb">
                       <figcaption>파트너사진</figcaption>
-                      <img src="../assets/images/sample/sample-someone.jpg">
+                      <img src="@@webRoot/assets/images/sample/sample-someone.jpg">
                     </figure>
                     <p class="name"><strong>홍길동</strong>변호사</p>
                   </div>
@@ -237,7 +150,7 @@
                   <div class="thumb-name">
                     <figure class="thumb">
                       <figcaption>파트너사진</figcaption>
-                      <img src="../assets/images/sample/sample-someone.jpg">
+                      <img src="@@webRoot/assets/images/sample/sample-someone.jpg">
                     </figure>
                     <p class="name"><strong>홍길동</strong>변호사</p>
                   </div>
@@ -307,7 +220,7 @@
                   <div class="thumb-name">
                     <figure class="thumb">
                       <figcaption>파트너사진</figcaption>
-                      <img src="../assets/images/sample/sample-someone.jpg">
+                      <img src="@@webRoot/assets/images/sample/sample-someone.jpg">
                     </figure>
                     <p class="name"><strong>홍길동</strong>손해사정사</p>
                   </div>
@@ -323,7 +236,7 @@
                   <div class="thumb-name">
                     <figure class="thumb">
                       <figcaption>파트너사진</figcaption>
-                      <img src="../assets/images/sample/sample-someone.jpg">
+                      <img src="@@webRoot/assets/images/sample/sample-someone.jpg">
                     </figure>
                     <p class="name"><strong>홍길동</strong>손해사정사</p>
                   </div>
@@ -339,7 +252,7 @@
                   <div class="thumb-name">
                     <figure class="thumb">
                       <figcaption>파트너사진</figcaption>
-                      <img src="../assets/images/sample/sample-someone.jpg">
+                      <img src="@@webRoot/assets/images/sample/sample-someone.jpg">
                     </figure>
                     <p class="name"><strong>홍길동</strong>손해사정사</p>
                   </div>
@@ -355,7 +268,7 @@
                   <div class="thumb-name">
                     <figure class="thumb">
                       <figcaption>파트너사진</figcaption>
-                      <img src="../assets/images/sample/sample-someone.jpg">
+                      <img src="@@webRoot/assets/images/sample/sample-someone.jpg">
                     </figure>
                     <p class="name"><strong>홍길동</strong>손해사정사</p>
                   </div>
@@ -425,7 +338,7 @@
                   <div class="thumb-name">
                     <figure class="thumb">
                       <figcaption>파트너사진</figcaption>
-                      <img src="../assets/images/sample/sample-someone.jpg">
+                      <img src="@@webRoot/assets/images/sample/sample-someone.jpg">
                     </figure>
                     <p class="name"><strong>홍길동</strong>탐정</p>
                   </div>
@@ -441,7 +354,7 @@
                   <div class="thumb-name">
                     <figure class="thumb">
                       <figcaption>파트너사진</figcaption>
-                      <img src="../assets/images/sample/sample-someone.jpg">
+                      <img src="@@webRoot/assets/images/sample/sample-someone.jpg">
                     </figure>
                     <p class="name"><strong>홍길동</strong>탐정</p>
                   </div>
@@ -457,7 +370,7 @@
                   <div class="thumb-name">
                     <figure class="thumb">
                       <figcaption>파트너사진</figcaption>
-                      <img src="../assets/images/sample/sample-someone.jpg">
+                      <img src="@@webRoot/assets/images/sample/sample-someone.jpg">
                     </figure>
                     <p class="name"><strong>홍길동</strong>탐정</p>
                   </div>
@@ -473,7 +386,7 @@
                   <div class="thumb-name">
                     <figure class="thumb">
                       <figcaption>파트너사진</figcaption>
-                      <img src="../assets/images/sample/sample-someone.jpg">
+                      <img src="@@webRoot/assets/images/sample/sample-someone.jpg">
                     </figure>
                     <p class="name"><strong>홍길동</strong>탐정</p>
                   </div>
@@ -516,16 +429,16 @@
           </div>
 
           <div class="event-move">
-            <button class="event-btn event-prev"><img src="../assets/images/main/btn-event-prev.png" alt="이전"></button>
-            <button class="event-btn event-next"><img src="../assets/images/main/btn-event-next.png" alt="다음"></button>
+            <button class="event-btn event-prev"><img src="@@webRoot/assets/images/main/btn-event-prev.png" alt="이전"></button>
+            <button class="event-btn event-next"><img src="@@webRoot/assets/images/main/btn-event-next.png" alt="다음"></button>
           </div>
 
 
           <div class="swiper events-swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><a href=""><img src="../assets/images/sample/event-sample.png" alt="고객 만족 설문에 응해주신 모든 고객님께 100% 증정 설문조사하고 스타벅스 쿠폰 받으세요"></a></div>
-              <div class="swiper-slide"><a href=""><img src="../assets/images/sample/event-sample.png" alt="고객 만족 설문에 응해주신 모든 고객님께 100% 증정 설문조사하고 스타벅스 쿠폰 받으세요"></a></div>
-              <div class="swiper-slide"><a href=""><img src="../assets/images/sample/event-sample.png" alt="고객 만족 설문에 응해주신 모든 고객님께 100% 증정 설문조사하고 스타벅스 쿠폰 받으세요"></a></div>
+              <div class="swiper-slide"><a href=""><img src="@@webRoot/assets/images/sample/event-sample.png" alt="고객 만족 설문에 응해주신 모든 고객님께 100% 증정 설문조사하고 스타벅스 쿠폰 받으세요"></a></div>
+              <div class="swiper-slide"><a href=""><img src="@@webRoot/assets/images/sample/event-sample.png" alt="고객 만족 설문에 응해주신 모든 고객님께 100% 증정 설문조사하고 스타벅스 쿠폰 받으세요"></a></div>
+              <div class="swiper-slide"><a href=""><img src="@@webRoot/assets/images/sample/event-sample.png" alt="고객 만족 설문에 응해주신 모든 고객님께 100% 증정 설문조사하고 스타벅스 쿠폰 받으세요"></a></div>
             </div>
           </div>     
 
@@ -546,8 +459,8 @@
           </div>
 
           <div class="services-move">
-            <button class="services-btn services-prev"><img src="../assets/images/main/btn-event-prev.png" alt="이전"></button>
-            <button class="services-btn services-next"><img src="../assets/images/main/btn-event-next.png" alt="다음"></button>
+            <button class="services-btn services-prev"><img src="@@webRoot/assets/images/main/btn-event-prev.png" alt="이전"></button>
+            <button class="services-btn services-next"><img src="@@webRoot/assets/images/main/btn-event-next.png" alt="다음"></button>
           </div>
 
           <div class="swiper services-swiper">
@@ -556,7 +469,7 @@
                 <div class="display">
                   <figure>
                     <figcaption>서비스 이미지</figcaption>
-                    <img src="../assets/images/main/services-img1.jpg">
+                    <img src="@@webRoot/assets/images/main/services-img1.jpg">
                   </figure>
                   <div class="txt-col">
                     <p class="txt1">services 01</p>
@@ -573,7 +486,7 @@
                 <div class="display">
                   <figure>
                     <figcaption>서비스 이미지</figcaption>
-                    <img src="../assets/images/main/services-img1.jpg">
+                    <img src="@@webRoot/assets/images/main/services-img1.jpg">
                   </figure>
                   <div class="txt-col">
                     <p class="txt1">services 02</p>
@@ -590,7 +503,7 @@
                 <div class="display">
                   <figure>
                     <figcaption>서비스 이미지</figcaption>
-                    <img src="../assets/images/main/services-img1.jpg">
+                    <img src="@@webRoot/assets/images/main/services-img1.jpg">
                   </figure>
                   <div class="txt-col">
                     <p class="txt1">services 03</p>
@@ -640,8 +553,8 @@
                 <div class="swiper-slide"><button class="btn-ctgr" onclick="subTab(0, 10);">변호사 분야10</button></div>
               </div>
             </div>
-            <div class="button-next"><img src="../assets/images/main/case-next.png" alt="다음"></div>
-            <div class="button-prev"><img src="../assets/images/main/case-prev.png" alt="이전"></div>
+            <div class="button-next"><img src="@@webRoot/assets/images/main/case-next.png" alt="다음"></div>
+            <div class="button-prev"><img src="@@webRoot/assets/images/main/case-prev.png" alt="이전"></div>
           </div>
           
           <div class="sub-tab sub-tab2" data-swiper="1">
@@ -660,8 +573,8 @@
                 <div class="swiper-slide"><button class="btn-ctgr" onclick="subTab(1, 10);">손해사정사 분야10</button></div>
               </div>
             </div>
-            <div class="button-next"><img src="../assets/images/main/case-next.png" alt="다음"></div>
-            <div class="button-prev"><img src="../assets/images/main/case-prev.png" alt="이전"></div>
+            <div class="button-next"><img src="@@webRoot/assets/images/main/case-next.png" alt="다음"></div>
+            <div class="button-prev"><img src="@@webRoot/assets/images/main/case-prev.png" alt="이전"></div>
           </div>
           
           <div class="sub-tab sub-tab3" data-swiper="2">
@@ -680,8 +593,8 @@
                 <div class="swiper-slide"><button class="btn-ctgr" onclick="subTab(2, 10);">탐정 분야10</button></div>
               </div>
             </div>
-            <div class="button-next"><img src="../assets/images/main/case-next.png" alt="다음"></div>
-            <div class="button-prev"><img src="../assets/images/main/case-prev.png" alt="이전"></div>
+            <div class="button-next"><img src="@@webRoot/assets/images/main/case-next.png" alt="다음"></div>
+            <div class="button-prev"><img src="@@webRoot/assets/images/main/case-prev.png" alt="이전"></div>
           </div>
           
           <div class="tab-content active" data-tab-content="0">
@@ -1212,11 +1125,11 @@
                 <dd>
                   <figure>
                     <figcaption>IOS 다운로드 QR이미지</figcaption>
-                    <img src="../assets/images/main/ios_qr.png" alt="qr이미지">
+                    <img src="@@webRoot/assets/images/main/ios_qr.png" alt="qr이미지">
                   </figure>
                   <figure>
                     <figcaption>IOS 다운로드 배너 이미지</figcaption>
-                    <img src="../assets/images/main/ios-down.png" alt="app store에서 다운로드 하기">
+                    <img src="@@webRoot/assets/images/main/ios-down.png" alt="app store에서 다운로드 하기">
                   </figure>
                 </dd>
               </dl>
@@ -1225,11 +1138,11 @@
                 <dd>
                   <figure>
                     <figcaption>안드로이드 다운로드 QR이미지</figcaption>
-                    <img src="../assets/images/main/and_qr.png" alt="qr이미지">
+                    <img src="@@webRoot/assets/images/main/and_qr.png" alt="qr이미지">
                   </figure>
                   <figure>
                     <figcaption>IOS 다운로드 배너 이미지</figcaption>
-                    <img src="../assets/images/main/and-down.png" alt="다운로드 하기 google play">
+                    <img src="@@webRoot/assets/images/main/and-down.png" alt="다운로드 하기 google play">
                   </figure>
                 </dd>
               </dl>
@@ -1254,20 +1167,20 @@
         <div class="partners-ban row-container">
           <div class="swiper partners-swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><a href="#" target="_blank"><img src="../assets/images/main/partners-ban01.png" alt="bada"></a></div>
-              <div class="swiper-slide"><a href="#" target="_blank"><img src="../assets/images/main/partners-ban02.png" alt="co actus 세상을 바꾸는 따뜻한기술"></a></div>
-              <div class="swiper-slide"><a href="#" target="_blank"><img src="../assets/images/main/partners-ban03.png" alt="openplan"></a></div>
-              <div class="swiper-slide"><a href="#" target="_blank"><img src="../assets/images/main/partners-ban04.png" alt="청소전문 플랫폼 clean bell"></a></div>
-              <div class="swiper-slide"><a href="#" target="_blank"><img src="../assets/images/main/partners-ban05.png" alt="on air"></a></div>
-              <div class="swiper-slide"><a href="#" target="_blank"><img src="../assets/images/main/partners-ban06.png" alt="타고가요"></a></div>
-              <div class="swiper-slide"><a href="#" target="_blank"><img src="../assets/images/main/partners-ban07.png" alt="1top손해사정학원"></a></div>
-              <div class="swiper-slide"><a href="#" target="_blank"><img src="../assets/images/main/partners-ban08.png" alt="spidor"></a></div>
+              <div class="swiper-slide"><a href="#" target="_blank"><img src="@@webRoot/assets/images/main/partners-ban01.png" alt="bada"></a></div>
+              <div class="swiper-slide"><a href="#" target="_blank"><img src="@@webRoot/assets/images/main/partners-ban02.png" alt="co actus 세상을 바꾸는 따뜻한기술"></a></div>
+              <div class="swiper-slide"><a href="#" target="_blank"><img src="@@webRoot/assets/images/main/partners-ban03.png" alt="openplan"></a></div>
+              <div class="swiper-slide"><a href="#" target="_blank"><img src="@@webRoot/assets/images/main/partners-ban04.png" alt="청소전문 플랫폼 clean bell"></a></div>
+              <div class="swiper-slide"><a href="#" target="_blank"><img src="@@webRoot/assets/images/main/partners-ban05.png" alt="on air"></a></div>
+              <div class="swiper-slide"><a href="#" target="_blank"><img src="@@webRoot/assets/images/main/partners-ban06.png" alt="타고가요"></a></div>
+              <div class="swiper-slide"><a href="#" target="_blank"><img src="@@webRoot/assets/images/main/partners-ban07.png" alt="1top손해사정학원"></a></div>
+              <div class="swiper-slide"><a href="#" target="_blank"><img src="@@webRoot/assets/images/main/partners-ban08.png" alt="spidor"></a></div>
             </div>
           </div>
         </div>
         <div class="move-wrap">
-          <div class="move prev"><img src="../assets/images/main/partners-prev.png" alt="이전"></div>
-          <div class="move next"><img src="../assets/images/main/partners-next.png" alt="다음"></div>
+          <div class="move prev"><img src="@@webRoot/assets/images/main/partners-prev.png" alt="이전"></div>
+          <div class="move next"><img src="@@webRoot/assets/images/main/partners-next.png" alt="다음"></div>
         </div>
       </div>
       <!-- partners end -->
@@ -1276,130 +1189,10 @@
 
     <hr>
 
-    <footer class="l-footer">
-
-  <div class="menu-row">
-    <div class="inner row-container d-flex-sb-c">
-      <ul class="menu-l d-flex-s-c">
-        <li class="menu-item"><a href="#" class="menu-btn">서비스 및 회사소개</a></li>
-        <li class="menu-item"><a href="#" class="menu-btn">서비스 이용약관</a></li>
-        <li class="menu-item"><a href="#" class="menu-btn">개인정보처리방침</a></li>
-        <li class="menu-item"><a href="#" class="menu-btn">약관동의</a></li>
-      </ul>
-      <ul class="menu-r d-flex-s-c">
-        <li class="menu-item"><a href="#" class="menu-btn">블로그 바로가기</a></li>
-        <li class="menu-item"><a href="#" class="menu-btn">유튜브 바로가기</a></li>
-      </ul>
-    </div>
+    @@include('@@webRoot/include/footer.html')
   </div>
 
-  <div class="info-row">
-    <div class="inner row-container d-flex-s-c">
-      <p class="company-name">(주)골고루보상</p>
-      <address>주소: 서울시 금천구 가산디지털1로 128  STXV타워 1604호  |  대표이사 : 유태석  |  사업자등록번호 : 205-81-43321  |  통신판매번호 : 2020-서울금천-2366  |  이메일: bosangcs@golgoru.co.kr</address>
-    </div>
-  </div>
-
-  <div class="copyright-row d-flex-c-c">
-    <p class="copyright">Copyright 2022. GOLGORUTEAM inc. all rights reserved.</p>
-  </div>
-
-</footer>
-
-<div class="l-login-wrap expert">
-  <div class="login-container">
-    <div class="eLogin">
-      <h2 class="eLogin__title">전문가 통합 로그인</h2>
-      <!-- login__inpBox -->
-      <div class="eLogin__inpBox">
-        <div class="eLogin__inpBoxTop">
-          <h3 class="eLogin__formGuide">로그인 후 서비스를 이용하실 수 있습니다.</h3>
-          <div class="inpTxt">
-            <input type="text" class="inpTxt__inp" placeholder="아이디">
-          </div>
-          <div class="inpTxt">
-            <input type="password" class="inpTxt__inp" placeholder="비밀번호">
-          </div>
-          <div class="btn-row eLogin__confirm">
-            <button class="btnDefault btnDefault--confirm eLogin__btnConfirm">
-              <span class="btnDefault__txt eLogin__btnConfirmTxt">로그인</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="eLogin__inpBoxBottom">
-          <div class="checkbox">
-            <label for="chk1" class="checkbox__label">자동 로그인</label>
-            <input type="checkbox" id="chk1" class="checkbox__chkbox">
-          </div>
-
-          <a href="#" class="eLogin__findIdPw">아이디 / 비밀번호 찾기</a>
-        </div>
-      </div>
-      <!-- login__inpBox end -->
-
-      <div class="eLogin__help">
-        <div class="eLogin__helpTxt1">
-          <span class="eLogin__helpTxt2">또는</span>
-        </div>
-        <p class="eLogin__helpGuideTxt">처음 오셨나요? 도움이 필요하세요?</p>
-
-        <div class="eLogin__helpRow">
-          <a href="#" class="eLogin__helpLink">제휴 및 가입 소개 페이지로 이동하기</a>
-        </div>
-      </div>
-
-      <button class="eLogin__btnClose" onclick="closeLogin();" title="로그인 닫기">
-        <span class="is-blind">로그인 닫기</span>
-      </button>
-    </div>
-  </div>
-</div>
-<div class="l-login-wrap user">
-  <div class="login-container">
-    <div class="uLogin">
-      <h2 class="uLogin__title">간편 로그인하기</h2>
-      <!-- login__inpBox -->
-      <div class="uLogin__box">
-        <div class="uLogin__boxTop">
-          <h3 class="uLogin__loginGuide">로그인 후 서비스를 이용하실 수 있습니다.</h3>
-          <ul class="uLogin__snsLogin">
-            <li class="uLogin__snsLoginItem"><a href="#" title="카카오계정으로 로그인"><img src="../assets/images/common/login-sns-kakao.png" alt="카카오"></a></li>
-            <li class="uLogin__snsLoginItem"><a href="#" title="네이버계정으로 로그인"><img src="../assets/images/common/login-sns-naver.png" alt="네이버"></a></li>
-            <li class="uLogin__snsLoginItem"><a href="#" title="애플계정으로 로그인"><img src="../assets/images/common/login-sns-apple.png" alt="애플"></a></li>
-            <li class="uLogin__snsLoginItem"><a href="#" title="구글계정으로 로그인"><img src="../assets/images/common/login-sns-google.png" alt="구글"></a></li>
-          </ul>
-        </div>
-
-        <div class="uLogin__help">
-          <div class="uLogin__helpTxt1">
-            <span class="uLogin__helpTxt2">또는</span>
-          </div>
-          <p class="uLogin__helpGuideTxt">골고루팀 전문가로 로그인을 원하시나요?</p>
-  
-          <div class="uLogin__helpRow">
-            <a href="#" class="uLogin__helpLink">전문가 통합 로그인하기</a>
-          </div>
-        </div>
-      </div>
-      <!-- login__box end -->
-
-      <div class="uLogin__cs">
-        <p class="uLogin__csTxt">서비스 이용에 어려움이 있으시다면 연락 바랍니다.</p>
-        <p class="uLogin__csNum">1670 - 2456</p>
-      </div>
-
-
-      <button class="eLogin__btnClose" onclick="closeLogin();" title="로그인 닫기">
-        <span class="is-blind">로그인 닫기</span>
-      </button>
-    </div>
-  </div>
-</div>
-
-  </div>
-
-<script src="../assets/js/swiper.min.js"></script>
+<script src="@@webRoot/assets/js/swiper.min.js"></script>
 <script>
   // 하단 메뉴 활성 변수 선언
   var page = 'home';

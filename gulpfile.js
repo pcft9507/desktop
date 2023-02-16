@@ -48,12 +48,9 @@ function htmlComplie() {
       prefix: '@@',
       basepath: '@file',
       // 파일인클루드에 쓰는 변수 초기화
-      // context: {
-      //   basic: false,
-      //   hasTitle: false,
-      //   btnRecommend: false,
-      //   headerTransparent: false
-      // }
+      context: {
+        login: false,
+      }
     }))
     .pipe(gulp.dest(paths.html))
     .pipe(browserSync.reload({stream:true}));

@@ -24,12 +24,30 @@
     .top-side {
       display: flex;
 
+      &.login {
+
+        .side-item {
+          color: $themeColor01;
+
+          a {
+            color: $themeColor01;
+          }
+        }
+      }
+
       .side-item {
         position: relative;
         margin-left: 40px;
-        color: $themeColor01;
+        color: #939393;
         font-size: 14px;
         line-height: 19px;
+
+        &:first-child {
+
+          &:before {
+            display: none;
+          }
+        }
 
         &:before {
           content: '';
@@ -42,7 +60,7 @@
         }
 
         a {
-          color: $themeColor01;
+          color: #939393;
           font-size: 14px;
           line-height: 19px;
         }
@@ -210,5 +228,23 @@
       color: #c1c1c1;
       font-size: 10px;
     }
+  }
+}
+
+.l-login-wrap {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  background-color: rgba(0, 9, 25, 0.8);
+
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 }
