@@ -1,0 +1,92 @@
+<div class="l-modal agreement-wrap" data-modal="agreement">
+  <div class="modal-container agreement-container">
+    <div class="agreement">
+      <h2 class="agreement__title">약관 동의</h2>
+
+      <div class="chkList">
+        <div class="chkList__title">
+          <label for="all" class="chkList__titleLabel">약관 전체동의</label>
+          <input type="checkbox" id="all" class="chkList__checkbox" onchange="agreeCheckboxAll();">
+        </div>
+
+        <ul class="chkList__list">
+          <li class="chkList__item">
+            <div class="chkList__col">
+              <span class="chkList__head">필수)</span>
+            </div>
+            <div class="chkList__col">
+              <label for="chk1" class="chkList__label">서비스 이용약관 동의  ></label>
+            </div>
+            <input type="checkbox" id="chk1" class="chkList__checkbox" onchange="agreeCheckbox();">
+          </li>
+          <li class="chkList__item">
+            <div class="chkList__col">
+              <span class="chkList__head">필수)</span>
+            </div>
+            <div class="chkList__col">
+              <label for="chk2" class="chkList__label">개인정보 수집 및 이용동의  ></label>
+            </div>
+            <input type="checkbox" id="chk2" class="chkList__checkbox" onchange="agreeCheckbox();">
+          </li>
+          <li class="chkList__item">
+            <div class="chkList__col">
+              <span class="chkList__head">선택)</span>
+            </div>
+            <div class="chkList__col">
+              <label for="chk3" class="chkList__label">마케팅 활용/광고성 정보 수신동의  ></label>
+              <p class="chkList__labelSub">다양한 프로모션 및 소식 등 정보를 보내 드립니다.</p>
+            </div>
+            <input type="checkbox" id="chk3" class="chkList__checkbox" onchange="agreeCheckbox();">
+          </li>
+        </ul>
+      </div>
+
+      <div class="agreement__contWrap">
+        <h3 class="agreement__contHeading">서비스 이용약관 동의</h3>
+        <pre class="agreement__cont custom-scroll">
+<p class="agreement__contTit">■  입력해주세요</p>
+가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하
+<p class="agreement__contTit">■  입력해주세요</p>
+가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아
+</pre>
+      </div>
+
+      <button class="agreement__btn">
+        <span class="txt">동의 후 서비스 이용하기</span>
+      </button>
+
+      <button class="modal-btnClose" onclick="closeModal('agreement');" title="약관동의 닫기">
+        <span class="is-blind">약관동의 닫기</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // 전체동의 체크박스
+  function agreeCheckboxAll() {
+    const checkboxAll= document.querySelector('#all');
+    const checkboxArr = document.querySelectorAll('.chkList__list .chkList__checkbox');
+    if (checkboxAll.checked === true) {
+      checkboxArr.forEach((el, i)=> checkboxArr[i].checked = true);
+    } else {
+      checkboxArr.forEach((el, i)=> checkboxArr[i].checked = false);
+    }
+  }
+  // 개별 체크박스
+  function agreeCheckbox() {
+    const checkboxAll= document.querySelector('#all');
+    const checkboxArr = document.querySelectorAll('.chkList__list .chkList__checkbox');
+    let trueLength = 0;
+    checkboxArr.forEach((el, i) => {
+      if (checkboxArr[i].checked === true) {
+        trueLength ++;
+        if (trueLength === checkboxArr.length) {
+          checkboxAll.checked = true;
+        }
+      } else {
+        checkboxAll.checked = false;
+      }
+    });
+  }
+</script>

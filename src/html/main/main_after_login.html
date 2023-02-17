@@ -1194,18 +1194,6 @@
 
 <script src="@@webRoot/assets/js/swiper.min.js"></script>
 <script>
-  // 하단 메뉴 활성 변수 선언
-  var page = 'home';
-
-  // 메인 상단 슬로건
-  function mainTopSloganAni () {
-    const introText = document.querySelectorAll(".main-slogan span");
-    let timer = 100;
-    introText.forEach((item) => {
-      item.style.animation = `fade 500ms ${(timer += 50)}ms forwards`;
-    });
-  };
-
   // 숫자 천단위 콤마
   function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")

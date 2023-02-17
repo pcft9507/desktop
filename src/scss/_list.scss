@@ -1,0 +1,77 @@
+.chkList {
+  margin-top: 60px;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 72px;
+    padding: 0 40px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  &__titleLabel {
+    color: $themeColor01;
+    font-family: ROKAF Slab Serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  &__checkbox {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    width: 32px;
+    height: 32px;
+    appearance: none;
+    background: url($imgCommon + 'checkbox32.png') 0/32px;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &:checked {
+      background: url($imgCommon + 'checkbox32-checked.png') 0/32px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 80px;
+    padding-left: 40px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  &__col {
+
+    & + .chkList__col {
+      margin-left: 20px;
+    }
+  }
+
+  &__head {
+    color: $themeColor01;
+    font-family: ROKAF Slab Serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  &__label {
+    color: #152131;
+    font-family: ROKAF Slab Serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  &__labelSub {
+    margin-top: 8px;
+    color: #525b6b;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 15px;
+  }
+}

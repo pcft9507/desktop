@@ -231,7 +231,7 @@
   }
 }
 
-.l-login-wrap {
+.l-modal {
   display: none;
   position: fixed;
   top: 0;
@@ -239,12 +239,38 @@
   left: 0;
   right: 0;
   z-index: 101;
-  background-color: rgba(0, 9, 25, 0.8);
+  overflow-y: auto;
 
-  .login-container {
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .modal-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    background-color: rgba(0, 9, 25, 0.8);
+  }
+
+  .modal-btnClose {
+    position: absolute;
+    top: 0;
+    right: -62px;
+    width: 42px;
+    height: 42px;
+    background: url($imgCommon + 'btn-close-login.png') 0/100% no-repeat;
   }
 }
