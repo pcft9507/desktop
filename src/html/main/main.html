@@ -1434,7 +1434,9 @@
   var pathSch = location.search;
   pathSch = pathSch.split('?')[1];
   console.log(pathSch);
-  openModal(pathSch);
+  if (pathSch.length > 0) {
+    openModal(pathSch);
+  }
 </script>
 </body>
 </html>
