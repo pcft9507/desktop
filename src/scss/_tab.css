@@ -1,0 +1,11 @@
+.tab {
+  display: flex;
+}
+
+.tab__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 0;
+}

@@ -1,9 +1,10 @@
 @@include('@@webRoot/include/head.html')
 
-@@include('@@webRoot/include/header.html')
-
 <body>
   <div class="wrap">
+
+    @@include('@@webRoot/include/header.html')
+
     <div class="l-container-main main">
       <!-- main-top -->
       <div class="main-top">
@@ -1432,6 +1433,7 @@
   // 로그인 모달 개발 후 삭제
   var pathSch = location.search;
   pathSch = pathSch.split('?')[1];
+  console.log(pathSch);
   openModal(pathSch);
 </script>
 </body>

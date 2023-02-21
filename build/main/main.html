@@ -11,7 +11,10 @@
 </head>
 
 
-<!-- header -->
+<body>
+  <div class="wrap">
+
+    <!-- header -->
 <header class="l-header">
   <!-- header-top -->
   <div class="header-top">
@@ -91,8 +94,6 @@
 </div>
 
 
-<body>
-  <div class="wrap">
     <div class="l-container-main main">
       <!-- main-top -->
       <div class="main-top">
@@ -1733,6 +1734,7 @@
   // 로그인 모달 개발 후 삭제
   var pathSch = location.search;
   pathSch = pathSch.split('?')[1];
+  console.log(pathSch);
   openModal(pathSch);
 </script>
 </body>

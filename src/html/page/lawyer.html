@@ -1,0 +1,54 @@
+@@include('@@webRoot/include/head.html')
+
+<body>
+  <div class="wrap">
+
+    @@include('@@webRoot/include/header.html')
+
+    <div class="l-container">
+      <!-- expert-default -->
+      <div class="expert-default">
+        <div class="selection-group">
+          <div class="header">
+            <h2 class="title">사건사고를 빠른시간에 문의/해결하고 싶으신가요?</h2>
+            <p class="desc">필요한 분야의 변호사분들이 전국에서 대기중입니다.</p>
+          </div>
+          <div class="conTab">
+            <a href="javascript: void(0);" class="conTab__btn active" onclick="conTab(0);">상담분야</a>
+            <a href="javascript: void(0);" class="conTab__btn" onclick="conTab(1);">지역</a>
+            <a href="javascript: void(0);" class="conTab__btn" onclick="conTab(2);">상담방법</a>
+          </div>
+      
+          <div class="selection">
+            <div class="selection-head">
+              <h3 class="selction-title">상담분야 선택</h3>
+              <div class="btnChk">
+                <label for="all" class="btnChk__label">전체</label>
+                <input type="checkbox" id="all" class="btnChk__checkbox">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- side -->
+        <div class="side"></div>
+        <!-- side -->
+      </div>
+      <!-- expert-default end -->
+    </div>
+
+    <hr>
+
+    @@include('@@webRoot/include/footer.html')
+  </div>
+
+<script>
+  const page = 'lawyer';
+
+  // 탭
+  function conTab(i) {
+    console.log('탭:', i);
+    $('.conTab__btn').removeClass('active').eq(i).addClass('active');
+  }  
+</script>
+</body>
+</html>

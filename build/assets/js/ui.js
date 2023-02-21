@@ -16,16 +16,16 @@ function closeModal(name) {
 $(document).ready(function () {
   // 하단메뉴 상단 뎁스 활성화
   if (typeof page != 'undefined') {
-    if (page == 'home') {
-      $('.bQuickMenu__item').eq(0).find('.bQuickMenu__txt').addClass('on');
-    } else if (page == 'lawyer') {
-      $('.bQuickMenu__item').eq(1).find('.bQuickMenu__txt').addClass('on');
+    if (page == 'lawyer') {
+      $('.mm-item').eq(0).find('.mm-btn').addClass('on');
     } else if (page == 'da') {
-      $('.bQuickMenu__item').eq(2).find('.bQuickMenu__txt').addClass('on');
+      $('.mm-item').eq(1).find('.mm-btn').addClass('on');
     } else if (page == 'detective') {
-      $('.bQuickMenu__item').eq(3).find('.bQuickMenu__txt').addClass('on');
-    } else if (page == 'more') {
-      $('.bQuickMenu__item').eq(4).find('.bQuickMenu__txt').addClass('on');
+      $('.mm-item').eq(2).find('.mm-btn').addClass('on');
+    } else if (page == 'event') {
+      $('.mm-item').eq(3).find('.mm-btn').addClass('on');
+    } else if (page == 'service') {
+      $('.mm-item').eq(4).find('.mm-btn').addClass('on');
     }
   }
 });

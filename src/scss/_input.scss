@@ -24,3 +24,35 @@
     }
   }
 }
+
+.btnChk {
+  display: flex;
+
+  &__label {
+    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    padding: 0 16px;
+    color: #152131;
+    font-size: 16px;
+    font-weight: 500;
+    border: solid 1px #c1c1c1;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  &__checkbox {
+    order: 1;
+    appearance: none;
+
+    
+    &:checked ~ .btnChk__label {
+      color: #fff;
+      background-color: #cc9d76;
+      border-color: #cc9d76;
+    }
+  }
+}
