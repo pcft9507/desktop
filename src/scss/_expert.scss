@@ -1,13 +1,206 @@
 .expert-default {
   display: flex;
   justify-content: space-between;
+  position: relative;
 
   .selection-group {
-    width: 784px;
-    padding-top: 60px;
+    width: 720px;
+    padding: 60px 0 44px;
+
+    .header {
+
+      .title {
+        color: #152131;
+        font-family: 'rokaf-slab';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1;
+      }
+
+      .desc {
+        margin-top: 12px;
+        color: #939393;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+      }
+    }
+
+    .conTab {
+      margin-top: 40px;
+    }
+
+    .selection {
+      height: 661px;
+      margin: 46px -64px 0 0;
+      padding-right: 64px;
+      overflow-y: auto;
+
+      &-head {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: 2px solid $themeColor01;
+      }
+
+      &-title {
+        margin-top: 12px;
+        color: $themeColor01;
+        font-family: 'rokaf-slab';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1;
+      }
+      
+      .type-list {
+          
+        .list-row {
+          padding: 33px 0 20px;
+          border-bottom: 2px solid #e6e6e6;
+        }
+
+        .list-head {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 32px;
+
+          .type-name {
+            color: #152131;
+            font-family: 'rokaf-slab';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1;
+          }
+        }
+
+        .type-cont {
+          margin-top: 17px;
+
+          .desc {
+            color: #939393;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19px;
+          }
+
+          .sub-chk {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 21px 0 0 -10px;
+          }
+
+          .btnChk {
+            margin: 10px 0 0 10px;            
+          }
+        }
+      }
+    }
   }
 
   .side {
     width: 454px;
+    padding: 40px 0 0 10px;
+
+    .side-top-ban {
+      height: 180px;
+      padding: 80px 0 40px 20px;
+      background-color: #0b2b5c;
+      border-radius: 8px;
+      background-color: #0b2b5c;
+
+      &.lawyer {
+        background-color: #0b2b5c;
+      }
+
+      &.da {
+        background-color: #003535;
+      }
+
+      &.detective {
+        background-color: #4c0a15;
+      }
+
+      &.expert {
+        background-color: #000;
+      }
+
+      .txt {  
+        color: #fefefe;
+        font-family: ROKAF Slab Serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1;
+
+        strong {
+          display: block;
+          margin-top: 16px;
+          color: #fefefe;
+          font-family: ROKAF Slab Serif;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 1;
+        }
+      }
+    }
+
+    .expert-list-wrap {
+      margin-top: 40px;
+    }
+
+    .expert-list {
+      margin-top: 20px;
+
+      .exptCard {
+        
+        & + .exptCard {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .btn-row {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+
+      .view-all-expert {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 290px;
+        height: 48px;
+        color: #152131;
+        font-weight: 500;
+        font-size: 18px;
+        border-radius: 32px;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);
+        background-color: #f7f7f7;
+      }
+    }
+  }
+}
+
+.selected-type {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 0;
+  background-color: rgba(204, 157, 118, 0.95);
+
+  .btn-selected-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 787px;
+    height: 48px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    border: 1px solid #fff;
+    border-radius: 32px;
   }
 }

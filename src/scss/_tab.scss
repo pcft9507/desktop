@@ -18,10 +18,22 @@
       width: calc(100% + 1px);
     }
 
-    &.active {
-      color: #fefefe;
-      background-color: $themeColor01;
-      border-color: $themeColor01;
-    }
+    &.default {
+      
+      &.active {
+        color: #fefefe;
+        background-color: $themeColor01;
+        border-color: $themeColor01;
+      }
+    } 
+
+    &.expert {
+      
+      &.active {
+        color: #fefefe;
+        background-color: #0b2b5c;
+        border-color: #0b2b5c;
+      }
+    } 
   }
 }

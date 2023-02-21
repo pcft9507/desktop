@@ -47,9 +47,8 @@
   &__checkbox {
     order: 1;
     appearance: none;
-
     
-    &:checked ~ .btnChk__label {
+    &:checked + .btnChk__label {
       color: #fff;
       background-color: #cc9d76;
       border-color: #cc9d76;

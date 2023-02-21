@@ -17,15 +17,15 @@ $(document).ready(function () {
   // 하단메뉴 상단 뎁스 활성화
   if (typeof page != 'undefined') {
     if (page == 'lawyer') {
-      $('.mm-item').eq(0).find('.mm-btn').addClass('on');
+      $('.mm-item').eq(0).find('.mm-btn').addClass('active');
     } else if (page == 'da') {
-      $('.mm-item').eq(1).find('.mm-btn').addClass('on');
+      $('.mm-item').eq(1).find('.mm-btn').addClass('active');
     } else if (page == 'detective') {
-      $('.mm-item').eq(2).find('.mm-btn').addClass('on');
+      $('.mm-item').eq(2).find('.mm-btn').addClass('active');
     } else if (page == 'event') {
-      $('.mm-item').eq(3).find('.mm-btn').addClass('on');
+      $('.mm-item').eq(3).find('.mm-btn').addClass('active');
     } else if (page == 'service') {
-      $('.mm-item').eq(4).find('.mm-btn').addClass('on');
+      $('.mm-item').eq(4).find('.mm-btn').addClass('active');
     }
   }
 });

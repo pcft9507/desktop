@@ -21,3 +21,126 @@
     }
   }
 }
+
+.hotKeyWord {
+  display: flex;
+  align-items: center;
+
+  &__label {
+    width: 123px;
+    padding-left: 22px;
+    color: #152131;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  &__swiper {
+    width: calc(100% - 123px);
+
+    .swiper-slide {
+      width: auto;
+    }
+  }
+} 
+
+.exptCard {
+  display: flex;
+  position: relative;
+  border-radius: 8px;
+  border: solid 1px #e6e6e6;
+  background-color: #fff;
+
+  &__img {
+    width: 124px;
+    height: 100%;
+    margin: -1px 0;
+
+    img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__connecting {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    padding: 0 6px;
+    color: #fff;
+    font-family: 'rokaf-slab';
+    font-weight: 500;
+    font-size: 12px;
+    background-color: #0336ff;
+  }
+
+  &__info {
+    width: calc(100% - 124px);
+    padding: 13px 20px;
+  }
+
+  &__kw {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #ff0247;
+  }
+
+  &__kwTxt {
+    position: relative;
+    color: #ff0247;
+    font-family: 'rokaf-slab';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    &:last-child {
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      content: ',';
+      margin-right: 3px;
+    }
+  }
+
+  &__name {
+    margin-top: 8px;
+    color: #152131;
+    font-family: 'rokaf-slab';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  &__company {
+    margin-top: 8px;
+    color: #939393;
+    font-family: 'rokaf-slab';
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1;
+  }
+
+  &__contact {
+    margin-top: 12px;
+  }
+
+  &__dr {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+}
