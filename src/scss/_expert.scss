@@ -204,3 +204,141 @@
     border-radius: 32px;
   }
 }
+
+.find-expert {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 130px;
+  
+  .side {
+    width: 280px;
+
+    .filter-title {
+      display: flex;
+      align-items: center;
+      height: 64px;
+      padding-left: 20px;
+      color: #fefefe;
+      font-family: ROKAF Slab Serif;
+      font-size: 20px;
+      font-weight: 500;
+      border-radius: 4px 4px 0 0;
+
+      &.lawyer {
+        background-color: #0b2b5c;
+      }
+
+      &.da {
+        background-color: #003535;
+      }
+
+      &.detective {
+        background-color: #4c0a15;
+      }
+    }
+
+    .filter-body {
+      padding: 20px 20px 40px;
+      border-left: 1px solid #e6e6e6;
+      border-right: 1px solid #e6e6e6;
+
+      .select-row {
+        border: 1px solid #e6e6e6;
+        border-radius: 4px;
+
+        & + .select-row {
+          margin-top: 20px;
+        }
+
+        select {
+          width: calc(100% - 10px);
+          height: 30px;
+          padding-left: 12px;
+        }
+      }
+    }
+
+    .key-word-list {
+      display: flex;
+      flex-wrap: wrap;
+      height: 262px;
+      margin-top: 40px;
+      margin-left: -4px;
+      overflow-y: auto;
+
+      li {
+        margin: 0 0 12px 4px;
+      }
+    }
+
+    .filter-btn {
+      display: flex;
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 48px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .btn-reset {
+        color: #939393;
+        border: 1px solid #e6e6e6;
+        background-color: #f7f7f7;
+      }
+
+      .btn-confirm {
+        color: #fff;
+        background-color: $themeColor01;
+      }
+    }
+  }
+
+  .find-result {
+    width: 950px;
+
+    .fs-title {
+      display: flex;
+      align-items: center;
+      height: 64px;
+      padding-left: 20px;
+      color: #fefefe;
+      font-family: ROKAF Slab Serif;
+      font-size: 20px;
+      font-weight: 500;
+      border-radius: 4px 4px 0 0;
+
+      &.lawyer {
+        background-color: #0b2b5c;
+      }
+
+      &.da {
+        background-color: #003535;
+      }
+
+      &.detective {
+        background-color: #4c0a15;
+      }
+    }
+
+    .fs-body {
+      height: 740px;
+      overflow-y: auto;
+      padding: 20px 42px 0 0;
+    }
+
+    .fs-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .list-item {
+      width: calc(50% - 10px);
+      margin-bottom: 10px;
+    }
+  }
+}

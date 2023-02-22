@@ -45,3 +45,40 @@
     background-color: $themeColor01;
   }
 }
+
+.kwChip {
+  display: inline-flex;
+  position: relative;
+
+  &.with-del {
+
+    .kwChip__btn {
+      padding: 0 26px 0 12px;
+    }
+
+    .kwChip__del {
+      position: absolute;
+      top: 50%;
+      right: 8px;
+      z-index: 1;
+      width: 8px;
+      height: 8px;
+      background: url($imgCommon + 'ico-hot-key-del.png') 0/100%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    padding: 0 12px;
+    color: #152131;
+    font-weight: 500;
+    font-size: 12px;
+    border: solid 1px #e6e6e6;
+    background-color: #f7f7f7;
+    border-radius: 14px;
+  }
+}
