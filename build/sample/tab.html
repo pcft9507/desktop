@@ -14,18 +14,41 @@
   <div class="sample-wrap">
     <h2 class="sample-heading">입력</h2>
     <h3 class="sample-heading2">컨텐츠 탭</h3>
-    <div class="conTab">
-      <a href="javascript: void(0);" class="conTab__btn active" onclick="conTab(0);">상담분야</a>
-      <a href="javascript: void(0);" class="conTab__btn" onclick="conTab(1);">지역</a>
-      <a href="javascript: void(0);" class="conTab__btn" onclick="conTab(2);">상담방법</a>
+    <div class="conTab" data-con-tab="0">
+      <a href="javascript: void(0);" class="conTab__btn default active" onclick="conTab(0, 0);">상담분야</a>
+      <a href="javascript: void(0);" class="conTab__btn default" onclick="conTab(0, 1);">지역</a>
+      <a href="javascript: void(0);" class="conTab__btn default" onclick="conTab(0, 2);">상담방법</a>
+    </div>
+    <br>
+    <div class="conTab" data-con-tab="1">
+      <a href="javascript: void(0);" class="conTab__btn lawyer active" onclick="conTab(1, 0);">상담분야</a>
+      <a href="javascript: void(0);" class="conTab__btn lawyer" onclick="conTab(1, 1);">지역</a>
+      <a href="javascript: void(0);" class="conTab__btn lawyer" onclick="conTab(1, 2);">상담방법</a>
+    </div>
+    <br>
+    <div class="conTab" data-con-tab="2">
+      <a href="javascript: void(0);" class="conTab__btn expert active" onclick="conTab(2, 0);">상담분야</a>
+      <a href="javascript: void(0);" class="conTab__btn expert" onclick="conTab(2, 1);">지역</a>
+      <a href="javascript: void(0);" class="conTab__btn expert" onclick="conTab(2, 2);">상담방법</a>
+    </div>
+    <div class="tabCont active" data-tab-cont="0">
+      탭 1111
+    </div>
+    <div class="tabCont" data-tab-cont="1">
+      탭 2222
+    </div>
+    <div class="tabCont" data-tab-cont="2">
+      탭 3333
     </div>
 
   </div>
 
 <script>
-function conTab(i) {
-  console.log('탭:', i);
-  $('.conTab__btn').removeClass('active').eq(i).addClass('active');
+function conTab(tabBody, tabBtnIndex) {
+  console.log('탭 ' + tabBody + ': 버튼인덱스 :', tabBtnIndex);
+  $('.conTab[data-con-tab="' + tabBody + '"] .conTab__btn').removeClass('active').eq(tabBtnIndex).addClass('active');
+  $('.tabCont').removeClass('active');
+  $('.tabCont[data-tab-cont="' + tabBtnIndex + '"]').addClass('active');
 }
 </script>
 </body>

@@ -342,3 +342,423 @@
     }
   }
 }
+
+.expert-detail {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+
+  .detail-content {
+    width: 950px;
+
+    .tabCont {
+      border-left: 1px solid #e6e6e6;
+      border-right: 1px solid #e6e6e6;
+  
+      &.detail {
+        padding: 55px 40px 60px;
+      }
+    }
+
+    .apeal-keyword {
+      display: flex;
+      justify-content: center;
+      padding: 46px 0;
+      border-radius: 8px;
+      border: solid 1px #cc9d76;
+      background-color: rgba(204, 157, 118, 0.1);
+
+      .ak-txt {
+        color: #000919;
+        font-family: nanummyeongjo;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 28px;
+      }
+    }
+
+    .detail-section {
+      margin-top: 60px;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #cc9d76;
+
+      .section-title {
+        color: #cc9d76;
+        font-family: ROKAF Slab Serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1;
+      }
+
+      .sub-txt {
+        color: #cc9d76;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1;
+      }
+    }
+
+    .section-cont {
+      padding-top: 20px;
+
+      .history {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -20px;
+      }
+
+      .history-col {
+        width: 50%;
+        margin-top: 20px;
+
+        .col-row {
+          display: flex;
+
+          & + .col-row {
+            margin-top: 10px;
+          }
+        }
+
+        .year {
+          width: 110px;
+          color: #939393;
+
+          & + .data {
+            width: calc(100% - 110px);
+          }
+        }
+
+        .data {
+          width: 100%;
+          color: #152131;
+        }
+      }
+
+      .service-row {
+        display: flex;
+        justify-content: space-between;
+
+        .service-col {
+          width: 400px;
+        }
+
+        .price-row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 48px;
+          margin-top: 10px;
+          padding: 0 20px;
+          border: 1px solid #e6e6e6;
+          border-radius: 4px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &.disabled {
+            background-color: #f7f7f7;
+
+            .txt {
+              color: #939393;
+            }
+          }
+
+          .txt {
+            color: #303030;
+            font-weight: 500;
+            font-size: 16px;
+
+            &:last-child {
+              font-weight: 600;
+            }
+          }
+        }
+
+        .fee-info {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 222px;
+          background-color: #f7f7f7;
+          border: solid 1px #e6e6e6;
+          border-radius: 4px;
+
+          .fee-txt {
+            color: #939393;
+            font-size: 16px;
+            line-height: 23px;
+          }
+        }
+      }
+
+      .map {
+        height: 400px;
+        margin-top: 20px;
+        border-radius: 2px;
+      }
+    }
+
+    .cont-txt-subject {
+      margin-bottom: 10px;
+      color: #152131;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .cont-txt-m {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.75;
+
+      &.gray {
+        color: #939393;
+      }
+    }
+
+    .cont-txt-s {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+
+      &.gray {
+        color: #939393;
+      }
+    }
+  }
+
+  .detail-side {
+    width: 280px;
+
+    .ex-card {
+      border-radius: 4px 4px 0 0;
+      border: solid 1px #e6e6e6;
+      background-color: #f7f7f7;  
+      border-bottom: 0;
+    }
+
+    .ex-overview {
+      padding: 40px 40px 20px;
+
+      .exptImg {
+        border-radius: 4px 4px 4px 0;
+        overflow: hidden;
+      }
+
+      .ex-info {
+        position: relative;
+      }
+
+      .ex-name {
+        display: block;
+        margin-top: 20px;
+        color: #152131;
+        font-family: ROKAF Slab Serif;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .ex-company {
+        display: block;
+        margin-top: 10px;
+        color: #939393;
+        font-family: ROKAF Slab Serif;
+        font-size: 10px;
+        font-weight: 500;
+      }
+
+      .ex-major {
+        margin-top: 16px;
+      }
+
+      .btn-wish {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        background: url($imgCommon + 'ico-favorite.png');
+      }
+    }
+
+    .ex-kw-cost {
+      padding: 20px 20px 40px;
+      border-top: solid 1px #e6e6e6;
+
+      .kw {
+        height: 136px;
+        padding: 20px;
+        border: solid 1px #e6e6e6;
+        background-color: #fefefe;
+      }
+
+      .kw-txt {
+        position: relative;
+        color: #ff0247;
+        font-family: ROKAF Slab Serif;
+        font-size: 14px;
+        font-weight: 500;
+
+        &:last-child {
+
+          &:after {
+            display: none;
+          }
+        }
+
+        &:after {
+          content: ',';
+          color: #ff0247;
+          font-family: ROKAF Slab Serif;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+
+      .cost {
+        margin-top: 20px;
+      }
+
+      .cost-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 42px;
+        margin-top: 4px;
+        padding: 0 12px;
+        border: solid 1px #e6e6e6;
+        background-color: #fff;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        .cost-txt {
+          font-size: 14px;
+          font-weight: 500;
+          color: #303030;
+
+          &:last-child {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .btn-reservation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 64px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 18px;
+      background-color: $themeColor01;
+    }
+  }
+
+  .review {
+
+    .review-head{
+      display: flex;
+      justify-content: space-between;
+      padding: 60px 20px 20px 40px;
+
+      .txt {
+        color: #152131;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 32px;
+
+        em {
+          color: #ff0247;
+          font-size: 1em;
+          text-decoration: underline;
+        }
+      }
+
+      .select-option {
+        width: 328px;
+      }
+    }
+
+    .review-list {
+      margin: 0 -1px;
+
+      .review-item {
+        display: flex;
+        align-items: center;
+        border: 1px solid #e6e6e6;
+
+        &:hover {
+          border-color: #018786;
+        }
+      }
+
+      .item-head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+        padding: 28px;
+
+        .type {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80px;
+          height: 80px;
+          color: #fefefe;
+          font-family: ROKAF Slab Serif;
+          font-size: 20px;
+          font-weight: 500;
+          border-radius: 50%;
+          background-color: $themeColor01;
+        }
+
+        .date {
+          margin-top: 8px;
+          color: #939393;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 23px;
+        }
+
+        .condition {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80px;
+          height: 24px;
+          margin-top: 10px;
+          color: #525b6b;
+          font-weight: 500;
+          font-size: 12px;
+          border-radius: 12px;
+          border: solid 1px #e6e6e6;
+        }
+      }
+
+      .item-cont {
+        width: calc(100% - 200px);
+        color: #525b6b;
+        font-weight: 600;
+        font-size: 16px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+        line-height: 24px;
+        height: 120px;
+      }
+    }
+  }
+}

@@ -27,6 +27,33 @@
       }
     } 
 
+    &.lawyer {
+      
+      &.active {
+        color: #fefefe;
+        background-color: #0b2b5c;
+        border-color: #0b2b5c;
+      }
+    } 
+
+    &.da {
+      
+      &.active {
+        color: #fefefe;
+        background-color: #003535;
+        border-color: #003535;
+      }
+    } 
+
+    &.detective {
+      
+      &.active {
+        color: #fefefe;
+        background-color: #4c0a15;
+        border-color: #4c0a15;
+      }
+    } 
+
     &.expert {
       
       &.active {
@@ -35,5 +62,13 @@
         border-color: #0b2b5c;
       }
     } 
+  }
+}
+
+.tabCont {
+  display: none;
+
+  &.active {
+    display: block;
   }
 }

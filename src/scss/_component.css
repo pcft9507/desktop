@@ -1,0 +1,162 @@
+.inpTxt__inp {
+  width: 100%;
+  height: 48px;
+  padding: 0 20px;
+  color: #152131;
+  font-size: 16px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+}
+
+.inpTxt__inp:focus {
+  background-color: #fff;
+  border-color: #152131;
+}
+
+.inpTxt__inp::placeholder {
+  color: #939393;
+  font-size: 16px;
+}
+
+.txtKeyWord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  padding: 0 16px;
+  color: #152131;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+}
+
+.txtKeyWord + .txtKeyWord {
+  margin-left: 12px;
+}
+
+.hotKeyWord {
+  display: flex;
+  align-items: center;
+}
+
+.hotKeyWord__label {
+  width: 123px;
+  padding-left: 22px;
+  color: #152131;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.hotKeyWord__swiper {
+  width: calc(100% - 123px);
+}
+
+.hotKeyWord__swiper .swiper-slide {
+  width: auto;
+}
+
+.exptCard {
+  display: flex;
+  position: relative;
+  border-radius: 8px;
+  border: solid 1px #e6e6e6;
+  background-color: #fff;
+}
+
+.exptCard__img {
+  width: 124px;
+  height: 100%;
+  margin: -1px 0;
+}
+
+.exptCard__info {
+  width: calc(100% - 124px);
+  padding: 13px 20px;
+}
+
+.exptCard__kw {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #ff0247;
+}
+
+.exptCard__kwTxt {
+  position: relative;
+  color: #ff0247;
+  font-family: 'rokaf-slab';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.exptCard__kwTxt:last-child:after {
+  display: none;
+}
+
+.exptCard__kwTxt:after {
+  content: ',';
+  margin-right: 3px;
+}
+
+.exptCard__name {
+  margin-top: 8px;
+  color: #152131;
+  font-family: 'rokaf-slab';
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.exptCard__company {
+  margin-top: 8px;
+  color: #939393;
+  font-family: 'rokaf-slab';
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.exptCard__contact {
+  margin-top: 12px;
+}
+
+.exptCard__dr {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.exptImg {
+  position: relative;
+  max-width: 300px;
+}
+
+.exptImg img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.exptImg__connecting {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  padding: 0 6px;
+  color: #fff;
+  font-family: 'rokaf-slab';
+  font-weight: 500;
+  font-size: 12px;
+  background-color: #0336ff;
+}

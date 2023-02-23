@@ -272,6 +272,88 @@
     background-color: rgba(0, 9, 25, 0.8);
   }
 
+  .content {
+    position: relative;
+    border-radius: 4px;
+    background-color: #fff;
+
+    &.review {
+      width: 950px;
+
+      .review-cont {
+        display: flex;
+
+        .item-head {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 160px;
+          padding: 28px;
+  
+          .type {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            color: #fefefe;
+            font-family: ROKAF Slab Serif;
+            font-size: 20px;
+            font-weight: 500;
+            border-radius: 50%;
+            background-color: $themeColor01;
+          }
+  
+          .date {
+            margin-top: 8px;
+            color: #939393;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 23px;
+          }
+  
+          .condition {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 24px;
+            margin-top: 10px;
+            color: #525b6b;
+            font-weight: 500;
+            font-size: 12px;
+            border-radius: 12px;
+            border: solid 1px #e6e6e6;
+          }
+        }
+  
+        .item-cont {
+          width: calc(100% - 170px);
+          max-height: 560px;
+          padding-right: 30px;
+          overflow-y: auto;
+          margin: 40px 0;
+          color: #525b6b;
+          font-weight: 600;
+          font-size: 16px;
+        }
+      }
+
+      .up-down-scroll {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+        right: -93px;
+
+        button {
+          margin-top: 1px;
+          font-size: 0;
+        }
+      }
+    }
+  }
+
   .modal-btnClose {
     position: absolute;
     top: 0;
@@ -279,5 +361,14 @@
     width: 42px;
     height: 42px;
     background: url($imgCommon + 'btn-close-login.png') 0/100% no-repeat;
+  }
+
+  .modal-btnCloseBig {
+    position: absolute;
+    top: 0;
+    right: -93px;
+    width: 64px;
+    height: 64px;
+    background: url($imgCommon + 'btn-modal-close2.png') 0/100% no-repeat;
   }
 }

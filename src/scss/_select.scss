@@ -1,0 +1,13 @@
+.select-option {
+  appearance: none;
+  padding-left: 13px;
+  color: #152131;
+  font-weight: 500;
+  font-size: 14px;
+  background: url($imgCommon + 'bg-select.png') calc(100% - 8px) 50%/20px no-repeat;
+  border: solid 1px #e6e6e6;
+
+  &.gray {
+    background-color: #f7f7f7;
+  }
+}

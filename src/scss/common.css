@@ -229,8 +229,15 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25px;
+  position: relative;
+  top: -11px;
+  left: -1px;
+  width: 170px;
+  padding: 5px;
   font-size: 13px;
+  background-color: #fff;
+  border: 1px solid #7681a8;
+  border-bottom: 0;
 }
 
 .d-block {
