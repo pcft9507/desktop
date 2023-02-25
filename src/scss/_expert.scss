@@ -381,28 +381,6 @@
       margin-top: 60px;
     }
 
-    .section-head {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 12px;
-      border-bottom: 1px solid #cc9d76;
-
-      .section-title {
-        color: #cc9d76;
-        font-family: ROKAF Slab Serif;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 1;
-      }
-
-      .sub-txt {
-        color: #cc9d76;
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 1;
-      }
-    }
-
     .section-cont {
       padding-top: 20px;
 
@@ -583,6 +561,10 @@
         width: 24px;
         height: 24px;
         background: url($imgCommon + 'ico-favorite.png');
+
+        &.active {
+          background: url($imgCommon + 'ico-favorite-active.png');
+        }
       }
     }
 
@@ -760,5 +742,54 @@
         height: 120px;
       }
     }
+  }
+}
+
+.reservation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+
+  .rv-cont {
+    width: 785px;
+ 
+    .title {
+      display: flex;
+      align-items: center;
+      height: 64px;
+      padding-left: 20px;
+      color: #fefefe;
+      font-family: ROKAF Slab Serif;
+      font-size: 20px;
+      font-weight: 500;
+      background: $themeColor01;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .rs-set {
+      padding: 60px 40px 90px;
+      border-left: 1px solid #e6e6e6;
+      border-right: 1px solid #e6e6e6;
+    }
+
+    .rs-date {
+      margin-top: 60px;
+    }
+
+    .rs-time {
+      margin-top: 60px;
+
+      .timePicker {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .ex-info {
+    width: 455px;
+  }
+
+  .datePick {
+    margin-top: 20px;
   }
 }

@@ -160,3 +160,60 @@
   font-size: 12px;
   background-color: #0336ff;
 }
+
+.sub-row-head {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #cc9d76;
+}
+
+.sub-row-head .sub-row-title {
+  color: #cc9d76;
+  font-family: ROKAF Slab Serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.sub-row-head .sub-txt {
+  color: #cc9d76;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.toolTip {
+  position: relative;
+}
+
+.toolTip__ancor {
+  color: #939393;
+  font-size: 10px;
+  line-height: 14px;
+  text-decoration: underline;
+}
+
+.toolTip__cont {
+  position: absolute;
+  top: 22px;
+  background-color: #272833;
+  border-radius: 4px;
+}
+
+.toolTip__cont.pos-left {
+  left: 0;
+}
+
+.toolTip__cont.pos-right {
+  right: 0;
+}
+
+.toolTip__contInner {
+  position: relative;
+  padding: 8px 12px;
+  color: #fefefe;
+  font-family: NotoSansKR;
+  font-size: 12px;
+  line-height: 1.5;
+}

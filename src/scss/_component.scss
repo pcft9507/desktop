@@ -167,3 +167,100 @@
     background-color: #0336ff;
   }
 }
+
+.sub-row-head {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #cc9d76;
+
+  .sub-row-title {
+    color: #cc9d76;
+    font-family: ROKAF Slab Serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  .sub-txt {
+    color: #cc9d76;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+  }
+}
+
+.toolTip {
+  display: inline-flex;
+  position: relative;
+  z-index: 100;
+
+  &:hover {
+
+    .toolTip__cont {
+      display: block;
+    }
+  }
+
+  &__ancor {
+    color: #939393;
+    font-size: 10px;
+    line-height: 14px;
+    text-decoration: underline;
+  }
+
+  &__cont {
+    display: none;
+    position: absolute;
+    top: 22px;
+    background-color: #272833;
+    border-radius: 4px;
+
+    &.pos-left {
+      left: 0;
+
+      .toolTip__contInner {
+
+        &:after {
+          left: 60px;
+        }
+      }
+    }
+
+    &.pos-right {
+      right: 0;
+
+      .toolTip__contInner {
+
+        &:after {
+          right: 60px;
+        }
+      }
+    }
+
+    &.pos-right {
+      right: 0;
+    }
+
+    &Inner {
+      position: relative;
+      width: auto;
+      width: max-content;
+      max-width: 350px;
+      padding: 8px 12px;
+      color: #fefefe;
+      font-family: Noto Sans KR;
+      font-size: 12px;
+      line-height: 1.5;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: -8px;
+        width: 10px;
+        height: 8px;
+        background: url($imgCommon + 'tool-tip-tail.png') 0/100%;
+      }
+    }
+  }
+}

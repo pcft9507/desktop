@@ -63,6 +63,25 @@ function createMap (mapEl, addr, infoWindow, type) {
   });
 }
 
+// 토글 컨텐츠
+$.fn.toggleContent = function () {
+  return this.each(function () {
+    const toggleBody = $(this); 
+    const btnToggle = toggleBody.find('.js-open-cont'); 
+    btnToggle.on('click', function () {
+      const currentActive = $(this).hasClass('opened');
+      if (!currentActive) {
+        $(this).addClass('opened');
+        toggleBody.find('.toggleCont').stop().slideDown(200);
+      }
+      else {
+        $(this).removeClass('opened');
+        toggleBody.find('.toggleCont').stop().slideUp(200);
+      }
+    });    
+  });
+}
+
 // 문서 로드 후 실행
 $(document).ready(function () {
   // 하단메뉴 상단 뎁스 활성화
