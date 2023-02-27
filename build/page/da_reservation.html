@@ -1,9 +1,98 @@
-@@include('@@webRoot/include/head.html')
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
+  <script src="../assets/js/ui.js"></script>
+  <title>골고루 보상</title>
+</head>
+
 
 <body>
   <div class="wrap">
 
-    @@include('@@webRoot/include/header.html')
+    <!-- header -->
+<header class="l-header">
+  <!-- header-top -->
+  <div class="header-top">
+    <div class="inner row-container">
+      <p class="intro-txt">사건사고 종합 솔루션 플랫폼, 골고루팀.</p>
+      
+        <ul class="top-side">
+          <li class="side-item"><a href="#">로그인</a></li>
+          <li class="side-item"><a href="#">마이페이지</a></li>
+        </ul>
+      
+      
+    </div>
+  </div>
+  <!-- header-top end -->
+
+  <!-- header-bot -->
+  <div class="header-bot">
+    <div class="inner row-container">
+      <h1 class="logo"><a href="#">Golgoru. Team</a></h1>
+
+      <nav class="gnb">
+        <ul class="main-menu">
+          <li class="mm-item"><a href="#" class="mm-btn">변호사 PICK</a></li>
+          <li class="mm-item"><a href="#" class="mm-btn">손해사정사 PICK</a></li>
+          <li class="mm-item"><a href="#" class="mm-btn">탐정 PICK</a></li>
+          <li class="mm-item"><a href="#" class="mm-btn">이벤트</a></li>
+          <li class="mm-item"><a href="#" class="mm-btn">서비스 소개</a></li>
+        </ul>
+      </nav>
+
+      <ul class="side-menu">
+        <li class="sm-item">
+          <a href="#" class="sm-btn search"><span class="is-blind">검색</span></a>
+        </li>
+        <li class="sm-item">
+          <a href="#" class="sm-btn all-menu"><span class="is-blind">전체메뉴</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- header-bot end -->
+</header>
+<!-- header end -->
+
+  <hr>
+
+  <div class="sideBar">
+
+  <a href="#" class="sideBar__rec">
+    <span class="sideBar__recTxt">24시 추천상담</span>
+  </a>
+
+  <ul class="sideBar__menu">
+    <li class="sideBar__menuItem">
+      <a href="#" class="sideBar__menuBtn">자주묻는질문</a>
+    </li>
+    <li class="sideBar__menuItem">
+      <a href="#" class="sideBar__menuBtn">상담사례</a>
+    </li>
+    <li class="sideBar__menuItem">
+      <a href="#" class="sideBar__menuBtn">찜한 전문가</a>
+    </li>
+  </ul>
+
+  <a href="#" class="sideBar__kakao">카카오톡 상담</a>
+
+  <div class="sideBar__cs">
+    <a href="#" class="ico-txt">고객센터</a>
+
+    <div class="call-num">
+      <span class="number">1670</span>
+      <span class="number">2456</span>
+    </div>
+  </div>
+
+</div>
+
 
     <div class="l-container">
       <!-- reservation -->
@@ -195,7 +284,7 @@
 
           <!-- toggleEl -->
           <div class="toggleEl">
-            <a href="javascript: void(0);" onclick="openExpertInfo();" class="toggleEl__btn lawyer">
+            <a href="javascript: void(0);" onclick="openExpertInfo();" class="toggleEl__btn da">
               <span class="toggleEl__btnTxt">변호사 정보</span>
             </a>
 
@@ -204,7 +293,7 @@
                 <div class="exptImg">
                   <figure>
                     <figcaption>전문가 사진</figcaption>
-                    <img src="@@webRoot/assets/images/sample/sample-ex1.jpg" alt="전문가 사진">
+                    <img src="../assets/images/sample/sample-ex1.jpg" alt="전문가 사진">
                   </figure>
                   <span class="exptImg__connecting">접속중</span>
                 </div>
@@ -240,7 +329,7 @@
 
           <!-- toggleEl -->
           <div class="toggleEl">
-            <a href="javascript: void(0);" class="toggleEl__btn lawyer">
+            <a href="javascript: void(0);" class="toggleEl__btn da">
               <span class="toggleEl__btnTxt">상담 정보</span>
             </a>
 
@@ -272,7 +361,7 @@
 
           <!-- toggleEl -->
           <div class="toggleEl">
-            <a href="javascript: void(0);" class="toggleEl__btn lawyer">
+            <a href="javascript: void(0);" class="toggleEl__btn da">
               <span class="toggleEl__btnTxt">예약취소 및 환불규정</span>
             </a>
 
@@ -292,12 +381,224 @@
 
     <hr>
 
-    @@include('@@webRoot/include/footer.html')
+    <footer class="l-footer">
+
+  <div class="menu-row">
+    <div class="inner row-container d-flex-sb-c">
+      <ul class="menu-l d-flex-s-c">
+        <li class="menu-item"><a href="#" class="menu-btn">서비스 및 회사소개</a></li>
+        <li class="menu-item"><a href="#" class="menu-btn">서비스 이용약관</a></li>
+        <li class="menu-item"><a href="#" class="menu-btn">개인정보처리방침</a></li>
+        <li class="menu-item"><a href="#" class="menu-btn">약관동의</a></li>
+      </ul>
+      <ul class="menu-r d-flex-s-c">
+        <li class="menu-item"><a href="#" class="menu-btn">블로그 바로가기</a></li>
+        <li class="menu-item"><a href="#" class="menu-btn">유튜브 바로가기</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="info-row">
+    <div class="inner row-container d-flex-s-c">
+      <p class="company-name">(주)골고루보상</p>
+      <address>주소: 서울시 금천구 가산디지털1로 128  STXV타워 1604호  |  대표이사 : 유태석  |  사업자등록번호 : 205-81-43321  |  통신판매번호 : 2020-서울금천-2366  |  이메일: bosangcs@golgoru.co.kr</address>
+    </div>
+  </div>
+
+  <div class="copyright-row d-flex-c-c">
+    <p class="copyright">Copyright 2022. GOLGORUTEAM inc. all rights reserved.</p>
+  </div>
+
+</footer>
+
+<div class="l-modal login-wrap" data-modal="expert">
+  <div class="modal-container login-container">
+    <div class="eLogin">
+      <h2 class="eLogin__title">전문가 통합 로그인</h2>
+      <!-- login__inpBox -->
+      <div class="eLogin__inpBox">
+        <div class="eLogin__inpBoxTop">
+          <h3 class="eLogin__formGuide">로그인 후 서비스를 이용하실 수 있습니다.</h3>
+          <div class="inpTxt">
+            <input type="text" class="inpTxt__inp" placeholder="아이디">
+          </div>
+          <div class="inpTxt">
+            <input type="password" class="inpTxt__inp" placeholder="비밀번호">
+          </div>
+          <div class="btn-row eLogin__confirm">
+            <button class="btnDefault btnDefault--confirm eLogin__btnConfirm">
+              <span class="btnDefault__txt eLogin__btnConfirmTxt">로그인</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="eLogin__inpBoxBottom">
+          <div class="checkbox">
+            <label for="chk1" class="checkbox__label">자동 로그인</label>
+            <input type="checkbox" id="chk1" class="checkbox__chkbox">
+          </div>
+
+          <a href="#" class="eLogin__findIdPw">아이디 / 비밀번호 찾기</a>
+        </div>
+      </div>
+      <!-- login__inpBox end -->
+
+      <div class="eLogin__help">
+        <div class="eLogin__helpTxt1">
+          <span class="eLogin__helpTxt2">또는</span>
+        </div>
+        <p class="eLogin__helpGuideTxt">처음 오셨나요? 도움이 필요하세요?</p>
+
+        <div class="eLogin__helpRow">
+          <a href="#" class="eLogin__helpLink">제휴 및 가입 소개 페이지로 이동하기</a>
+        </div>
+      </div>
+
+      <button class="eLogin__btnClose" onclick="closeModal('expert');" title="로그인 닫기">
+        <span class="is-blind">로그인 닫기</span>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="l-modal login-wrap" data-modal="user">
+  <div class="modal-container login-container">
+    <div class="uLogin">
+      <h2 class="uLogin__title">간편 로그인하기</h2>
+      <!-- login__inpBox -->
+      <div class="uLogin__box">
+        <div class="uLogin__boxTop">
+          <h3 class="uLogin__loginGuide">로그인 후 서비스를 이용하실 수 있습니다.</h3>
+          <ul class="uLogin__snsLogin">
+            <li class="uLogin__snsLoginItem"><a href="#" title="카카오계정으로 로그인"><img src="../assets/images/common/login-sns-kakao.png" alt="카카오"></a></li>
+            <li class="uLogin__snsLoginItem"><a href="#" title="네이버계정으로 로그인"><img src="../assets/images/common/login-sns-naver.png" alt="네이버"></a></li>
+            <li class="uLogin__snsLoginItem"><a href="#" title="애플계정으로 로그인"><img src="../assets/images/common/login-sns-apple.png" alt="애플"></a></li>
+            <li class="uLogin__snsLoginItem"><a href="#" title="구글계정으로 로그인"><img src="../assets/images/common/login-sns-google.png" alt="구글"></a></li>
+          </ul>
+        </div>
+
+        <div class="uLogin__help">
+          <div class="uLogin__helpTxt1">
+            <span class="uLogin__helpTxt2">또는</span>
+          </div>
+          <p class="uLogin__helpGuideTxt">골고루팀 전문가로 로그인을 원하시나요?</p>
+  
+          <div class="uLogin__helpRow">
+            <a href="#" class="uLogin__helpLink">전문가 통합 로그인하기</a>
+          </div>
+        </div>
+      </div>
+      <!-- login__box end -->
+
+      <div class="uLogin__cs">
+        <p class="uLogin__csTxt">서비스 이용에 어려움이 있으시다면 연락 바랍니다.</p>
+        <p class="uLogin__csNum">1670 - 2456</p>
+      </div>
+
+
+      <button class="eLogin__btnClose" onclick="closeModal('user');" title="로그인 닫기">
+        <span class="is-blind">로그인 닫기</span>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="l-modal agreement-wrap" data-modal="agreement">
+  <div class="modal-container agreement-container">
+    <div class="agreement">
+      <h2 class="agreement__title">약관 동의</h2>
+
+      <div class="chkList">
+        <div class="chkList__title">
+          <label for="all" class="chkList__titleLabel">약관 전체동의</label>
+          <input type="checkbox" id="all" class="chkList__checkbox" onchange="agreeCheckboxAll();">
+        </div>
+
+        <ul class="chkList__list">
+          <li class="chkList__item">
+            <div class="chkList__col">
+              <span class="chkList__head">필수)</span>
+            </div>
+            <div class="chkList__col">
+              <label for="chk1" class="chkList__label">서비스 이용약관 동의  ></label>
+            </div>
+            <input type="checkbox" id="chk1" class="chkList__checkbox" onchange="agreeCheckbox();">
+          </li>
+          <li class="chkList__item">
+            <div class="chkList__col">
+              <span class="chkList__head">필수)</span>
+            </div>
+            <div class="chkList__col">
+              <label for="chk2" class="chkList__label">개인정보 수집 및 이용동의  ></label>
+            </div>
+            <input type="checkbox" id="chk2" class="chkList__checkbox" onchange="agreeCheckbox();">
+          </li>
+          <li class="chkList__item">
+            <div class="chkList__col">
+              <span class="chkList__head">선택)</span>
+            </div>
+            <div class="chkList__col">
+              <label for="chk3" class="chkList__label">마케팅 활용/광고성 정보 수신동의  ></label>
+              <p class="chkList__labelSub">다양한 프로모션 및 소식 등 정보를 보내 드립니다.</p>
+            </div>
+            <input type="checkbox" id="chk3" class="chkList__checkbox" onchange="agreeCheckbox();">
+          </li>
+        </ul>
+      </div>
+
+      <div class="agreement__contWrap">
+        <h3 class="agreement__contHeading">서비스 이용약관 동의</h3>
+        <pre class="agreement__cont custom-scroll">
+<p class="agreement__contTit">■  입력해주세요</p>
+가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하
+<p class="agreement__contTit">■  입력해주세요</p>
+가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아
+</pre>
+      </div>
+
+      <button class="agreement__btn">
+        <span class="txt">동의 후 서비스 이용하기</span>
+      </button>
+
+      <button class="modal-btnClose" onclick="closeModal('agreement');" title="약관동의 닫기">
+        <span class="is-blind">약관동의 닫기</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // 전체동의 체크박스
+  function agreeCheckboxAll() {
+    const checkboxAll= document.querySelector('#all');
+    const checkboxArr = document.querySelectorAll('.chkList__list .chkList__checkbox');
+    if (checkboxAll.checked === true) {
+      checkboxArr.forEach((el, i)=> checkboxArr[i].checked = true);
+    } else {
+      checkboxArr.forEach((el, i)=> checkboxArr[i].checked = false);
+    }
+  }
+  // 개별 체크박스
+  function agreeCheckbox() {
+    const checkboxAll= document.querySelector('#all');
+    const checkboxArr = document.querySelectorAll('.chkList__list .chkList__checkbox');
+    let trueLength = 0;
+    checkboxArr.forEach((el, i) => {
+      if (checkboxArr[i].checked === true) {
+        trueLength ++;
+        if (trueLength === checkboxArr.length) {
+          checkboxAll.checked = true;
+        }
+      } else {
+        checkboxAll.checked = false;
+      }
+    });
+  }
+</script>
+
   </div>
 
 <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c7de0761cab8833759b89d424e98bd32&amp;libraries=services"></script>
 <script>
-  const page = 'lawyer';
+  const page = 'da';
 
   // 날짜 선택 체크
   $('.js-pick-date').on('click', function (e) {

@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 @font-face {
   font-family: 'S-CoreDream';
   src: local("SCDream1"), url("../fonts/S-CoreDream-1Thin.woff") format("woff");
@@ -336,4 +337,8 @@ button {
 
 .custom-scroll::-webkit-scrollbar-thumb {
   background: #f7f7f7;
+}
+
+.br-0 {
+  border-radius: 0 !important;
 }

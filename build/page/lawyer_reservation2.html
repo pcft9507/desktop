@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
+  <script src="../assets/js/ui.js"></script>
+  <title>골고루 보상</title>
+</head>
+
+
+<body>
+  <div class="wrap">
+
+    <!-- header -->
+<header class="l-header">
+  <!-- header-top -->
+  <div class="header-top">
+    <div class="inner row-container">
+      <p class="intro-txt">사건사고 종합 솔루션 플랫폼, 골고루팀.</p>
+      
+        <ul class="top-side">
+          <li class="side-item"><a href="#">로그인</a></li>
+          <li class="side-item"><a href="#">마이페이지</a></li>
+        </ul>
+      
+      
+    </div>
+  </div>
+  <!-- header-top end -->
+
+  <!-- header-bot -->
+  <div class="header-bot">
+    <div class="inner row-container">
+      <h1 class="logo"><a href="#">Golgoru. Team</a></h1>
+
+      <nav class="gnb">
+        <ul class="main-menu">
+          <li class="mm-item"><a href="#" class="mm-btn">변호사 PICK</a></li>
+          <li class="mm-item"><a href="#" class="mm-btn">손해사정사 PICK</a></li>
+          <li class="mm-item"><a href="#" class="mm-btn">탐정 PICK</a></li>
+          <li class="mm-item"><a href="#" class="mm-btn">이벤트</a></li>
+          <li class="mm-item"><a href="#" class="mm-btn">서비스 소개</a></li>
+        </ul>
+      </nav>
+
+      <ul class="side-menu">
+        <li class="sm-item">
+          <a href="#" class="sm-btn search"><span class="is-blind">검색</span></a>
+        </li>
+        <li class="sm-item">
+          <a href="#" class="sm-btn all-menu"><span class="is-blind">전체메뉴</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- header-bot end -->
+</header>
+<!-- header end -->
+
+  <hr>
+
+  <div class="sideBar">
+
+  <a href="#" class="sideBar__rec">
+    <span class="sideBar__recTxt">24시 추천상담</span>
+  </a>
+
+  <ul class="sideBar__menu">
+    <li class="sideBar__menuItem">
+      <a href="#" class="sideBar__menuBtn">자주묻는질문</a>
+    </li>
+    <li class="sideBar__menuItem">
+      <a href="#" class="sideBar__menuBtn">상담사례</a>
+    </li>
+    <li class="sideBar__menuItem">
+      <a href="#" class="sideBar__menuBtn">찜한 전문가</a>
+    </li>
+  </ul>
+
+  <a href="#" class="sideBar__kakao">카카오톡 상담</a>
+
+  <div class="sideBar__cs">
+    <a href="#" class="ico-txt">고객센터</a>
+
+    <div class="call-num">
+      <span class="number">1670</span>
+      <span class="number">2456</span>
+    </div>
+  </div>
+
+</div>
+
+
+    <div class="l-container">
+      <!-- reservation -->
+      <div class="reservation row-container">
+        <!-- rv-cont -->
+        <div class="rv-cont">
+          <h2 class="title">상담예약</h2>
+          
+          <div class="rs-set">
+
+            <!-- rs-option -->
+            <div class="rs-option">
+              <div class="sub-row-head">
+                <h3 class="sub-row-title">상담 선택</h3>
+              </div>
+
+              <ul class="option-list">
+                <li class="option-row">
+                  <div class="option-row-col">
+                    <div class="radio">
+                      <input type="radio" id="chk1" name="radio1" class="radio__inp">
+                      <label for="chk1" class="radio__label">15분 전화상담</label>
+                    </div>
+                    <span class="sub-txt">1시간 뒤 상담 가능</span>
+                  </div>
+                  <div class="option-row-col">
+                    <div class="price">
+                      <span class="txt">20,000원</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="option-row">
+                  <div class="option-row-col">
+                    <div class="radio">
+                      <input type="radio" id="chk2" name="radio1" class="radio__inp">
+                      <label for="chk2" class="radio__label">20분 영상상담</label>
+                    </div>
+                  </div>
+                  <div class="option-row-col">
+                    <div class="price">
+                      <span class="txt">70,000원</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="option-row">
+                  <div class="option-row-col">
+                    <div class="radio">
+                      <input type="radio" id="chk1" name="radio1" class="radio__inp">
+                      <label for="chk1" class="radio__label">30분 방문상담</label>
+                    </div>
+                  </div>
+                  <div class="option-row-col">
+                    <div class="price">
+                      <span class="txt">110,000원</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="option-row">
+                  <div class="option-row-col">
+                    <div class="radio">
+                      <input type="radio" id="chk1" name="radio1" class="radio__inp">
+                      <label for="chk1" class="radio__label">온라인 상담</label>
+                    </div>
+                    <span class="sub-txt">바로 상담 가능</span>
+                  </div>
+                  <div class="option-row-col">
+                    <div class="price">
+                      <span class="txt">40,000원</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- rs-option end -->
+
+            <!-- rs-date -->
+            <div class="rs-date">
+              <div class="sub-row-head">
+                <h3 class="sub-row-title">날짜 선택</h3>
+              </div>
+
+              <div class="datePick">
+                <a href="#" class="datePick__item js-pick-date checked">
+                  <span class="datePick__day">오늘</span>
+                  <span class="datePick__num">01</span>
+                  <span class="datePick__date today"></span>
+                </a>
+                <a href="#" class="datePick__item js-pick-date">
+                  <span class="datePick__day">수요일</span>
+                  <span class="datePick__num">02</span>
+                  <span class="datePick__date">2022/11/02</span>
+                </a>
+                <a href="#" class="datePick__item js-pick-date">
+                  <span class="datePick__day">목요일</span>
+                  <span class="datePick__num">03</span>
+                  <span class="datePick__date">2022/11/03</span>
+                </a>
+                <a href="#" class="datePick__item js-pick-date">
+                  <span class="datePick__day">금요일</span>
+                  <span class="datePick__num">04</span>
+                  <span class="datePick__date">2022/11/04</span>
+                </a>
+                <a href="#" class="datePick__item js-pick-date">
+                  <span class="datePick__day">토요일</span>
+                  <span class="datePick__num saturday">05</span>
+                  <span class="datePick__date">2022/11/05</span>
+                </a>
+                <a href="#" class="datePick__item js-pick-date">
+                  <span class="datePick__day">일요일</span>
+                  <span class="datePick__num sunday">06</span>
+                  <span class="datePick__date">2022/11/06</span>
+                </a>
+                <a href="#" class="datePick__item js-pick-date">
+                  <span class="datePick__day">월요일</span>
+                  <span class="datePick__num">07</span>
+                  <span class="datePick__date">2022/11/07</span>
+                </a>
+              </div>
+
+            </div>
+            <!-- rs-date end -->
+
+            <!-- rs-time -->
+            <div class="rs-time">
+              <div class="sub-row-head">
+                <h3 class="sub-row-title">시간 선택</h3>
+                <div class="toolTip">
+                  <a href="#" class="toolTip__ancor">혹시 해외에서 이용중이신가요?</a>
+                  <div class="toolTip__cont pos-right">
+                    <div class="toolTip__contInner">
+                      해외에서 상담 예약시 의뢰인님의 연락처는 050 안심번호로 전환되지 않아 변호사님의 연락을 받아 볼 수 없습니다. 상담요청 내용에 연락 가능한 번호를 기재하거나, 변호사의 사무실로 연결되는 050전화번호로 직접 전화하여 문의해주세요.<br>또한, 20분 영상상담 또는 온라인 상담글 이용을 권해드립니다.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="timePicker">
+                <a href="#" class="timePicker__el js-pick-time">
+                  <span class="timePicker__el2">오후</span>
+                  <span class="timePicker__el2">02:30</span>
+                </a>
+                <a href="#" class="timePicker__el js-pick-time">
+                  <span class="timePicker__el2">오후</span>
+                  <span class="timePicker__el2">03:30</span>
+                </a>
+                <a href="#" class="timePicker__el js-pick-time disabled">
+                  <span class="timePicker__el2">오후</span>
+                  <span class="timePicker__el2">04:30</span>
+                </a>
+                <a href="#" class="timePicker__el js-pick-time">
+                  <span class="timePicker__el2">오후</span>
+                  <span class="timePicker__el2">05:30</span>
+                </a>
+                <a href="#" class="timePicker__el js-pick-time">
+                  <span class="timePicker__el2">오후</span>
+                  <span class="timePicker__el2">06:30</span>
+                </a>
+                <a href="#" class="timePicker__el js-pick-time">
+                  <span class="timePicker__el2">오후</span>
+                  <span class="timePicker__el2">07:00</span>
+                </a>
+                <a href="#" class="timePicker__el js-pick-time">
+                  <span class="timePicker__el2">오후</span>
+                  <span class="timePicker__el2">08:30</span>
+                </a>
+                <a href="#" class="timePicker__el js-pick-time">
+                  <span class="timePicker__el2">오후</span>
+                  <span class="timePicker__el2">09:00</span>
+                </a>
+                <a href="#" class="timePicker__el js-pick-time">
+                  <span class="timePicker__el2">오후</span>
+                  <span class="timePicker__el2">10:00</span>
+                </a>
+                <a href="#" class="timePicker__el js-pick-time">
+                  <span class="timePicker__el2">오후</span>
+                  <span class="timePicker__el2">10:30</span>
+                </a>
+              </div>
+            </div>
+            <!-- rs-time end -->
+
+          </div>
+
+        </div>
+        <!-- rv-cont end -->
+
+        <!-- ex-info -->
+        <div class="ex-info">
+
+          <!-- toggleEl -->
+          <div class="toggleEl">
+            <a href="javascript: void(0);" onclick="openExpertInfo();" class="toggleEl__btn lawyer">
+              <span class="toggleEl__btnTxt">변호사 정보</span>
+            </a>
+
+            <div class="toggleEl__cont">
+              <div class="exptCard br-0">
+                <div class="exptImg">
+                  <figure>
+                    <figcaption>전문가 사진</figcaption>
+                    <img src="../assets/images/sample/sample-ex1.jpg" alt="전문가 사진">
+                  </figure>
+                  <span class="exptImg__connecting">접속중</span>
+                </div>
+                <div class="exptCard__info">
+                  <div class="exptCard__kw">
+                    <span class="exptCard__kwTxt">키워드1</span>
+                    <span class="exptCard__kwTxt">키워드2</span>
+                    <span class="exptCard__kwTxt">키워드3</span>
+                    <span class="exptCard__kwTxt">키워드3</span>
+                    <span class="exptCard__kwTxt">키워드3</span>
+                    <span class="exptCard__kwTxt">키워드3</span>
+                  </div>
+                  <p class="exptCard__name">홍길동 변호사</p>
+                  <p class="exptCard__company">법무법인 가나다라마바사아자차</p>
+                  <div class="exptCard__contact">
+                    <span class="chip active">전화</span>
+                    <span class="chip">영상</span>
+                    <span class="chip">방문</span>
+                    <span class="chip active">온라인</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="company-info">
+                <p class="addr cont-txt">서울 금천구 가산디지털 1로 128 STXV타워 1604호</p>
+
+                <div class="map" id="map"></div>
+              </div>
+              
+            </div>
+          </div>
+          <!-- toggleEl end -->
+
+          <!-- toggleEl -->
+          <div class="toggleEl">
+            <a href="javascript: void(0);" class="toggleEl__btn lawyer">
+              <span class="toggleEl__btnTxt">상담 정보</span>
+            </a>
+
+            <div class="toggleEl__cont">
+              <div class="rs-info">
+                <div class="overview">
+                  <div class="info-col">
+                    <span class="txt1">상담 종류</span>
+                    <span class="txt2">15분 전화상담</span>
+                  </div>
+                  <div class="info-col">
+                    <span class="txt1">상담료(단위:원)</span>
+                    <span class="txt2">20,000</span>
+                  </div>
+                  <div class="info-col">
+                    <span class="txt1">날짜 및 시간</span>
+                    <span class="txt2">22-11-01(화) 오후 09:00</span>
+                  </div>
+                </div>
+                <p class="info-txt">예약한 시간에 변호사가 직접 의뢰인에게 전화해 상담을 진행합니다. (의뢰인의 휴대폰번호는 050번호로 전환되며 변호사에게 노출되지 않습니다.)
+                  예약 시 작성한 상담글을 변호사가 사전검토합니다.<br>
+                  상담예약 및 작성한 상담내용은 "변호사의 비밀유지"에 의해 비밀보호됩니다.<br>
+                  상담이 끝나면 상담의 핵심내용을 변호사가 요약하여 제공합니다. (상담결과는 필수항목이 아닙니다.)<br><br>
+                  변호사와 상담을 어떻게 시작해야할지 모르겠다면 부담없는 방식과 상담료의  15분 전화상담부터 일단 시작해보세요. 계약서 검토, 자문 등의 추가적인 법률 서비스는 추가 상담료가 발생할 수 있습니다.</p>
+              </div>
+            </div>
+          </div>
+          <!-- toggleEl end -->
+
+          <!-- toggleEl -->
+          <div class="toggleEl">
+            <a href="javascript: void(0);" class="toggleEl__btn lawyer">
+              <span class="toggleEl__btnTxt">예약취소 및 환불규정</span>
+            </a>
+
+            <div class="toggleEl__cont">
+              <div class="rs-info">
+                <p class="info-txt"><em>예약취소는 전화상담 1시간 전까지만 마이페이지에서 취소 가능</em>하며, 이후에는 취소 및 환불이 불가능합니다. <em>예약날짜 및 시간변경은 전화상담 1시간 전까지만 가능</em>하며, 골고루보상플러스 고객센터로 문의주시면 됩니다.  변호사 사정으로 상담을 하지 못한 경우에는 100% 환불해드립니다. 의뢰인 사정으로 상담을 하지 못한 경우 또는 상담이 이루어진 경우에는 환불해드리지 않습니다.</p>
+              </div>
+            </div>
+          </div>
+          <!-- toggleEl end -->
+
+        </div>
+        <!-- ex-info end -->
+      </div>
+      <!-- reservation end -->
+
+      <div class="selected-reservation">
+        <div class="sr-inner row-container">
+          <div class="sr-col">
+            <div class="col-sub">
+              <span class="col-head">상담 선택</span>
+              <span class="col-data">15분 전화상담</span>
+            </div>
+            <div class="col-sub">
+              <span class="col-head no-select">날짜 및 시간 선택</span>
+              <span class="col-data no-select">2022년 11월 01일, 화요일</span>
+            </div>
+            <div class="col-sub">
+              <span class="col-head">결제 금액(단위: 원)</span>
+              <span class="col-data">20.000 원</span>
+            </div>
+          </div>
+
+          <div class="sr-col">
+            <button class="btn-reservation">예약하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <footer class="l-footer">
+
+  <div class="menu-row">
+    <div class="inner row-container d-flex-sb-c">
+      <ul class="menu-l d-flex-s-c">
+        <li class="menu-item"><a href="#" class="menu-btn">서비스 및 회사소개</a></li>
+        <li class="menu-item"><a href="#" class="menu-btn">서비스 이용약관</a></li>
+        <li class="menu-item"><a href="#" class="menu-btn">개인정보처리방침</a></li>
+        <li class="menu-item"><a href="#" class="menu-btn">약관동의</a></li>
+      </ul>
+      <ul class="menu-r d-flex-s-c">
+        <li class="menu-item"><a href="#" class="menu-btn">블로그 바로가기</a></li>
+        <li class="menu-item"><a href="#" class="menu-btn">유튜브 바로가기</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="info-row">
+    <div class="inner row-container d-flex-s-c">
+      <p class="company-name">(주)골고루보상</p>
+      <address>주소: 서울시 금천구 가산디지털1로 128  STXV타워 1604호  |  대표이사 : 유태석  |  사업자등록번호 : 205-81-43321  |  통신판매번호 : 2020-서울금천-2366  |  이메일: bosangcs@golgoru.co.kr</address>
+    </div>
+  </div>
+
+  <div class="copyright-row d-flex-c-c">
+    <p class="copyright">Copyright 2022. GOLGORUTEAM inc. all rights reserved.</p>
+  </div>
+
+</footer>
+
+<div class="l-modal login-wrap" data-modal="expert">
+  <div class="modal-container login-container">
+    <div class="eLogin">
+      <h2 class="eLogin__title">전문가 통합 로그인</h2>
+      <!-- login__inpBox -->
+      <div class="eLogin__inpBox">
+        <div class="eLogin__inpBoxTop">
+          <h3 class="eLogin__formGuide">로그인 후 서비스를 이용하실 수 있습니다.</h3>
+          <div class="inpTxt">
+            <input type="text" class="inpTxt__inp" placeholder="아이디">
+          </div>
+          <div class="inpTxt">
+            <input type="password" class="inpTxt__inp" placeholder="비밀번호">
+          </div>
+          <div class="btn-row eLogin__confirm">
+            <button class="btnDefault btnDefault--confirm eLogin__btnConfirm">
+              <span class="btnDefault__txt eLogin__btnConfirmTxt">로그인</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="eLogin__inpBoxBottom">
+          <div class="checkbox">
+            <label for="chk1" class="checkbox__label">자동 로그인</label>
+            <input type="checkbox" id="chk1" class="checkbox__chkbox">
+          </div>
+
+          <a href="#" class="eLogin__findIdPw">아이디 / 비밀번호 찾기</a>
+        </div>
+      </div>
+      <!-- login__inpBox end -->
+
+      <div class="eLogin__help">
+        <div class="eLogin__helpTxt1">
+          <span class="eLogin__helpTxt2">또는</span>
+        </div>
+        <p class="eLogin__helpGuideTxt">처음 오셨나요? 도움이 필요하세요?</p>
+
+        <div class="eLogin__helpRow">
+          <a href="#" class="eLogin__helpLink">제휴 및 가입 소개 페이지로 이동하기</a>
+        </div>
+      </div>
+
+      <button class="eLogin__btnClose" onclick="closeModal('expert');" title="로그인 닫기">
+        <span class="is-blind">로그인 닫기</span>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="l-modal login-wrap" data-modal="user">
+  <div class="modal-container login-container">
+    <div class="uLogin">
+      <h2 class="uLogin__title">간편 로그인하기</h2>
+      <!-- login__inpBox -->
+      <div class="uLogin__box">
+        <div class="uLogin__boxTop">
+          <h3 class="uLogin__loginGuide">로그인 후 서비스를 이용하실 수 있습니다.</h3>
+          <ul class="uLogin__snsLogin">
+            <li class="uLogin__snsLoginItem"><a href="#" title="카카오계정으로 로그인"><img src="../assets/images/common/login-sns-kakao.png" alt="카카오"></a></li>
+            <li class="uLogin__snsLoginItem"><a href="#" title="네이버계정으로 로그인"><img src="../assets/images/common/login-sns-naver.png" alt="네이버"></a></li>
+            <li class="uLogin__snsLoginItem"><a href="#" title="애플계정으로 로그인"><img src="../assets/images/common/login-sns-apple.png" alt="애플"></a></li>
+            <li class="uLogin__snsLoginItem"><a href="#" title="구글계정으로 로그인"><img src="../assets/images/common/login-sns-google.png" alt="구글"></a></li>
+          </ul>
+        </div>
+
+        <div class="uLogin__help">
+          <div class="uLogin__helpTxt1">
+            <span class="uLogin__helpTxt2">또는</span>
+          </div>
+          <p class="uLogin__helpGuideTxt">골고루팀 전문가로 로그인을 원하시나요?</p>
+  
+          <div class="uLogin__helpRow">
+            <a href="#" class="uLogin__helpLink">전문가 통합 로그인하기</a>
+          </div>
+        </div>
+      </div>
+      <!-- login__box end -->
+
+      <div class="uLogin__cs">
+        <p class="uLogin__csTxt">서비스 이용에 어려움이 있으시다면 연락 바랍니다.</p>
+        <p class="uLogin__csNum">1670 - 2456</p>
+      </div>
+
+
+      <button class="eLogin__btnClose" onclick="closeModal('user');" title="로그인 닫기">
+        <span class="is-blind">로그인 닫기</span>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="l-modal agreement-wrap" data-modal="agreement">
+  <div class="modal-container agreement-container">
+    <div class="agreement">
+      <h2 class="agreement__title">약관 동의</h2>
+
+      <div class="chkList">
+        <div class="chkList__title">
+          <label for="all" class="chkList__titleLabel">약관 전체동의</label>
+          <input type="checkbox" id="all" class="chkList__checkbox" onchange="agreeCheckboxAll();">
+        </div>
+
+        <ul class="chkList__list">
+          <li class="chkList__item">
+            <div class="chkList__col">
+              <span class="chkList__head">필수)</span>
+            </div>
+            <div class="chkList__col">
+              <label for="chk1" class="chkList__label">서비스 이용약관 동의  ></label>
+            </div>
+            <input type="checkbox" id="chk1" class="chkList__checkbox" onchange="agreeCheckbox();">
+          </li>
+          <li class="chkList__item">
+            <div class="chkList__col">
+              <span class="chkList__head">필수)</span>
+            </div>
+            <div class="chkList__col">
+              <label for="chk2" class="chkList__label">개인정보 수집 및 이용동의  ></label>
+            </div>
+            <input type="checkbox" id="chk2" class="chkList__checkbox" onchange="agreeCheckbox();">
+          </li>
+          <li class="chkList__item">
+            <div class="chkList__col">
+              <span class="chkList__head">선택)</span>
+            </div>
+            <div class="chkList__col">
+              <label for="chk3" class="chkList__label">마케팅 활용/광고성 정보 수신동의  ></label>
+              <p class="chkList__labelSub">다양한 프로모션 및 소식 등 정보를 보내 드립니다.</p>
+            </div>
+            <input type="checkbox" id="chk3" class="chkList__checkbox" onchange="agreeCheckbox();">
+          </li>
+        </ul>
+      </div>
+
+      <div class="agreement__contWrap">
+        <h3 class="agreement__contHeading">서비스 이용약관 동의</h3>
+        <pre class="agreement__cont custom-scroll">
+<p class="agreement__contTit">■  입력해주세요</p>
+가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하
+<p class="agreement__contTit">■  입력해주세요</p>
+가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아
+</pre>
+      </div>
+
+      <button class="agreement__btn">
+        <span class="txt">동의 후 서비스 이용하기</span>
+      </button>
+
+      <button class="modal-btnClose" onclick="closeModal('agreement');" title="약관동의 닫기">
+        <span class="is-blind">약관동의 닫기</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // 전체동의 체크박스
+  function agreeCheckboxAll() {
+    const checkboxAll= document.querySelector('#all');
+    const checkboxArr = document.querySelectorAll('.chkList__list .chkList__checkbox');
+    if (checkboxAll.checked === true) {
+      checkboxArr.forEach((el, i)=> checkboxArr[i].checked = true);
+    } else {
+      checkboxArr.forEach((el, i)=> checkboxArr[i].checked = false);
+    }
+  }
+  // 개별 체크박스
+  function agreeCheckbox() {
+    const checkboxAll= document.querySelector('#all');
+    const checkboxArr = document.querySelectorAll('.chkList__list .chkList__checkbox');
+    let trueLength = 0;
+    checkboxArr.forEach((el, i) => {
+      if (checkboxArr[i].checked === true) {
+        trueLength ++;
+        if (trueLength === checkboxArr.length) {
+          checkboxAll.checked = true;
+        }
+      } else {
+        checkboxAll.checked = false;
+      }
+    });
+  }
+</script>
+
+  </div>
+
+<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c7de0761cab8833759b89d424e98bd32&amp;libraries=services"></script>
+<script>
+  const page = 'lawyer';
+
+  // 날짜 선택 체크
+  $('.js-pick-date').on('click', function (e) {
+    e.preventDefault();
+    $('.js-pick-date').removeClass('checked');
+    $(this).addClass('checked');
+  });
+
+  // 시간 선택 체크
+  $('.js-pick-time').on('click', function (e) {
+    e.preventDefault();
+    $('.js-pick-time').removeClass('checked');
+    if (!$(this).hasClass('disabled')) {
+      $(this).addClass('checked');
+    }
+  });
+
+  // ui.js 토글 컨텐츠
+  $('.toggleEl').toggleEl();
+
+  // 변호사 정보 토글 열기
+  function openExpertInfo () {
+    // 카카오지도
+    setTimeout(function () {
+      // display none 상태에서 바로 보여주면 js로 처리 되는 부분은 안보여 지기 때문에 settimeout으로 실행 시간 조정
+      createMap('map', '.addr', '.addr');
+    }, 200)
+  }
+</script>
+</body>
+</html>

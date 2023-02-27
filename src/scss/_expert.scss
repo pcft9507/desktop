@@ -767,9 +767,67 @@
     }
 
     .rs-set {
+      height: calc(100% - 64px);
       padding: 60px 40px 90px;
       border-left: 1px solid #e6e6e6;
       border-right: 1px solid #e6e6e6;
+
+      .option-list {
+        padding-top: 14px;
+
+        .option-row {
+          display: flex;
+          justify-content: space-between;
+          height: 40px;
+          margin-top: 6px;
+        }
+
+        .price {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          width: 200px;
+          height: 40px;
+          padding: 0 20px;
+          background-color: #f7f7f7;
+
+          .txt {
+            color: #152131;
+            font-weight: 600;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .option-row-col {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .sub-txt {
+          display: flex;
+          align-items: center;
+          position: relative;
+          height: 22px;
+          margin-left: 18px;
+          padding: 0 8px;
+          color: #fff;
+          font-size: 10px;
+          font-weight: 500;
+          background: $themeColor01;
+          border-radius: 4px;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: -8px;
+            width: 8px;
+            height: 10px;
+            background: url($imgCommon + 'talk-tail.png') 0/100% no-repeat;
+          }
+        }
+      }
     }
 
     .rs-date {
@@ -787,9 +845,161 @@
 
   .ex-info {
     width: 455px;
+    margin-bottom: -1px;
+    border-left: solid 1px #e6e6e6;
+    border-right: solid 1px #e6e6e6;
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+
+    .company-info {
+
+      .cont-txt {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 40px;
+        padding-left: 34px;
+        color: #939393;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          width: 14px;
+          height: 20px;
+          background: url($imgCommon + 'ico-place.png') 0/100% no-repeat;
+        }
+      }
+
+      .map {
+        width: 100%;
+        height: 453px;
+      }
+    }
+
+    .rs-info {
+      padding: 20px 20px 40px;
+
+      .overview {
+        display: flex;
+        margin-bottom: 20px;
+
+        .info-col {
+          margin-left: 40px;
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+        
+        .txt1 {
+          display: block;
+          color: #939393;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
+        }
+
+        .txt2 {
+          display: block;
+          margin-top: 4px;
+          color: #152131;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 19px;
+        }
+      }
+
+      .info-txt {
+        color: #939393;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 24px;
+
+        em {
+          color: #ff0247;
+          font-size: 1em;
+        }
+      }
+    }
   }
 
   .datePick {
     margin-top: 20px;
+  }
+}
+
+.selected-reservation {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  background-color: #0c0c0c;
+
+  .sr-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .sr-col {
+      display: flex;
+      align-items: center;
+    }
+
+    .col-sub {
+      margin-right: 60px;
+    }
+
+    .col-head {
+      display: block;
+      color: #939393;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 14px;
+
+      &.no-select {
+        color: #ff6331;
+      }
+    }
+
+    .col-data {
+      display: block;
+      margin-top: 8px;
+      color: #cc9d76;
+      font-family: ROKAF Slab Serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1;
+
+      &.no-select {
+        color: #ff6331;
+        text-decoration: underline;
+      }
+    }
+
+    .btn-reservation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 455px;
+      height: 80px;
+      color: $themeColor01;
+      font-weight: 500;
+      font-size: 18px;
+      border-radius: 40px;
+      border: 1px solid $themeColor01;
+
+      &:hover {
+        color: #fff;
+        background: $themeColor01;
+      }
+    }
   }
 }

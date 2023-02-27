@@ -119,6 +119,10 @@
 
     &.disabled {
 
+      &:hover {
+        border-color: #f7f7f7;
+      }
+
       .timePicker__el2 {
         color: #c1c1c1;
         text-decoration: line-through;

@@ -12,7 +12,6 @@ function closeModal(name) {
   $('html').removeClass('ovh');
 }
 
-
 // 카카오지도 1.요소, 2.도로명주소, 3.마커위에 인포윈도우
 function createMap (mapEl, addr, infoWindow, type) {
 
@@ -64,19 +63,19 @@ function createMap (mapEl, addr, infoWindow, type) {
 }
 
 // 토글 컨텐츠
-$.fn.toggleContent = function () {
+$.fn.toggleEl = function () {
   return this.each(function () {
     const toggleBody = $(this); 
-    const btnToggle = toggleBody.find('.js-open-cont'); 
+    const btnToggle = toggleBody.find('.toggleEl__btn'); 
     btnToggle.on('click', function () {
-      const currentActive = $(this).hasClass('opened');
+      const currentActive = $(this).parent().hasClass('active');
       if (!currentActive) {
-        $(this).addClass('opened');
-        toggleBody.find('.toggleCont').stop().slideDown(200);
+        $(this).parent().addClass('active');
+        toggleBody.find('.toggleEl__cont').stop().slideDown(200);
       }
       else {
-        $(this).removeClass('opened');
-        toggleBody.find('.toggleCont').stop().slideUp(200);
+        $(this).parent().removeClass('active');
+        toggleBody.find('.toggleEl__cont').stop().slideUp(200);
       }
     });    
   });
