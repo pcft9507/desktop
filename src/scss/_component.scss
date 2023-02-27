@@ -264,3 +264,49 @@
     }
   }
 }
+
+.toggleEl {
+  border-bottom: 1px solid #e6e6e6;
+  
+  &.active {
+
+    .toggleEl__btn {
+      background-image: url($imgIcon + 'arrow-toggle-el-up.png');
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    padding-left: 20px;
+    background: url($imgIcon + 'arrow-toggle-el-down.png') calc(100% - 20px) 50%/20px no-repeat;
+
+    &.lawyer {
+      background-color: #0b2b5c;
+    }
+
+    &.da {
+      background-color: #003535;
+    }
+
+    &.detective {
+      background-color: #4c0a15;
+    }
+
+    &Txt {
+      color: #fff;
+      font-family: ROKAF Slab Serif;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  &__cont {
+    display: none;
+
+    .exptCard {
+      margin: 0 -1px;
+    }
+  }
+}
