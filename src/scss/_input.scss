@@ -64,10 +64,10 @@
     appearance: none;
     width: 20px;
     height: 20px;
-    background: url($imgIcon + 'icon-radio.png');
+    background: url($imgCommon + 'icon-radio.png');
 
     &:checked {
-      background-image: url($imgIcon + 'icon-radio-checked.png');
+      background-image: url($imgCommon + 'icon-radio-checked.png');
     }
   }
 

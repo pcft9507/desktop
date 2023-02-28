@@ -1003,3 +1003,69 @@
     }
   }
 }
+
+.rs-write {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 50%;
+    background: url($imgBg + 'bg-rs-w.png') 0 50%/cover no-repeat;
+  }
+
+  .rsw-inner  {
+    display: flex;
+  }
+
+  .rsw-head {
+    width: 100%;
+    padding: 240px 0 357px;
+
+    .title {
+      padding-top: 164px;
+      color: #fefefe;
+      font-family: ROKAF Slab Serif;
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 1;
+      background: url($imgBg + 'bg-rs-w-head.png') 0 0/124px no-repeat;
+    }
+
+    .txt {
+      margin-top: 40px;
+      color: $themeColor01;
+      font-family: ROKAF Slab Serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1;
+
+      strong {
+        display: block;
+        margin-bottom: 16px;
+        color: $themeColor01;
+        font-family: ROKAF Slab Serif;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 1;
+      }
+    }
+
+    .txt-sub {
+      margin-top: 40px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 23px;
+      color: #939393;
+    }
+  }
+
+  .rsw-cont {
+    width: 100%;
+    padding: 20px 0 0 40px;
+  }
+}
