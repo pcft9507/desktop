@@ -81,6 +81,29 @@ $.fn.toggleEl = function () {
   });
 }
 
+// 텍스트 에어리어 컴포넌트 textLength 현재 글자수, areaHeight 텍스트 영역만의 높이
+$.fn.textArea = function (textLength, areaHeight) {
+  const taBody = this;
+  const textArea = taBody.find('.textarea__text');
+  const taTextCurrent = taBody.find('.textarea__current');
+  const taTextTotal = taBody.find('.textarea__total');
+  const taOverlay = taBody.find('.textarea__overlay');
+  textArea.css('height', areaHeight);
+  taTextTotal.text(textLength);
+  textArea.on('focusin', function () {
+    taOverlay.hide();
+  });
+  textArea.on('blur', function () {
+    if (textArea.val().length == 0) {
+      taOverlay.show();
+    }
+  });
+  textArea.on('keyup', function () {
+    let valLeng = $(this).val().length;
+    taTextCurrent.text(valLeng);
+  });
+}
+
 // 문서 로드 후 실행
 $(document).ready(function () {
   // 하단메뉴 상단 뎁스 활성화

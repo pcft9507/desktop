@@ -24,30 +24,62 @@
                 <h3 class="sub-row-title">예약자 정보</h3>
               </div>
               
-              <div class="inputRow">
+              <div class="inputRow mt-20">
                 <div class="inputCol">
-                  <div class="input">
-                    <input type="text" class="input__txt" placeholder="이름을 입력해주세요">
+                  <div class="inputTxt">
+                    <input type="text" class="inputTxt__inp" placeholder="이름을 입력해주세요">
                   </div>
                 </div>
               </div>
               
-              <div class="inputRow">
+              <div class="inputRow mt-10">
                 <div class="inputCol">
-                  <div class="input">
-                    <input type="text" class="inputTxt" placeholder="예) 010-1234-5678">
-                    <button class="input__btn confirm"><span class="txt">인증</span></button>
+                  <div class="inputTxt">
+                    <input type="text" class="inputTxt__inp" placeholder="예) 010-1234-5678">
+                    <button class="inputTxt__btn verify confirm"><span class="txt">인증</span></button>
                   </div>
                 </div>
                 <div class="inputCol">
-                  <div class="input">
-                    <input type="text" class="inputTxt" placeholder="예) 010-1234-5678">
-                    <button class="input__btn disabled"><span class="txt">확인</span></button>
+                  <div class="inputTxt">
+                    <input type="text" class="inputTxt__inp" placeholder="인증번호 입력">
+                    <button class="inputTxt__btn verify disabled"><span class="txt">확인</span></button>
                   </div>
                 </div>
               </div>
               
-              <p class="guideTxt">개인정보를 위해 050 안심번호로 변환하여 변호사에게 전달합니다. 문자메시지를 확인하여 인증번호를 입력해주세요.</p>
+              <div class="inputRow mt-10">
+                <div class="inputCol">
+                  <div class="inputTxt">
+                    <input type="text" class="inputTxt__inp" placeholder="예) 010-1234-5678">
+                    <button class="inputTxt__btn verify confirm"><span class="txt">재인증</span></button>
+                  </div>
+                </div>
+                <div class="inputCol">
+                  <div class="inputTxt">
+                    <input type="text" class="inputTxt__inp" placeholder="인증번호 입력">
+                    <span class="inputTxt__time">3:59</span>
+                    <button class="inputTxt__btn verify confirm"><span class="txt">확인</span></button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="inputRow mt-10">
+                <div class="inputCol">
+                  <div class="inputTxt">
+                    <input type="text" class="inputTxt__inp enter" placeholder="핸드폰 번호를 입력해주세요">
+                    <button class="inputTxt__btn verify enter"><span class="txt">인증</span></button>
+                  </div>
+                </div>
+                <div class="inputCol">
+                  <div class="inputTxt">
+                    <input type="text" class="inputTxt__inp" placeholder="인증번호 입력">
+                    <span class="inputTxt__time">3:59</span>
+                    <button class="inputTxt__btn verify confirm"><span class="txt">확인</span></button>
+                  </div>
+                </div>
+              </div>
+              
+              <p class="guideTxt mt-20">개인정보를 위해 050 안심번호로 변환하여 변호사에게 전달합니다. 문자메시지를 확인하여 인증번호를 입력해주세요.</p>
             </div>
 
             <div class="rsw-section">
@@ -56,7 +88,7 @@
               </div>
 
               <div class="textarea">
-                <textarea name="" id="" maxlength="1000" class="textarea__text"></textarea>
+                <textarea name="" id="" class="textarea__text"></textarea>
                 <div class="textarea__overlay">
                   <p class="txt1">문의내용을 작성해주세요</p>
                   <p class="txt2">
@@ -66,21 +98,47 @@
                   </p>
                 </div>
                 <div class="textarea__cnt">
-                  <span class="textarea__current"></span>자 / 최대 1000자
+                  <span class="textarea__current">0</span>자 / 최대 <span class="textarea__total"></span>자
                 </div>
               </div>
 
-              <button class="btn-attach-file">파일첨부</button>
+              <button class="btn-attach-file js-attach-photo">파일첨부</button>
+
+              <div class="attachFile">
+                <input type="file" id="attachPic" class="attachFile__inp" multiple="multiple">
+  
+                <div id="dropZone" class="attachFile__dropArea">
+  
+                  <p class="attachFile__dropAreaTxt">사진 및 파일 첨부 시에 더 빠른 대응이 가능합니다.  총, 이미지 12장까지 첨부 가능합니다.</p>
+  
+                  <ul id="fileList"></ul>
+  
+                </div>
+  
+                <div class="attachFile__totalVol">
+                  <span class="attachFile__totalVol2">0</span> / 10.00 MB
+                </div>
+  
+                <p class="guideTxt">- 접수 후, 모든 업무는 전문가가 직접 수행해드립니다.</p>
+                <p class="guideTxt">- 골고루팀은 통신판매/불법수수료 등을 지원하지 않으니, 안심하셔도 됩니다.</p>
+              </div>            
             </div>
 
             <div class="btn-row">
-              <button class="btn-default confirm">
-                <span class="txt">다음</span>
+              <button class="btnDefault btnDefault--confirm">
+                <span class="btnDefault__txt">다음</span>
               </button>
             </div>
           </div>
           <!-- rsw-cont end -->
         </div>
+
+        <!-- 재인증 요청이 있을 때만 -->
+        <div class="rs-request">
+          <p class="txt-heading">재인증 요청</p>
+          <p class="txt-desc">해당 번호로 인증이 되지 않습니다. 재인증 바랍니다.</p>
+        </div>
+        <!-- 재인증 요청이 있을 때만 -->
       </div>
       <!-- rs-write end -->
     </div>
@@ -92,6 +150,283 @@
 
 <script>
   const page = 'lawyer';
+
+  // 텍스트 에어리어 ui.js
+  $('.textarea').textArea(1000, 240);
+
+
+  // 사진첨부
+  // 파일 첨부 버튼
+  $('.js-attach-photo').on('click', function () {
+    $("#attachPic").click()
+  })
+
+  // 파일 첨부할 때 
+  $("#attachPic").on('change', function() {
+      selectFile(this.files, 12);
+  });
+  // 파일 리스트 번호
+  var fileIndex = 0;
+  // 등록할 전체 파일 사이즈
+  var totalFileSize = 0;
+  // 파일 리스트
+  var fileList = new Array();
+  // 파일 사이즈 리스트
+  var fileSizeList = new Array();
+  // 등록 가능한 파일 사이즈 MB
+  var uploadSize = 10;
+  // 등록 가능한 총 파일 사이즈 MB
+  var maxUploadSize = 10;
+
+  $(function () {
+    // 파일 드롭 다운
+    fileDropDown(12);
+  });
+
+  // 파일 드롭 다운
+  function fileDropDown(maxlength) {
+    var dropZone = $("#dropZone");
+    //Drag기능
+    dropZone.on('dragenter', function (e) {
+      e.stopPropagation();
+      e.preventDefault();
+      dropZone.addClass('enter');
+      //dropZone.css('background-color', '#eee')
+    });
+    dropZone.on('dragleave', function (e) {
+      e.stopPropagation();
+      e.preventDefault();
+      dropZone.addClass('leave');
+      //dropZone.css('background-color', '#fff')
+    });
+    dropZone.on('dragover', function (e) {
+      e.stopPropagation();
+      e.preventDefault();
+      // dropZone.css('background-color', '#eee')
+    });
+    dropZone.on('drop', function (e) {
+      e.preventDefault();
+      dropZone.removeClass('enter');
+
+      var files = e.originalEvent.dataTransfer.files;
+      if (maxlength < files.length) {
+        alert('파일 첨부는 ' + maxlength +'개까지 가능합니다.')
+      }
+      else {
+        if (files != null) {
+          if (files.length < 1) {
+            /* alert("폴더 업로드 불가"); */
+            console.log("폴더 업로드 불가");
+            return;
+          } else {
+            selectFile(files)
+          }
+        } else {
+          alert("ERROR");
+        }
+      }
+    });
+  }  
+
+  // 파일 선택시
+  function selectFile(fileObject, maxlength) {
+    var files = fileObject;
+
+    // if (fileObject != null) {
+    //   // 파일 Drag 이용하여 등록시
+    //   files = fileObject;
+    // } else {
+    //   // 직접 파일 등록시
+    //   //files = $('#multipaartFileList_' + fileIndex)[0].files;
+    //   files = $('#attachPic').files[0].size;
+    //   console.log('files',)
+    // }
+
+    if (files.length > maxlength) {
+      alert('파일 첨부는 ' + maxlength +'개까지 가능합니다.')
+    } else {
+      // 기존등록된 파일 갯수
+      var registeredLeng = $('#fileList .file-row').length;
+      console.log('files.length', files.length, registeredLeng)
+
+      if ((registeredLeng + files.length) > maxlength) {
+        alert('파일 첨부는 ' + maxlength +'개까지 가능합니다')
+      } else {
+        // 다중파일 등록
+        if (files != null) {
+          
+          for (var i = 0; i < files.length; i++) {
+            // 파일 이름
+            var fileName = files[i].name;
+            var fileNameArr = fileName.split("\.");
+            // 확장자
+            var ext = fileNameArr[fileNameArr.length - 1];
+            
+            var fileSize = files[i].size; // 파일 사이즈(단위 :byte)
+            console.log("fileSize="+fileSize);
+            if (fileSize <= 0) {
+              console.log("0kb file return");
+              return;
+            }
+            
+            /* if ($.inArray(ext, [ 'exe', 'bat', 'sh', 'java', 'jsp', 'html', 'js', 'css', 'xml' ]) >= 0) {
+              // 확장자 체크
+              alert("등록 불가 확장자");
+              break; */
+            if ($.inArray(ext, [ 'jpg', 'jpeg', 'gif', 'png'  ]) < 0) {
+              // 확장자 체크
+              /* alert("등록이 불가능한 파일 입니다.");
+              break; */
+              alert("등록이 불가능한 파일 입니다.("+fileName+")");
+            } else if (fileSizeMb > uploadSize) {
+              // 파일 사이즈 체크
+              alert("용량 초과\n업로드 가능 용량 : " + uploadSize + " MB");
+              break;
+            } else {
+              // 전체 파일 사이즈
+              totalFileSize += fileSize;
+
+              var fileSizeKb = totalFileSize / 1024; // 파일 사이즈(단위 :kb)
+              var fileSizeMb = fileSizeKb / 1024;    // 파일 사이즈(단위 :Mb)
+
+              var fileSizeStr = "";
+              
+              if ((1024*1024) <= totalFileSize) {    // 파일 용량이 1메가 이상인 경우 
+                console.log("fileSizeMb="+fileSizeMb.toFixed(2));
+                fileSizeStr = fileSizeMb.toFixed(2) + " Mb";
+              } else if ((1024) <= totalFileSize) {
+                console.log("fileSizeKb="+parseInt(fileSizeKb));
+                fileSizeStr = parseInt(fileSizeKb) + " kb";
+              } else {
+                console.log("fileSize="+parseInt(fileSize));
+                fileSizeStr = parseInt(totalFileSize) + " byte";
+              }
+
+              // 파일 배열에 넣기
+              fileList[fileIndex] = files[i];
+
+              // 파일 사이즈 배열에 넣기
+              fileSizeList[fileIndex] = fileSize;
+
+              // 업로드 파일 목록 생성
+              addFileList(fileIndex, fileName, totalFileSize);
+
+              // 파일 번호 증가
+              fileIndex++;
+            }
+          }
+        } else {
+          alert("ERROR");
+        }
+        $('.attachFile__totalVol2').text(fileSizeStr)
+        $('.attachFile__dropArea').addClass('attached')
+      }
+    }
+  }
+
+  // 업로드 파일 목록 생성
+  function addFileList(fIndex, fileName, fileSizeStr) {
+    var html = `<li id="fileRow` + fIndex + `" class="file-row">
+                  <span class="file-name">` + fileName + `</span>
+                  <button type="button" class="file-delete radiusBtn txt-s" onclick="deleteFile(` + fIndex + `)">삭제</button>
+                </li>`
+
+    $('#fileList').append(html);
+  }
+
+  // 업로드 파일 삭제
+  function deleteFile(fIndex) {
+    console.log("totalFileSize="+totalFileSize, "deleteFile.fIndex=" + fIndex);
+    
+    // 전체 파일 사이즈 수정
+    totalFileSize -= fileSizeList[fIndex];
+    console.log("afterTotalFileSize="+totalFileSize, fileSizeList[fIndex]);
+    // 전체 파일 사이즈
+    // totalFileSize += fileSize;
+
+    var fileSizeKb = totalFileSize / 1024; // 파일 사이즈(단위 :kb)
+    var fileSizeMb = fileSizeKb / 1024;    // 파일 사이즈(단위 :Mb)
+
+    var fileSizeStr = "";
+
+    if ((1024*1024) <= totalFileSize) {    // 파일 용량이 1메가 이상인 경우 
+      console.log("fileSizeMb="+fileSizeMb.toFixed(2));
+      fileSizeStr = fileSizeMb.toFixed(2) + " Mb";
+    } else if ((1024) <= totalFileSize) {
+      console.log("fileSizeKb="+parseInt(fileSizeKb));
+      fileSizeStr = parseInt(fileSizeKb) + " kb";
+    } else {
+      console.log("fileSize="+parseInt(totalFileSize));
+      fileSizeStr = parseInt(totalFileSize) + " byte";
+    }
+
+    // 파일 배열에서 삭제
+    delete fileList[fIndex];
+
+    // 파일 사이즈 배열 삭제
+    delete fileSizeList[fIndex];
+
+    // 업로드 파일 테이블 목록에서 삭제
+    $("#fileRow" + fIndex).remove();
+
+    if (totalFileSize > 0) {
+      console.log('totalFileSize over zero')
+      $('.attachFile__totalVol2').text(fileSizeStr)
+    } else {
+      console.log('totalFileSize zero')
+      $('.attachFile__totalVol2').text(0)
+      $('.attachFile__dropArea').removeClass('attached')
+    }
+  }
+
+  // 파일 등록
+  function uploadFile() {
+    // 등록할 파일 리스트
+    var uploadFileList = Object.keys(fileList);
+
+    // 파일이 있는지 체크
+    if (uploadFileList.length == 0) {
+      // 파일등록 경고창
+      alert("파일이 없습니다.");
+      return;
+    }
+
+    // 용량을 넘을 경우 업로드 불가
+    if (totalFileSize > maxUploadSize) {
+      // 파일 사이즈 초과 경고창
+      alert("총 용량 초과\n총 업로드 가능 용량 : " + maxUploadSize + " MB");
+      return;
+    }
+
+    if (confirm("등록 하시겠습니까?")) {
+      // 등록할 파일 리스트를 formData로 데이터 입력
+      var form = $('#uploadForm');
+      var formData = new FormData(form);
+      for (var i = 0; i < uploadFileList.length; i++) {
+        formData.append('files', fileList[uploadFileList[i]]);
+      }
+
+      $.ajax({
+        url : "업로드 경로",
+        data : formData,
+        type : 'POST',
+        enctype : 'multipart/form-data',
+        processData : false,
+        contentType : false,
+        dataType : 'json',
+        cache : false,
+        success : function(result) {
+          if (result.data.length > 0) {
+              alert("성공");
+              location.reload();
+          } else {
+              alert("실패");
+              location.reload();
+          }
+        }
+      });
+    }
+  }  
 </script>
 </body>
 </html>

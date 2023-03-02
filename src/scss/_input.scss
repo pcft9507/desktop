@@ -79,3 +79,142 @@
     font-size: 16px;
   }
 }
+
+.inputRow {
+  display: flex;
+}
+
+.inputCol {
+  width: 100%;
+
+  & + .inputCol {
+    margin-left: 20px;
+  }
+}
+
+.inputTxt {
+  position: relative;
+
+  &__inp {
+    width: 100%;
+    height: 48px;
+    padding: 0 20px;
+    border: solid 1px #e6e6e6;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+      
+    &.enter {
+      background-color: rgba(255, 2, 71, 0.04);
+      border-color: #ff0247;
+
+      &::placeholder {
+        color: #ff0247;
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 4px;
+
+    &.verify {
+      width: 88px;
+    }
+
+    &.confirm {
+      background: $themeColor01;
+    }
+
+    &.disabled {
+      background: #c1c1c1;
+    }
+
+    &.enter {
+      background: #ff0247;
+    }
+
+    .txt {
+      color: #fff;
+      font-family: ROKAF Slab Serif;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  &__time {
+    position: absolute;
+    top: 50%;
+    right: 104px;
+    color: #ff0247;
+    font-weight: 500;
+    font-size: 16px;
+    transform: translateY(-50%);
+  }
+}
+
+.textarea {
+  position: relative;
+  padding-bottom: 12px;
+  border: solid 1px #e6e6e6;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+
+  &__text {
+    width: 100%;
+    padding: 20px;
+    resize: none;
+    background-color: #f7f7f7;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    padding: 16px 20px;
+    background-color: #f7f7f7;
+    pointer-events: none;
+
+    .txt1 {
+      color: #939393;
+      font-size: 16px;
+      line-height: 23px;
+    }
+
+    .txt2 {
+      margin-top: 12px;
+      color: #939393;
+      font-size: 14px;
+      line-height: 28px;
+    }
+  }
+
+  &__cnt {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 12px;
+    color: #939393;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+
+    .textarea__current,
+    .textarea__total {
+      color: #939393;
+      font-weight: 500;
+      font-size: 1em;
+      line-height: 16px;
+    }
+
+    .textarea__total {
+      margin-left: 5px;
+    }
+  }
+}
