@@ -11,8 +11,8 @@
         <div class="rsw-inner row-container">
           <!-- rsw-head -->
           <div class="rsw-head">
-            <h2 class="title">상담요청 내용작성</h2>
-            <p class="txt"><strong>상담 전, 미리 문제를 파악해</strong>원활한 상담이 될 수 있도록 작성하여 알려주세요.</p>
+            <h2 class="title">결제하기</h2>
+            <p class="txt"><strong>정보를 확인하고 결제를 완료해주세요.</strong>결제 전 상담정보를 확인 바랍니다.</p>
             <p class="txt-sub">30분 이내에 결제를 완료하지 않으면 예약이 취소됩니다.</p>
           </div>
           <!-- rsw-head end -->
@@ -105,13 +105,21 @@
     <hr>
 
     @@include('@@webRoot/include/footer.html')
+
+    @@include('@@webRoot/modal/complete_reservation.html')
+    @@include('@@webRoot/modal/retry.html')
   </div>
 
 <script>
   const page = 'lawyer';
 
-  // 텍스트 에어리어 ui.js
-  $('.textarea').textArea(1000, 240);
+  // 모달 개발 후 삭제
+  var pathSch = location.search;
+  pathSch = pathSch.split('?')[1];
+  console.log(pathSch);
+  if (pathSch.length > 0) {
+    openModal(pathSch);
+  }
 </script>
 </body>
 </html>

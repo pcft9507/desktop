@@ -237,7 +237,6 @@
   }
 }
 
-
 .l-modal {
   display: none;
   position: fixed;
@@ -371,4 +370,85 @@
     height: 64px;
     background: url($imgCommon + 'btn-modal-close2.png') 0/100% no-repeat;
   }
+
+  .mProcess {
+    position: relative;
+    min-width: 950px;
+    background: #fff;
+    border-radius: 4px;
+
+    &__cont {
+      padding: 124px 0;
+    }
+
+    &__title {
+      position: relative;
+      padding-top: 180px;
+      color: #152131;
+      font-family: ROKAF Slab Serif;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1;
+      text-align: center;
+
+      &.info {
+
+        &:before {
+          background-image: url($imgIcon + 'ico-modal-info.png');
+        }
+      }
+
+      &.ok {
+
+        &:before {
+          background-image: url($imgIcon + 'ico-modal-ok.png');
+        }
+      }
+
+      &.check {
+
+        &:before {
+          background-image: url($imgIcon + 'ico-modal-check.png');
+        }
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 140px;
+        height: 140px;
+        margin-left: -70px;
+        background-size: 140px;
+      }
+    }
+
+    &__txt {
+      margin-top: 20px;
+      color: #939393;
+      font-family: ROKAF Slab Serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1;
+      text-align: center;
+    }
+
+    &__btn {
+      display: block;
+      width: 164px;
+      margin: 80px auto 0;
+      border-radius: 4px;
+      background: $themeColor01;
+
+      &Txt {
+        display: block;
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 64px;
+        text-align: center;
+      }
+    }
+  }  
 }
