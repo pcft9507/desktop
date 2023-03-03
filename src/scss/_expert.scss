@@ -1015,7 +1015,32 @@
     left: 0;
     z-index: -1;
     width: 50%;
-    background: url($imgBg + 'bg-rs-w.png') 0 50%/cover no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  &.write {
+
+    &:before {
+      background-image: url($imgBg + 'bg-rs-w.png');
+    }
+
+    .title {
+      background: url($imgBg + 'bg-rs-w-head.png') 0 0/124px no-repeat;
+    }
+  }
+
+  &.payment {
+
+    &:before {
+
+      background-image: url($imgBg + 'bg-rs-w-pay.png');
+    }
+
+    .title {
+      background: url($imgBg + 'bg-payment-head.png') 0 0/124px no-repeat;
+    }
   }
 
   .rsw-inner  {
@@ -1023,7 +1048,7 @@
   }
 
   .rsw-head {
-    width: 100%;
+    width: 50%;
     padding: 240px 0 357px;
 
     .title {
@@ -1033,7 +1058,6 @@
       font-size: 48px;
       font-weight: 500;
       line-height: 1;
-      background: url($imgBg + 'bg-rs-w-head.png') 0 0/124px no-repeat;
     }
 
     .txt {
@@ -1065,7 +1089,7 @@
   }
 
   .rsw-cont {
-    width: 100%;
+    width: 50%;
     padding: 20px 0 0 40px;
 
     .rsw-section {
@@ -1094,6 +1118,39 @@
 
       .attachFile {
         margin-top: 20px;
+      }
+
+      .guideTxt {
+        line-height: 24px;
+      }
+
+      .counsel-info-row {
+        display: flex;
+
+        .col {
+          margin-left: 66px;
+
+          &:first-child {
+            margin-left: 0;
+          }
+
+          .label {
+            display: block;
+            color: #939393;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+          }
+
+          .detail {
+            display: block;
+            margin-top: 9px;
+            color: #152131;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 23px;
+          }
+        }
       }
     }
 

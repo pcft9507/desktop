@@ -2,4 +2,37 @@
   color: #939393;
   font-weight: 500;
   font-size: 14px;
+
+  &.small {
+    font-size: 12px;
+  }
+
+  .pointColor {
+    color: #ff0247;
+    font-size: 1em;
+  }
+}
+
+.priceRow {
+  display: flex;
+  justify-content: space-between;
+
+  &__label {
+    color: #152131;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    padding: 0 20px;
+    color: #152131;
+    font-weight: 600;
+    font-size: 16px;
+    background: #f7f7f7;
+  }
 }
