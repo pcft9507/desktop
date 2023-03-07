@@ -232,3 +232,34 @@
     }
   }
 }
+
+.areaCheckbox {
+  display: flex;
+
+  &__inp {
+    width: 0;
+    height: 0;
+
+    &:checked + .areaCheckbox__label {
+      z-index: 1;
+      color: #fff;
+      background: $themeColor01;
+      border: 1px solid $themeColor01;
+    }
+  }
+
+  &__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 125px;
+    height: 64px;
+    color: #152131;
+    font-weight: 500;
+    font-size: 18px;
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    cursor: pointer;
+  }
+}

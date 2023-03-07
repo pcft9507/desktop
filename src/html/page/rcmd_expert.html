@@ -1,0 +1,750 @@
+@@include('@@webRoot/include/head.html')
+
+<body>
+  <div class="wrap">
+
+    @@include('@@webRoot/include/header.html')
+
+    <div class="l-container">
+      <!-- recommend -->
+      <div class="recommend">
+        <div class="expert-visual">
+          <p class="is-blind">고객님께 최적화된 전문가를 추천해드립니다.</p>
+        </div>
+
+        <div class="rc-cont row-container">
+          <!-- rc-cont-container -->
+          <div class="rc-cont-container">
+            <h3 class="cont-title">24시 상황에 적합한 전문가 추천받기.</h3>
+            <p class="cont-title-sub">필요한 전문가 선택 / 상담분야 선택 / 지역 선택 / 상담내용을 작성 후 신청해주세요.</p>
+
+            <div class="conTab" data-con-tab="0">
+              <a href="javascript: void(0);" class="conTab__btn expert active" onclick="conTab(0, 0);">변호사</a>
+              <a href="javascript: void(0);" class="conTab__btn expert" onclick="conTab(0, 1);">손해사정사</a>
+              <a href="javascript: void(0);" class="conTab__btn expert" onclick="conTab(0, 2);">탐정</a>
+            </div>
+
+            <div class="cont-section">
+              <div class="sectionHead">
+                <h4 class="sectionHead__title">상담분야</h4>
+              </div>
+              <div class="section-cont">
+                <div class="type-list-wrap custom-scroll">
+                  <div class="sub-row-head">
+                    <h5 class="sub-row-title">상담분야 선택</h5>
+                    <div class="btnChk">
+                      <input type="checkbox" id="all" class="btnChk__checkbox">
+                      <label for="all" class="btnChk__label">전체</label>
+                    </div>
+                  </div>
+                  <ul class="type-list">
+                    <li class="list-row">
+                      <div class="list-head">
+                        <span class="type-name">법</span>
+                        <div class="btnChk">
+                          <input type="checkbox" id="chk1" class="btnChk__checkbox">
+                          <label for="chk1" class="btnChk__label">선택</label>
+                        </div>
+                      </div>
+                      <div class="type-cont">
+                        <p class="desc">가나다라마바사아자차카타파하 등 관련한 문제 카피문구 들어가는 부분입니다.</p>
+                        <div class="sub-chk">
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-1" class="btnChk__checkbox">
+                            <label for="chk1-1" class="btnChk__label">폭행</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-2" class="btnChk__checkbox">
+                            <label for="chk1-2" class="btnChk__label">협박</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-3" class="btnChk__checkbox">
+                            <label for="chk1-3" class="btnChk__label">상해</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-4" class="btnChk__checkbox">
+                            <label for="chk1-4" class="btnChk__label">강도</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-5" class="btnChk__checkbox">
+                            <label for="chk1-5" class="btnChk__label">방화</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-6" class="btnChk__checkbox">
+                            <label for="chk1-6" class="btnChk__label">사기</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-7" class="btnChk__checkbox">
+                            <label for="chk1-7" class="btnChk__label">횡령</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-8" class="btnChk__checkbox">
+                            <label for="chk1-8" class="btnChk__label">배임</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-9" class="btnChk__checkbox">
+                            <label for="chk1-9" class="btnChk__label">절도</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-10" class="btnChk__checkbox">
+                            <label for="chk1-10" class="btnChk__label">공갈</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-11" class="btnChk__checkbox">
+                            <label for="chk1-11" class="btnChk__label">손괴</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-12" class="btnChk__checkbox">
+                            <label for="chk1-12" class="btnChk__label">절도</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-13" class="btnChk__checkbox">
+                            <label for="chk1-13" class="btnChk__label">명예훼손/모욕</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-14" class="btnChk__checkbox">
+                            <label for="chk1-14" class="btnChk__label">통매음</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-15" class="btnChk__checkbox">
+                            <label for="chk1-15" class="btnChk__label">성범죄</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-16" class="btnChk__checkbox">
+                            <label for="chk1-16" class="btnChk__label">성매매</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-17" class="btnChk__checkbox">
+                            <label for="chk1-17" class="btnChk__label">마약/대마</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-18" class="btnChk__checkbox">
+                            <label for="chk1-18" class="btnChk__label">스토킹</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-19" class="btnChk__checkbox">
+                            <label for="chk1-19" class="btnChk__label">보이스피싱</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-20" class="btnChk__checkbox">
+                            <label for="chk1-20" class="btnChk__label">주거침입</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-21" class="btnChk__checkbox">
+                            <label for="chk1-21" class="btnChk__label">형사사건</label>
+                          </div>
+                          <div class="btnChk">
+                            <input type="checkbox" id="chk1-22" class="btnChk__checkbox">
+                            <label for="chk1-22" class="btnChk__label">기타</label>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-row">
+                      <div class="list-head">
+                        <span class="type-name">법</span>
+                        <div class="btnChk">
+                          <input type="checkbox" id="chk2" class="btnChk__checkbox">
+                          <label for="chk2" class="btnChk__label">선택</label>
+                        </div>
+                      </div>
+                      <div class="type-cont">
+                        <p class="desc">가나다라마바사아자차카타파하 등 관련한 문제 카피문구 들어가는 부분입니다.</p>
+                      </div>
+                    </li>
+                    <li class="list-row">
+                      <div class="list-head">
+                        <span class="type-name">법</span>
+                        <div class="btnChk">
+                          <input type="checkbox" id="chk3" class="btnChk__checkbox">
+                          <label for="chk3" class="btnChk__label">선택</label>
+                        </div>
+                      </div>
+                      <div class="type-cont">
+                        <p class="desc">가나다라마바사아자차카타파하 등 관련한 문제 카피문구 들어가는 부분입니다.</p>
+                      </div>
+                    </li>
+                    <li class="list-row">
+                      <div class="list-head">
+                        <span class="type-name">법</span>
+                        <div class="btnChk">
+                          <input type="checkbox" id="chk4" class="btnChk__checkbox">
+                          <label for="chk4" class="btnChk__label">선택</label>
+                        </div>
+                      </div>
+                      <div class="type-cont">
+                        <p class="desc">가나다라마바사아자차카타파하 등 관련한 문제 카피문구 들어가는 부분입니다.</p>
+                      </div>
+                    </li>
+                    <li class="list-row">
+                      <div class="list-head">
+                        <span class="type-name">법</span>
+                        <div class="btnChk">
+                          <input type="checkbox" id="chk5" class="btnChk__checkbox">
+                          <label for="chk5" class="btnChk__label">선택</label>
+                        </div>
+                      </div>
+                      <div class="type-cont">
+                        <p class="desc">가나다라마바사아자차카타파하 등 관련한 문제 카피문구 들어가는 부분입니다.</p>
+                      </div>
+                    </li>
+                    <li class="list-row">
+                      <div class="list-head">
+                        <span class="type-name">법</span>
+                        <div class="btnChk">
+                          <input type="checkbox" id="chk6" class="btnChk__checkbox">
+                          <label for="chk6" class="btnChk__label">선택</label>
+                        </div>
+                      </div>
+                      <div class="type-cont">
+                        <p class="desc">가나다라마바사아자차카타파하 등 관련한 문제 카피문구 들어가는 부분입니다.</p>
+                      </div>
+                    </li>
+                    <li class="list-row">
+                      <div class="list-head">
+                        <span class="type-name">법</span>
+                        <div class="btnChk">
+                          <input type="checkbox" id="chk7" class="btnChk__checkbox">
+                          <label for="chk7" class="btnChk__label">선택</label>
+                        </div>
+                      </div>
+                      <div class="type-cont">
+                        <p class="desc">가나다라마바사아자차카타파하 등 관련한 문제 카피문구 들어가는 부분입니다.</p>
+                      </div>
+                    </li>
+                    <li class="list-row">
+                      <div class="list-head">
+                        <span class="type-name">법</span>
+                        <div class="btnChk">
+                          <input type="checkbox" id="chk8" class="btnChk__checkbox">
+                          <label for="chk8" class="btnChk__label">선택</label>
+                        </div>
+                      </div>
+                      <div class="type-cont">
+                        <p class="desc">가나다라마바사아자차카타파하 등 관련한 문제 카피문구 들어가는 부분입니다.</p>
+                      </div>
+                    </li>
+                    <li class="list-row">
+                      <div class="list-head">
+                        <span class="type-name">법</span>
+                        <div class="btnChk">
+                          <input type="checkbox" id="chk9" class="btnChk__checkbox">
+                          <label for="chk9" class="btnChk__label">선택</label>
+                        </div>
+                      </div>
+                      <div class="type-cont">
+                        <p class="desc">가나다라마바사아자차카타파하 등 관련한 문제 카피문구 들어가는 부분입니다.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="cont-section">
+              <div class="sectionHead">
+                <h4 class="sectionHead__title">상담 지역</h4>
+              </div>
+              <div class="section-cont gray">
+                <ul class="area-list">
+                  <li class="item">
+                    <div class="areaCheckbox">
+                      <input type="checkbox" id="area1" class="areaCheckbox__inp">
+                      <label for="area1" class="areaCheckbox__label">서울</label>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="areaCheckbox">
+                      <input type="checkbox" id="area2" class="areaCheckbox__inp">
+                      <label for="area2" class="areaCheckbox__label">경기</label>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="areaCheckbox">
+                      <input type="checkbox" id="area3" class="areaCheckbox__inp">
+                      <label for="area3" class="areaCheckbox__label">인천</label>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="areaCheckbox">
+                      <input type="checkbox" id="area4" class="areaCheckbox__inp">
+                      <label for="area4" class="areaCheckbox__label">부산</label>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="areaCheckbox">
+                      <input type="checkbox" id="area5" class="areaCheckbox__inp">
+                      <label for="area5" class="areaCheckbox__label">대구</label>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="areaCheckbox">
+                      <input type="checkbox" id="area6" class="areaCheckbox__inp">
+                      <label for="area6" class="areaCheckbox__label">울산</label>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="areaCheckbox">
+                      <input type="checkbox" id="area7" class="areaCheckbox__inp">
+                      <label for="area7" class="areaCheckbox__label">경북</label>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="areaCheckbox">
+                      <input type="checkbox" id="area8" class="areaCheckbox__inp">
+                      <label for="area8" class="areaCheckbox__label">경남</label>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="areaCheckbox">
+                      <input type="checkbox" id="area9" class="areaCheckbox__inp">
+                      <label for="area9" class="areaCheckbox__label">광주</label>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="areaCheckbox">
+                      <input type="checkbox" id="area10" class="areaCheckbox__inp">
+                      <label for="area10" class="areaCheckbox__label">전북</label>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="areaCheckbox">
+                      <input type="checkbox" id="area11" class="areaCheckbox__inp">
+                      <label for="area11" class="areaCheckbox__label">전남</label>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="areaCheckbox">
+                      <input type="checkbox" id="area12" class="areaCheckbox__inp">
+                      <label for="area12" class="areaCheckbox__label">세종</label>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="areaCheckbox">
+                      <input type="checkbox" id="area13" class="areaCheckbox__inp">
+                      <label for="area13" class="areaCheckbox__label">충북</label>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="areaCheckbox">
+                      <input type="checkbox" id="area14" class="areaCheckbox__inp">
+                      <label for="area14" class="areaCheckbox__label">충남</label>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="areaCheckbox">
+                      <input type="checkbox" id="area15" class="areaCheckbox__inp">
+                      <label for="area15" class="areaCheckbox__label">대전</label>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="areaCheckbox">
+                      <input type="checkbox" id="area16" class="areaCheckbox__inp">
+                      <label for="area16" class="areaCheckbox__label">강원</label>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="areaCheckbox">
+                      <input type="checkbox" id="area17" class="areaCheckbox__inp">
+                      <label for="area17" class="areaCheckbox__label">제주</label>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="areaCheckbox">
+                      <input type="checkbox" id="area18" class="areaCheckbox__inp">
+                      <label for="area18" class="areaCheckbox__label else">기타</label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cont-section">
+              <div class="sectionHead">
+                <h4 class="sectionHead__title">상담 내용</h4>
+              </div>
+              <div class="section-cont">
+                <div class="textarea">
+                  <textarea name="" id="" class="textarea__text"></textarea>
+                  <div class="textarea__overlay">
+                    <p class="txt1">문의내용을 작성해주세요</p>
+                    <p class="txt2">
+                      - 변호사가 상담하기 전에 미리 검토/파악하는 내용입니다.<br>
+                      - 상담요청 내용은 건의 배경과 질문 위주로 핵심만 간결하게 작성해주세요.<br>
+                      - 1000자 이하로 작성 가능합니다.
+                    </p>
+                  </div>
+                  <div class="textarea__cnt">
+                    <span class="textarea__current">0</span>자 / 최대 <span class="textarea__total"></span>자
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- rc-cont-container end -->
+
+          <!-- rc-side -->
+          <div class="rc-cont-side">
+            <div class="side-head">
+              <h4 class="head-title">선택한 분야, 지역  키워드</h4>
+              <button class="btn-reset">초기화</button>
+            </div>
+            <div class="side-cont">
+              <div class="cont-scroll custom-scroll">
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">키워드1</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">키워드2</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">키워드1</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">키워드2</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+                <div class="kwChip with-del">
+                  <a href="#" class="kwChip__btn">분야</a>
+                  <button class="kwChip__del">
+                    <span class="is-blind">삭제</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- rc-side end -->
+        </div>
+
+        <div class="btn-row mt-80 row-container">
+          <button class="btnDefault confirm large">
+            <span class="btnDefault__txt">전문가 추천상담 신청</span>
+          </button>
+        </div>
+      </div>
+      <!-- recommend end -->
+    </div>
+
+    <hr>
+
+    @@include('@@webRoot/include/footer.html')
+  </div>
+
+<script>
+  // 텍스트 에어리어 ui.js
+  $('.textarea').textArea(1000, 240);
+
+  // 탭
+  function conTab(tabBody, tabBtnIndex) {
+    console.log('탭 ' + tabBody + ': 버튼인덱스 :', tabBtnIndex);
+    $('.conTab[data-con-tab="' + tabBody + '"] .conTab__btn').removeClass('active').eq(tabBtnIndex).addClass('active');
+  }
+
+</script>
+</body>
+</html>

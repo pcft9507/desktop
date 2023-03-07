@@ -10,8 +10,40 @@
   height: 48px;
   border-radius: 40px;
 
-  &--confirm {
+  &.large {
+    height: 80px;
+
+    .btnDefault__txt {
+      font-size: 22px;
+    }
+  }
+
+  &.confirm {
     background-color: $themeColor01;
+
+    .btnDefault__txt {
+      color: #fff;
+    }
+  }
+
+  &.lawyer {
+    background-color: #1e6ee8;
+
+    .btnDefault__txt {
+      color: #fff;
+    }
+  }
+
+  &.da {
+    background-color: #018786;
+
+    .btnDefault__txt {
+      color: #fff;
+    }
+  }
+
+  &.detective {
+    background-color: #bf1b37;
 
     .btnDefault__txt {
       color: #fff;

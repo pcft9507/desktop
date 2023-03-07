@@ -1,0 +1,8 @@
+.recommend .rc-head {
+  background: #000;
+}
+
+.recommend .rc-head .head-inner {
+  position: relative;
+  padding-top: 120px;
+}
