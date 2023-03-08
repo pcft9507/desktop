@@ -251,6 +251,7 @@
         .cont-scroll {
           display: flex;
           flex-wrap: wrap;
+          align-items: flex-start;
           height: 100%;
           overflow-y: auto;
           padding-right: 18px;
