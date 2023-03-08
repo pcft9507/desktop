@@ -1,0 +1,90 @@
+@@include('@@webRoot/include/head.html')
+
+<body>
+  <div class="wrap">
+
+    @@include('@@webRoot/include/header.html')
+
+    <div class="l-container">
+      <!-- mypage -->
+      <div class="mypage row-container">
+        <!-- mp-nav -->
+        <nav class="mp-nav">
+          <div class="nav-mp">
+            <span class="mp-title">마이페이지</span>
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a href="#" class="nav-list-btn">나의 상담후기</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-list-btn">찜한 전문가 보기</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-list-btn">책갈피 보기</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-bottom">
+            <ul class="nav-head-list">
+              <li class="nav-head-item">
+                <a href="#" class="nav-head-btn">상담사례 / 해결사례</a>
+                <ul class="nav-list">
+                  <li class="nav-list-item">
+                    <a href="#" class="nav-list-btn">상담사례</a>
+                  </li>
+                  <li class="nav-list-item">
+                    <a href="#" class="nav-list-btn">해결사례</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-head-item">
+                <a href="#" class="nav-head-btn">FAQ & 공지사항</a>
+                <ul class="nav-list">
+                  <li class="nav-list-item">
+                    <a href="#" class="nav-list-btn">자주 묻는 질문</a>
+                  </li>
+                  <li class="nav-list-item">
+                    <a href="#" class="nav-list-btn">공지사항</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- mp-nav end -->
+
+        <!-- mypage-body -->
+        <div class="mypage-body">
+          <div class="sub-row-head">
+            <h3 class="sub-row-title">로그인 정보</h3>
+            <a href="javascript: login();" class="btn-login">로그인</a>
+          </div>
+
+          <div class="login-before">
+            <p class="before-txt">로그인 후 서비스를 이용하실 수 있습니다.</p>
+          </div>
+
+          <div class="btn-row">
+            <button class="btnDefault confirm h-px-64">
+              <span class="btnDefault__txt">SNS 간편 로그인하기</span>
+            </button>
+          </div>
+        </div>
+        <!-- mypage-body end -->
+      </div>
+      <!-- mypage end -->
+    </div>
+
+    <hr>
+
+    @@include('@@webRoot/include/footer.html')
+  </div>
+
+<script>
+  // 로그인
+  function login() {
+    console.log('로그인');
+  }
+</script>
+</body>
+</html>

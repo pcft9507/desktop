@@ -5,7 +5,7 @@
 
   .selection-group {
     width: 720px;
-    padding: 60px 0 44px;
+    padding: 60px 0 0;
 
     .header {
 
@@ -208,7 +208,7 @@
 .find-expert {
   display: flex;
   justify-content: space-between;
-  padding: 40px 0 130px;
+  padding: 40px 0 0;
   
   .side {
     width: 280px;
@@ -356,7 +356,7 @@
       border-right: 1px solid #e6e6e6;
   
       &.detail {
-        padding: 55px 40px 60px;
+        padding: 55px 40px 120px;
       }
     }
 
@@ -768,7 +768,7 @@
 
     .rs-set {
       height: calc(100% - 64px);
-      padding: 60px 40px 90px;
+      padding: 60px 40px 120px;
       border-left: 1px solid #e6e6e6;
       border-right: 1px solid #e6e6e6;
 

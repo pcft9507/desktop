@@ -64,7 +64,7 @@ $defaultBtnRadius: 4px;
 // 높이 사이즈
 @for $i from 1 through 10000 {
   .h-px-#{$i} {
-    height: 1px * $i;
+    height: 1px * $i !important;
   }
 }
 

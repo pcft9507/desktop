@@ -169,6 +169,11 @@
 .l-container {
   position: relative;
   padding-top: 105px;
+  padding-bottom: 120px;
+
+  &.no-pb {
+    padding-bottom: 0;
+  }
 }
 
 .l-footer {
