@@ -1,0 +1,13 @@
+.mypage {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.mypage .mp-nav {
+  width: 280px;
+}
+
+.mypage .mp-body {
+  width: 950px;
+}

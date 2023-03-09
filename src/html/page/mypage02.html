@@ -54,7 +54,7 @@
         <!-- mp-nav end -->
 
         <!-- mypage-body -->
-        <div class="mypage-body">
+        <div class="mp-body">
           <div class="sub-row-head">
             <h3 class="sub-row-title">로그인 정보</h3>
             <a href="javascript: login();" class="btn-login">로그인</a>
@@ -85,6 +85,18 @@
   function login() {
     console.log('로그인');
   }
+
+  // 사이드 네비
+  $('.nav-head-btn').on('click', function (e) {
+    e.preventDefault();
+    var chkActive = $(this).hasClass('active');
+    if (chkActive) {
+      $(this).removeClass('active').next().stop().slideUp(200);
+    }
+    else {
+      $(this).addClass('active').next().stop().slideDown(200);
+    }
+  })
 </script>
 </body>
 </html>

@@ -1,0 +1,278 @@
+.mypage {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+
+  .mp-nav {
+    width: 280px;
+    border: 1px solid #e6e6e6;
+    border-bottom: 0;
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+
+    .mp-title {
+      display: flex;
+      align-items: center;
+      height: 64px;
+      padding-left: 20px;
+      color: $themeColor01;
+      font-family: ROKAF Slab Serif;
+      font-size: 18px;
+      font-weight: 500;
+      background: #000;
+    }
+
+    .nav-list {
+
+      &-item {
+        border-bottom: 1px solid #e6e6e6;
+
+        &:first-child {
+          border-top: 1px solid #e6e6e6;
+        }
+      }
+
+      &-btn {
+        display: flex;
+        align-items: center;
+        height: 64px;
+        padding-left: 20px;
+        color: #152131;
+        font-weight: 500;
+        font-size: 16px;
+        background: url($imgIcon + 'ico-mp-arrow-right.png') calc(100% - 14px) 50% no-repeat;
+
+        &.active,
+        &:hover {
+          color: $themeColor01;
+        }
+      }
+    }
+
+    .nav-bottom {
+
+      .nav-list {
+        display: none;
+      }
+    }
+
+    .nav-head-item {
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    .nav-head-btn {
+      display: flex;
+      align-items: center;
+      height: 64px;
+      padding-left: 20px;
+      color: #939393;
+      font-family: ROKAF Slab Serif;
+      font-size: 18px;
+      font-weight: 500;
+      background: #000 url($imgIcon + 'ico-mp-arrow-down.png') calc(100% - 14px) 50% no-repeat;
+
+      &.active {
+        background: #000 url($imgIcon + 'ico-mp-arrow-up.png') calc(100% - 14px) 50% no-repeat;
+      }
+    }    
+  }
+
+  .mp-body {
+    width: 950px;
+
+    .sub-row-head {
+
+      .btn-login {
+        display: flex;
+        align-items: center;
+        height: 36px;
+        padding: 0 22px;
+        color: #fff;
+        font-family: ROKAF Slab Serif;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 18px;
+        background: $themeColor01;
+
+        &.login {
+          background: #939393;
+        }
+      }
+    }
+
+    .login-before {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 236px;
+      margin: 20px 0;
+      border-radius: 4px;
+      border: solid 1px #e6e6e6;
+      background-color: #f7f7f7;
+
+      .before-txt {
+        color: #939393;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+      }
+    }
+
+    .account-info {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0 72px;
+
+      .info-card {
+        width: 464px;
+        border-radius: 4px;
+        border: solid 1px #e6e6e6;
+
+        .user-info {
+          display: flex;
+          align-items: center;
+          height: 140px;
+          padding: 0 20px;
+        }
+
+        .mark-img {
+          width: 64px;
+          height: 64px;
+        }
+
+        .user-summary {
+          margin-left: 20px;
+
+          .user-name {
+            display: flex;
+            align-items: baseline;
+          }
+
+          .name {
+            font-family: ROKAF Slab Serif;
+            font-size: 24px;
+            font-weight: 500;
+            letter-spacing: 4.8px;
+          }
+
+          .nick-name {
+            margin-left: 10px;
+            font-family: ROKAF Slab Serif;
+            font-size: 16px;
+            font-weight: 500;
+          }
+
+          .user-b-s-p {
+            margin-top: 12px;
+
+            .bsp-txt {
+              font-family: ROKAF Slab Serif;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 1;
+              color: #939393;
+
+              &:after {
+                content: '/';
+                display: inline-flex;
+                margin: 0 7px;
+                font-family: ROKAF Slab Serif;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1;
+                color: #939393;
+              }
+
+              &:last-child {
+
+                &:after {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+
+        .login-info {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          height: 100%;
+
+          .email {
+            color: $themeColor01;
+            font-family: ROKAF Slab Serif;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1;
+          }
+
+          .login-acc {
+            margin-top: 12px;
+            font-family: ROKAF Slab Serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1;
+            color: #939393;
+          }
+        }
+      }
+    }
+
+    .app-status {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 236px;
+      margin: 20px 0;
+      border: solid 1px #e6e6e6;
+      background-color: #f7f7f7;
+
+      .status-sub {
+        width: 160px;
+        margin: 0 10px;
+
+        &.cnt0 {
+
+          .board {
+            background-color: #f7f7f7;
+          }
+
+          .cnt {
+            color: #c1c1c1;
+            border-bottom: 0;
+          }
+        }
+      }
+
+      .board {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        border-radius: 4px;
+        border: solid 1px #e6e6e6;
+        background-color: #fff;
+
+        .cnt {
+          color: #0336ff;
+          font-size: 32px;
+          font-weight: 900;
+          border-bottom: 3px solid #0336ff;
+          line-height: 1;
+        }
+      }
+
+      .sub-name {
+        display: block;
+        margin-top: 20px;
+        font-family: ROKAF Slab Serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        text-align: center;
+      }
+    }
+  }
+}
