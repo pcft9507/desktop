@@ -101,6 +101,30 @@
           background: #939393;
         }
       }
+
+      &.online-history {
+
+        .select {
+          width: 260px;
+          height: 32px;
+          background-color: #f7f7f7;
+        }
+      }    
+      
+      .history-cnt {
+        color: #0336ff;
+        font-family: ROKAF Slab Serif;
+        font-size: 18px;
+        font-weight: 500;
+
+        em {
+          color: #0336ff;
+          font-family: ROKAF Slab Serif;
+          font-size: 18px;
+          font-weight: 500;
+          text-decoration: underline;
+        }
+      }
     }
 
     .login-before {
@@ -277,5 +301,242 @@
         text-align: center;
       }
     }
+
+    .apply-status {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
+      border-bottom: 1px solid #e6e6e6;
+
+      .as-col {
+        display: flex;
+
+        .as-col-sub {
+          display: flex;
+          align-items: center;
+          margin: 0 20px;
+          height: 56px;
+        }
+
+        .label {
+          color: #525b6b;
+          font-family: ROKAF Slab Serif;
+          font-size: 16px;
+          font-weight: 500;
+        }
+
+        .cnt {
+          display: flex;
+          margin-left: 10px;
+          color: #0336ff;
+          font-family: ROKAF Slab Serif;
+          font-size: 16px;
+          font-weight: 500;
+
+          span {
+            position: relative;
+            margin-right: 3px;
+            text-decoration: underline;
+            color: #0336ff;
+            font-family: ROKAF Slab Serif;
+            font-size: 16px;
+            font-weight: 500;
+          }
+
+          &.zero {
+            color: #939393;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .online-history-tbl {
+
+      .history-tbl {
+        width: 100%;
+
+        thead {
+
+          th {
+            height: 48px;
+            color: #525b6b;
+            font-size: 16px;
+            font-weight: 500;
+            background-color: #f7f7f7;
+            vertical-align: middle;
+          }
+        }
+
+        tbody {
+          tr {
+
+            &:nth-of-type(even) {
+              background-color: #f7f7f7;
+            }
+          }
+
+          td {
+            padding: 28px 0;
+            vertical-align: middle;
+            text-align: center;
+          }
+
+          .expt-info {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            padding-left: 16px;
+            text-align: left;
+
+            .info-img {
+              width: 64px;
+              height: 64px;
+              border-radius: 4px;
+              overflow: hidden;
+            }
+
+            .name-comp {
+              width: calc(100% - 84px);
+              margin-left: 20px;
+
+              .name {
+                font-family: ROKAF Slab Serif;
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 1;
+                color: #152131;
+              }
+
+              .comp {
+                margin-top: 10px;
+                font-family: ROKAF Slab Serif;
+                font-size: 10px;
+                font-weight: 500;
+                line-height: 1;
+                color: #939393;
+
+              }
+            }
+          }
+
+          .expt-label {
+            font-size: 16px;
+            font-weight: 500;
+
+            &.lawyer {
+              color: #1e6ee8;
+            }
+
+            &.da {
+              color: #018786;
+            }
+
+            &.detective {
+              color: #bf1b37;
+            }
+          }
+
+          .type {
+            display: inline-flex;
+            align-items: center;
+            height: 28px;
+            padding: 0 9px;
+            color: #fff;
+            font-family: ROKAF Slab Serif;
+            font-size: 16px;
+            font-weight: 500;
+            background: $themeColor01;
+            border-radius: 4px;
+          }
+
+          .situation {
+
+            .txt {
+              display: block;
+              color: #152131;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 25px;
+            }
+
+            .go-answer {
+              color: #0336ff;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 25px;
+              text-decoration: underline;
+            }
+          }
+
+          .date {
+
+            .txt {
+              display: block;
+              color: #152131;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 25px;
+
+              &.cancel {
+                color: #939393;
+                text-decoration: line-through;
+              }
+
+              &.done {
+                color: #939393;
+              }
+            }
+          }
+        }
+
+        .checkbox {
+          justify-content: center;
+        }
+      }
+
+      .history-bot {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+
+        .sch-box {
+          position: relative;
+
+          .sch-inp {
+            width: 240px;
+            height: 36px;
+            border-radius: 21px;
+            border: solid 1px #c1c1c1;
+            background-color: #fff;
+          }
+
+          .btn-sch {
+            position: absolute;
+            top: 9px;
+            right: 10px;
+            width: 18px;
+            height: 18px;
+            background: url($imgCommon + 'btn-mp-sch.png') 0/100% no-repeat;
+          }
+        }
+      }
+    }
+
+    .btn-mp-gray {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 36px;
+      padding: 0 28px;
+      color: #fefefe;
+      font-family: ROKAF Slab Serif;
+      font-size: 12px;
+      font-weight: 500;
+      background: #939393;
+      border-radius: 18px;
+    }    
   }
 }

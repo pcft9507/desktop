@@ -22,6 +22,17 @@
     &:checked {
       background-image: url($imgCommon + 'checkbox-checked.png');
     }
+
+    &.bold {
+      width: 24px;
+      height: 24px;
+      background-size: 24px;
+      background-image: url($imgCommon + 'checkbox-bold.png');
+
+      &:checked {
+        background-image: url($imgCommon + 'checkbox-bold-checked.png');
+      }
+    }    
   }
 }
 

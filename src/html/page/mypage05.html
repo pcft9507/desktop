@@ -1,0 +1,258 @@
+@@include('@@webRoot/include/head.html')
+
+<body>
+  <div class="wrap">
+
+    @@include('@@webRoot/include/header.html')
+
+    <div class="l-container">
+      <!-- mypage -->
+      <div class="mypage row-container">
+        <!-- mp-nav -->
+        <nav class="mp-nav">
+          <div class="nav-mp">
+            <span class="mp-title">마이페이지</span>
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a href="#" class="nav-list-btn">나의 상담후기</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-list-btn">찜한 전문가 보기</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-list-btn">책갈피 보기</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-bottom">
+            <ul class="nav-head-list">
+              <li class="nav-head-item">
+                <a href="#" class="nav-head-btn">상담사례 / 해결사례</a>
+                <ul class="nav-list">
+                  <li class="nav-list-item">
+                    <a href="#" class="nav-list-btn">상담사례</a>
+                  </li>
+                  <li class="nav-list-item">
+                    <a href="#" class="nav-list-btn">해결사례</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-head-item">
+                <a href="#" class="nav-head-btn">FAQ & 공지사항</a>
+                <ul class="nav-list">
+                  <li class="nav-list-item">
+                    <a href="#" class="nav-list-btn">자주 묻는 질문</a>
+                  </li>
+                  <li class="nav-list-item">
+                    <a href="#" class="nav-list-btn">공지사항</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- mp-nav end -->
+
+        <!-- mypage-body -->
+        <div class="mp-body">
+          <div class="sub-row-head">
+            <h3 class="sub-row-title">상담신청 현황</h3>
+          </div>
+
+          <div class="apply-status">
+            <div class="as-col">
+              <div class="as-col-sub">
+                <span class="label">전화 상담 :</span>
+                <a href="#" class="cnt"><span>2</span> 건</a>
+              </div>
+              <div class="as-col-sub">
+                <span class="label">영상 상담 :</span>
+                <div class="cnt zero">0 건</div>
+              </div>
+              <div class="as-col-sub">
+                <span class="label">방문 상담 :</span>
+                <a href="#" class="cnt"><span>2</span> 건</a>
+              </div>
+              <div class="as-col-sub">
+                <span class="label">온라인 상담 :</span>
+                <a href="#" class="cnt"><span>2</span> 건</a>
+              </div>
+            </div>
+            <div class="as-col">
+              <button class="btn-mp-gray">전체보기</button>
+            </div>
+          </div>
+
+          <div class="sub-row-head online-history">
+            <h3 class="sub-row-title">온라인 내역 : <span class="history-cnt"><em>3</em> 건</span></h3>
+            <select name="" id="" class="select select-option">
+              <option value="">전체(대기중, 진행중, 취소, 완료)</option>
+              <option value="">대기중</option>
+              <option value="">진행중</option>
+              <option value="">취소</option>
+              <option value="">완료</option>
+            </select>
+          </div>
+
+          <div class="online-history-tbl">
+            <table class="history-tbl">
+              <caption>온라인 내역 게시판입니다.</caption>
+              <colgroup>
+                <col style="width: 48px">
+                <col style="width: auto">
+                <col style="width: 80px">
+                <col style="width: 178px">
+                <col style="width: 178px">
+                <col style="width: 178px">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="row">
+                    <div class="checkbox">
+                      <input type="checkbox" id="all" class="checkbox__chkbox bold" title="전체 체크">
+                    </div>
+                  </th>
+                  <th scope="row">PICK</th>
+                  <th scope="row">전문가</th>
+                  <th scope="row">상담종류</th>
+                  <th scope="row">상태</th>
+                  <th scope="row">예약일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tac">
+                    <div class="checkbox">
+                      <input type="checkbox" id="chk1" class="checkbox__chkbox bold" title="체크하기">
+                    </div>
+                  </td>
+                  <td>
+                    <a href="javascript: openModal('exptinfo')" class="expt-info">
+                      <figure class="info-img">
+                        <figcaption>전문가 사진입니다.</figcaption>
+                        <img src="@@webRoot/assets/images/sample/sample-ex1.jpg" alt="홍길동 변호사 사진">
+                      </figure>
+                      <div class="name-comp">
+                        <p class="name">홍길동 변호사</p>
+                        <p class="comp">법무법인 가나다라마바사아자차</p>
+                      </div>
+                    </a>
+                  </td>
+                  <td><span class="expt-label lawyer">변호사</span></td>
+                  <td><span class="type">온라인</span></td>
+                  <td>
+                    <div class="situation">
+                      <span class="txt">상담 예약 완료</span>
+                      <span class="txt">( 대기중 )</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="date">
+                      <span class="txt r-complete">22년 11월 21일 (월)<br>am 10:30 예정</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="checkbox">
+                      <input type="checkbox" id="chk2" class="checkbox__chkbox bold" title="체크하기">
+                    </div>
+                  <td>
+                    <a href="javascript: openModal('exptinfo')" class="expt-info">
+                      <figure class="info-img">
+                        <figcaption>전문가 사진입니다.</figcaption>
+                        <img src="@@webRoot/assets/images/sample/sample-ex1.jpg" alt="홍길동 변호사 사진">
+                      </figure>
+                      <div class="name-comp">
+                        <p class="name">홍길동 손해사정사</p>
+                        <p class="comp">법무법인 가나다라마바사아자차</p>
+                      </div>
+                    </a>
+                  </td>
+                  <td><span class="expt-label da">손사</span></td>
+                  <td><span class="type">온라인</span></td>
+                  <td>
+                    <div class="situation">
+                      <span class="txt">상담 예약</span>
+                      <span class="txt">( 취소 )</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="date">
+                      <span class="txt cancel">22년 11월 21일 (월)<br>am 10:30 예정</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="checkbox">
+                      <input type="checkbox" id="chk3" class="checkbox__chkbox bold" title="체크하기">
+                    </div>
+                  </td>
+                  <td>
+                    <a href="javascript: openModal('exptinfo')" class="expt-info">
+                      <figure class="info-img">
+                        <figcaption>전문가 사진입니다.</figcaption>
+                        <img src="@@webRoot/assets/images/sample/sample-ex1.jpg" alt="홍길동 변호사 사진">
+                      </figure>
+                      <div class="name-comp">
+                        <p class="name">홍길동 탐정</p>
+                        <p class="comp">법무법인 가나다라마바사아자차</p>
+                      </div>
+                    </a>
+                  </td>
+                  <td><span class="expt-label detective">탐정</span></td>
+                  <td><span class="type">온라인</span></td>
+                  <td>
+                    <div class="situation">
+                      <span class="txt">상담 완료</span>
+                      <a href="#" class="go-answer">답변보기</a>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="date">
+                      <span class="txt done">22년 11월 21일 (월)<br>am 10:30 예정</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="history-bot">
+              <button class="btn-mp-gray">삭제</button>
+
+              <div class="sch-box">
+                <input type="text" class="sch-inp" title="검색어입력">
+                <button class="btn-sch" title="검색하기">
+                  <span class="is-blind">검색하기</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- mypage-body end -->
+      </div>
+      <!-- mypage end -->
+    </div>
+
+    <hr>
+
+    @@include('@@webRoot/include/footer.html')
+    @@include('@@webRoot/modal/expt_info.html')
+  </div>
+
+<script>
+  // 사이드 네비
+  $('.nav-head-btn').on('click', function (e) {
+    e.preventDefault();
+    var chkActive = $(this).hasClass('active');
+    if (chkActive) {
+      $(this).removeClass('active').next().stop().slideUp(200);
+    }
+    else {
+      $(this).addClass('active').next().stop().slideDown(200);
+    }
+  })
+</script>
+</body>
+</html>
