@@ -83,7 +83,7 @@
             </div>
           </div>
 
-          <div class="sub-row-head online-history">
+          <div class="sub-row-head online-history mt-60">
             <h3 class="sub-row-title">온라인 내역 : <span class="history-cnt"><em>3</em> 건</span></h3>
             <select name="" id="" class="select select-option">
               <option value="">전체(대기중, 진행중, 취소, 완료)</option>
@@ -120,14 +120,14 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr role="button" onclick="openModal('exptinfo')">
                   <td class="tac">
                     <div class="checkbox">
                       <input type="checkbox" id="chk1" class="checkbox__chkbox bold" title="체크하기">
                     </div>
                   </td>
                   <td>
-                    <a href="javascript: openModal('exptinfo')" class="expt-info">
+                    <div class="expt-info">
                       <figure class="info-img">
                         <figcaption>전문가 사진입니다.</figcaption>
                         <img src="@@webRoot/assets/images/sample/sample-ex1.jpg" alt="홍길동 변호사 사진">
@@ -136,7 +136,7 @@
                         <p class="name">홍길동 변호사</p>
                         <p class="comp">법무법인 가나다라마바사아자차</p>
                       </div>
-                    </a>
+                    </div>
                   </td>
                   <td><span class="expt-label lawyer">변호사</span></td>
                   <td><span class="type">온라인</span></td>
@@ -152,13 +152,13 @@
                     </div>
                   </td>
                 </tr>
-                <tr>
+                <tr role="button" onclick="openModal('exptinfo')">
                   <td>
                     <div class="checkbox">
                       <input type="checkbox" id="chk2" class="checkbox__chkbox bold" title="체크하기">
                     </div>
                   <td>
-                    <a href="javascript: openModal('exptinfo')" class="expt-info">
+                    <div class="expt-info">
                       <figure class="info-img">
                         <figcaption>전문가 사진입니다.</figcaption>
                         <img src="@@webRoot/assets/images/sample/sample-ex1.jpg" alt="홍길동 변호사 사진">
@@ -167,7 +167,7 @@
                         <p class="name">홍길동 손해사정사</p>
                         <p class="comp">법무법인 가나다라마바사아자차</p>
                       </div>
-                    </a>
+                    </div>
                   </td>
                   <td><span class="expt-label da">손사</span></td>
                   <td><span class="type">온라인</span></td>
@@ -183,14 +183,14 @@
                     </div>
                   </td>
                 </tr>
-                <tr>
+                <tr role="button" onclick="openModal('exptinfo')">
                   <td>
                     <div class="checkbox">
                       <input type="checkbox" id="chk3" class="checkbox__chkbox bold" title="체크하기">
                     </div>
                   </td>
                   <td>
-                    <a href="javascript: openModal('exptinfo')" class="expt-info">
+                    <div class="expt-info">
                       <figure class="info-img">
                         <figcaption>전문가 사진입니다.</figcaption>
                         <img src="@@webRoot/assets/images/sample/sample-ex1.jpg" alt="홍길동 변호사 사진">
@@ -199,7 +199,7 @@
                         <p class="name">홍길동 탐정</p>
                         <p class="comp">법무법인 가나다라마바사아자차</p>
                       </div>
-                    </a>
+                    </div>
                   </td>
                   <td><span class="expt-label detective">탐정</span></td>
                   <td><span class="type">온라인</span></td>
