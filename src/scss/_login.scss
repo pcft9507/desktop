@@ -136,7 +136,7 @@
   position: relative;
   width: 600px;
   margin: 0 auto;
-  padding: 106px 60px 55px;
+  padding: 80px 60px 55px;
   border-radius: 4px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);
   background-color: #f7f7f7;
@@ -151,7 +151,7 @@
   }
 
   &__box {
-    margin-top: 106px;
+    margin-top: 80px;
     border-radius: 4px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
     border: solid 1px #e6e6e6;
@@ -159,7 +159,7 @@
   }
 
   &__boxTop {
-    padding: 60px 0;
+    padding: 40px;
   }
 
   &__loginGuide {
@@ -178,6 +178,7 @@
 
     &Item {
       margin: 0 16px;
+      font-size: 0;
     }
   }
 
@@ -269,6 +270,10 @@
     width: 42px;
     height: 42px;
     background: url($imgCommon + 'btn-close-login.png') 0/100% no-repeat;
+  } 
+
+  &__btnConfirmTxt {
+    font-size: 14px;
   }
 }
 
