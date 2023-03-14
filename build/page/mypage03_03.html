@@ -172,7 +172,7 @@
             </div>
           </div>
 
-          <div class="sub-row-head online-history">
+          <div class="sub-row-head online-history mt-60">
             <h3 class="sub-row-title">온라인 내역 : <span class="history-cnt"><em>3</em> 건</span></h3>
             <select name="" id="" class="select select-option">
               <option value="">전체(대기중, 진행중, 취소, 완료)</option>
@@ -189,10 +189,10 @@
               <colgroup>
                 <col style="width: 48px">
                 <col style="width: auto">
-                <col style="width: 80px">
-                <col style="width: 178px">
-                <col style="width: 178px">
-                <col style="width: 178px">
+                <col style="width: 110px">
+                <col style="width: 168px">
+                <col style="width: 168px">
+                <col style="width: 168px">
               </colgroup>
               <thead>
                 <tr>
@@ -216,7 +216,7 @@
                     </div>
                   </td>
                   <td>
-                    <a href="javascript: openModal('exptInfo')" class="expt-info">
+                    <a href="javascript: openModal('exptinfo');" class="expt-info">
                       <figure class="info-img">
                         <figcaption>전문가 사진입니다.</figcaption>
                         <img src="../assets/images/sample/sample-ex1.jpg" alt="홍길동 변호사 사진">
@@ -247,13 +247,13 @@
                       <input type="checkbox" id="chk2" class="checkbox__chkbox bold" title="체크하기">
                     </div>
                   <td>
-                    <a href="javascript: openModal('exptInfo')" class="expt-info">
+                    <a href="javascript: openModal('exptinfo');" class="expt-info">
                       <figure class="info-img">
                         <figcaption>전문가 사진입니다.</figcaption>
                         <img src="../assets/images/sample/sample-ex1.jpg" alt="홍길동 변호사 사진">
                       </figure>
                       <div class="name-comp">
-                        <p class="name">홍길동 손해사정사</p>
+                        <p class="name">홍길동 변호사</p>
                         <p class="comp">법무법인 가나다라마바사아자차</p>
                       </div>
                     </a>
@@ -279,13 +279,13 @@
                     </div>
                   </td>
                   <td>
-                    <a href="javascript: openModal('exptInfo')" class="expt-info">
+                    <a href="javascript: openModal('exptinfo');" class="expt-info">
                       <figure class="info-img">
                         <figcaption>전문가 사진입니다.</figcaption>
                         <img src="../assets/images/sample/sample-ex1.jpg" alt="홍길동 변호사 사진">
                       </figure>
                       <div class="name-comp">
-                        <p class="name">홍길동 탐정</p>
+                        <p class="name">홍길동 변호사</p>
                         <p class="comp">법무법인 가나다라마바사아자차</p>
                       </div>
                     </a>
@@ -399,7 +399,7 @@
         </div>
       </div>
 
-      <button class="eLogin__btnClose" onclick="closeModal('expert');" title="로그인 닫기">
+      <button class="eLogin__btnCloseLogin" onclick="closeModal('expert');" title="로그인 닫기">
         <span class="is-blind">로그인 닫기</span>
       </button>
     </div>
@@ -440,7 +440,7 @@
       </div>
 
 
-      <button class="eLogin__btnClose" onclick="closeModal('user');" title="로그인 닫기">
+      <button class="eLogin__btnCloseLogin" onclick="closeModal('user');" title="로그인 닫기">
         <span class="is-blind">로그인 닫기</span>
       </button>
     </div>
@@ -503,7 +503,7 @@
         <span class="txt">동의 후 서비스 이용하기</span>
       </button>
 
-      <button class="modal-btnClose" onclick="closeModal('agreement');" title="약관동의 닫기">
+      <button class="modal-btnCloseLogin" onclick="closeModal('agreement');" title="약관동의 닫기">
         <span class="is-blind">약관동의 닫기</span>
       </button>
     </div>
@@ -539,9 +539,90 @@
   }
 </script>
 
+    <div class="l-modal" data-modal="exptinfo">
+  <div class="modal-container">
+    <div class="content modal-expt-info">
+      <div class="expt-header">
+        <div class="expt-info">
+          <figure class="info-img">
+            <figcaption>전문가 사진입니다.</figcaption>
+            <img src="../assets/images/sample/sample-ex1.jpg" alt="홍길동 변호사 사진">
+          </figure>
+          <div class="name-comp">
+            <p class="name">홍길동 변호사</p>
+            <p class="comp">법무법인 가나다라마바사아자차</p>
+          </div>
+        </div>
+        <span class="expt-type lawyer">변호사</span>
+        <span class="current">온라인</span>
+        <div class="situation">
+          <span class="txt">상담 예약 완료</span>
+          <span class="txt">( 대기중 )</span>
+        </div>
+        <div class="date">
+          <span class="txt r-complete">22년 11월 21일 (월)<br>am 10:30 예정</span>
+        </div>        
+      </div>
+
+      <div class="expt-cont custom-scroll">
+        <div class="cont-row">
+          <div class="title">변호사 정보</div>
+          <div class="row-sub">
+            <div class="sub-col">
+              <span class="label">변호사</span>
+              <p class="data">홍길동 변호사</p>
+            </div>
+            <div class="sub-col">
+              <span class="label">법률사무소</span>
+              <p class="data">법무법인 가나다라마바사아자차</p>
+            </div>
+            <div class="sub-col">
+              <span class="label">주소</span>
+              <p class="data">서울 금천구 가산디지털 1로 128 STXV타워 1604호</p>
+            </div>
+          </div>
+        </div>
+        <div class="cont-row">
+          <div class="title">상담 정보</div>
+          <div class="row-sub">
+            <div class="sub-col">
+              <span class="label">상담 종류</span>
+              <p class="data">15분 전화상담</p>
+            </div>
+            <div class="sub-col">
+              <span class="label">상담료(단위:원)</span>
+              <p class="data">20,000</p>
+            </div>
+            <p class="desc">예약한 시간에 변호사가 직접 의뢰인에게 전화해 상담을 진행합니다.<br>(의뢰인의 휴대폰번호는 050번호로 전환되며 변호사에게 노출되지 않습니다.)예약 시 작성한 상담글을 변호사가 사전검토합니다. 상담예약 및 작성한 상담내용은 "변호사의 비밀유지"에 의해 비밀보호됩니다.<br>상담이 끝나면 상담의 핵심내용을 변호사가 요약하여 제공합니다. (상담결과는 필수항목이 아닙니다.)<br>계약서 검토, 자문 등의 추가적인 법률 서비스는 추가 상담료가 발생할 수 있습니다.</p>
+          </div>
+        </div>
+        <div class="cont-row">
+          <div class="title">예약취소 및 환불규정</div>
+          <div class="row-sub">
+            <p class="desc"><em>예약취소는 전화상담 1시간 전까지만 마이페이지에서 취소 가능</em>하며, 이후에는 취소 및 환불이 불가능합니다.<br><em>예약날짜 및 시간변경은 전화상담 1시간 전까지만 가능</em>하며, 골고루팀 고객센터로 문의주시면 됩니다.<br>변호사 사정으로 상담을 하지 못한 경우에는 100% 환불해드립니다.<br>의뢰인 사정으로 상담을 하지 못한 경우 또는 상담이 이루어진 경우에는 환불해드리지 않습니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="expt-bot">
+        <div class="price">
+          <span class="price-label">결제 금액(단위:원)</span>
+          <strong class="price-num">20,000</strong>
+        </div>
+        <button class="btn-cancel">예약 취소</button>
+      </div>
+      <button class="modal-btnClose" onclick="closeModal('exptinfo');" title="팝업 닫기">
+        <span class="is-blind">팝업 닫기</span>
+      </button>
+    </div>
+  </div>
+</div>
+
   </div>
 
 <script>
+  // 모달 열기
+  openModal('exptinfo');
+
   // 사이드 네비
   $('.nav-head-btn').on('click', function (e) {
     e.preventDefault();

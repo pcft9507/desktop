@@ -100,10 +100,10 @@
               <colgroup>
                 <col style="width: 48px">
                 <col style="width: auto">
-                <col style="width: 80px">
-                <col style="width: 178px">
-                <col style="width: 178px">
-                <col style="width: 178px">
+                <col style="width: 110px">
+                <col style="width: 168px">
+                <col style="width: 168px">
+                <col style="width: 168px">
               </colgroup>
               <thead>
                 <tr>
@@ -238,9 +238,13 @@
     <hr>
 
     @@include('@@webRoot/include/footer.html')
+    @@include('@@webRoot/modal/guide_cancel.html')
   </div>
 
 <script>
+  // 모달 열기
+  openModal('cancel');
+
   // 사이드 네비
   $('.nav-head-btn').on('click', function (e) {
     e.preventDefault();

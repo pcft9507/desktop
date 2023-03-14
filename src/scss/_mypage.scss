@@ -370,9 +370,37 @@
 
         tbody {
           tr {
-            
+
             &[role="button"] {
               cursor: pointer;
+
+              &:hover {
+                background: #f7f7f7;
+              }
+            }
+
+            &.review {
+
+              &.active {
+
+                & + .review-row {
+                  display: table-row;
+                }
+              }
+            }
+
+            &.review-row {
+              display: none;
+              
+              .review-txt {
+                padding: 20px;
+                color: #152131;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.75;
+                background: #f7f7f7;
+                text-align: left;
+              }
             }
           }
 
@@ -451,6 +479,16 @@
             border-radius: 4px;
           }
 
+          .type-condition {
+            display: block;
+            margin-top: 10px;
+            color: $themeColor01;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 23px;
+            text-align: center;
+          }
+
           .situation {
 
             .txt {
@@ -488,6 +526,86 @@
                 color: #939393;
               }
             }
+
+            .d-day {
+              display: block;
+              color: #0336ff;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 23px;
+              text-align: center;
+            }            
+
+            .w-review {
+              display: inline-flex;
+              align-items: center;
+              height: 28px;
+              margin-top: 10px;
+              padding: 0 9px;
+              color: #fff;
+              font-family: ROKAF Slab Serif;
+              font-size: 16px;
+              font-weight: 500;
+              background: $themeColor01;
+              border-radius: 4px;
+            }
+          }
+
+          .view-detail {
+            display: inline-flex;
+            align-items: center;
+            height: 28px;
+            padding: 0 9px;
+            color: #152131;
+            font-family: ROKAF Slab Serif;
+            font-size: 16px;
+            font-weight: 500;
+            background: #f7f7f7;
+            border: 1px solid #e6e6e6;
+            border-radius: 4px;
+          }
+
+          .btn-cancel-wish {
+            position: relative;
+            padding-left: 32px;
+            font-family: ROKAF Slab Serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: left;
+            color: #0336ff;
+            text-decoration: underline;
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: 50%;
+              left: 0;
+              width: 24px;
+              height: 24px;
+              background: url($imgCommon + 'ico-favorite-active.png') 0/24px no-repeat;
+              transform: translateY(-50%);
+            }
+          }
+
+          .bm-info {
+            padding-left: 28px;
+            text-align: left;
+
+            .bm-type {
+              color: #939393; 
+              font-size: 12px;
+              font-weight: 500;
+            }
+
+            .bm-sbj {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              margin-top: 10px;
+              font-size: 18px;
+              font-weight: bold;
+              color: #152131;
+            }
           }
         }
 
@@ -520,6 +638,24 @@
             height: 18px;
             background: url($imgCommon + 'btn-mp-sch.png') 0/100% no-repeat;
           }
+        }
+
+        .btn-row {
+          width: 100%;
+        }
+
+        .btn-reg-review {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 280px;
+          height: 64px;
+          font-family: ROKAF Slab Serif;
+          font-size: 18px;
+          font-weight: 500;
+          color: #fff;
+          background: $themeColor01;
+          border-radius: 4px;
         }
       }
     }

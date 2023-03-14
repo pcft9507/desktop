@@ -88,7 +88,7 @@ $.fn.textArea = function (textLength, areaHeight) {
   const taTextCurrent = taBody.find('.textarea__current');
   const taTextTotal = taBody.find('.textarea__total');
   const taOverlay = taBody.find('.textarea__overlay');
-  textArea.css('height', areaHeight);
+  textArea.css('height', areaHeight).attr('maxlength', textLength);
   taTextTotal.text(textLength);
   textArea.on('focusin', function () {
     taOverlay.hide();

@@ -589,6 +589,15 @@
   .modal-btnClose {
     position: absolute;
     top: 0;
+    right: -94px;
+    width: 64px;
+    height: 64px;
+    background: url($imgCommon + 'btn-close-modal.png') 0/100% no-repeat;
+  }
+
+  .modal-btnCloseLogin {
+    position: absolute;
+    top: 0;
     right: -62px;
     width: 42px;
     height: 42px;
@@ -685,4 +694,61 @@
     }
   }  
 
+  .guide {
+    position: relative;
+    width: 640px;
+    background-color: #fff;
+    border-radius: 4px;
+
+    &__title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 102px;
+      font-family: ROKAF Slab Serif;
+      font-size: 22px;
+      font-weight: 500;
+      color: #152131;
+    }
+
+    &__cont {
+      padding: 80px 0;
+      border-top: 1px solid #e6e6e6;
+    }
+
+    &__txt {
+      font-family: ROKAF Slab Serif;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 1.91;
+      text-align: center;
+      color: #152131;
+    }
+
+    &__bot {
+      display: flex;
+    }
+
+    &__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 80px;
+
+      &.cancel {
+        font-size: 18px;
+        font-weight: 500;
+        color: #939393;
+        background-color: #f7f7f7;
+      }
+
+      &.confirm {
+        font-size: 18px;
+        font-weight: 500;
+        color: #fefefe;
+        background-color: #152131;
+      }
+    }
+  }
 }
