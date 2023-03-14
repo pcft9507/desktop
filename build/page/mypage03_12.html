@@ -145,92 +145,49 @@
         <!-- mypage-body -->
         <div class="mp-body">
           <div class="sub-row-head">
-            <h3 class="sub-row-title">책갈피 보기</h3>
-          </div>
-
-          <div class="apply-status">
-            <div class="as-col">
-              <div class="as-col-sub">
-                <span class="label">변호사 :</span>
-                <a href="#" class="cnt"><span>2</span> 건</a>
-              </div>
-              <div class="as-col-sub">
-                <span class="label">손해사정사 :</span>
-                <div class="cnt zero">0 건</div>
-              </div>
-              <div class="as-col-sub">
-                <span class="label">탐정 :</span>
-                <a href="#" class="cnt"><span>2</span> 건</a>
-              </div>
-            </div>
-            <div class="as-col">
-              <button class="btn-mp-gray">전체보기</button>
+            <h3 class="sub-row-title">상담사례 & 해결사례</h3>
+            <div class="sch-box">
+              <input type="text" class="sch-inp" title="검색어입력">
+              <button class="btn-sch" title="검색하기">
+                <span class="is-blind">검색하기</span>
+              </button>
             </div>
           </div>
 
-          <div class="online-history-tbl">
-            <table class="history-tbl">
-              <caption>책갈피 보기 게시판입니다.</caption>
-              <colgroup>
-                <col style="width: 48px">
-                <col style="width: auto">
-                <col style="width: 178px">
-                <col style="width: 276px">
-              </colgroup>
-              <thead>
-                <tr>
-                  <th scope="row">
-                    <div class="checkbox">
-                      <input type="checkbox" id="all" class="checkbox__chkbox bold" title="전체 체크">
-                    </div>
-                  </th>
-                  <th scope="row">PICK</th>
-                  <th scope="row">답변 상태</th>
-                  <th scope="row">책갈피 상태</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="checkbox">
-                      <input type="checkbox" id="chk1" class="checkbox__chkbox bold" title="체크하기">
-                    </div>
-                  </td>
-                  <td>
-                    <div class="bm-info">
-                      <p class="bm-type">상담 분야 텍스트</p>
-                      <p class="bm-sbj">문의 제목 노출란입니다. 문의 제목 노출란입니다.</p>
-                    </div>
-                  </td>
-                  <td><a href="#" class="view-detail">답변보기</a></td>
-                  <td>
-                    <button class="btn-cancel-bm">책갈피 해제하기</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="checkbox">
-                      <input type="checkbox" id="chk1" class="checkbox__chkbox bold" title="체크하기">
-                    </div>
-                  </td>
-                  <td>
-                    <div class="bm-info">
-                      <p class="bm-type">상담 분야 텍스트</p>
-                      <p class="bm-sbj">문의 제목 노출란입니다. 문의 제목 노출란입니다.</p>
-                    </div>
-                  </td>
-                  <td><a href="#" class="view-detail">답변보기</a></td>
-                  <td>
-                    <button class="btn-cancel-bm">책갈피 해제하기</button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <div class="history-bot">
-              <button class="btn-mp-gray">책갈피 해제하기</button>
+          <div class="mp-tab">
+            <div class="swiper mp-tab-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-active"><button class="btn-ctgr active" onclick="mpTab(0);">전체</button></div>
+                <div class="swiper-slide swiper-slide-next"><button class="btn-ctgr" onclick="mpTab(1);">변호사 분야1</button></div>
+                <div class="swiper-slide"><button class="btn-ctgr" onclick="mpTab(2);">변호사 분야2</button></div>
+                <div class="swiper-slide"><button class="btn-ctgr" onclick="mpTab(3);">변호사 분야3</button></div>
+                <div class="swiper-slide"><button class="btn-ctgr" onclick="mpTab(4);">변호사 분야4</button></div>
+                <div class="swiper-slide"><button class="btn-ctgr" onclick="mpTab(5);">변호사 분야5</button></div>
+                <div class="swiper-slide"><button class="btn-ctgr" onclick="mpTab(6);">변호사 분야6</button></div>
+                <div class="swiper-slide"><button class="btn-ctgr" onclick="mpTab(7);">변호사 분야7</button></div>
+                <div class="swiper-slide"><button class="btn-ctgr" onclick="mpTab(8);">변호사 분야8</button></div>
+                <div class="swiper-slide"><button class="btn-ctgr" onclick="mpTab(9);">변호사 분야9</button></div>
+                <div class="swiper-slide"><button class="btn-ctgr" onclick="mpTab(10);">변호사 분야10</button></div>
+              </div>
             </div>
-          </div>
+            <div class="button-next"><img src="../assets/images/main/case-next.png" alt="다음"></div>
+            <div class="button-prev swiper-button-disabled"><img src="../assets/images/main/case-prev.png" alt="이전"></div>
+          </div>          
+
+          <div class="case-view">
+            <div class="card-cont">
+              <span class="title">변호사 분야1</span>
+              <span class="subject">제목 노출란입니다. 가나다라마바사아자차카타파하가나다라</span>
+              <p class="case-content">내용 일부입니다. 가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자내용 일부입니다. 가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자내용 일부입니다. 가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자내용 일부입니다. 가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자내용 일부입니다. 가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자내용 일부입니다. 가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자내용 일부입니다. 가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자내용 일부입니다. 가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자내용 일부입니다. 가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자내용 일부입니다. 가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자내용 일부입니다. 가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자내용 일부입니다. 가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자내용 일부입니다. 가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자내용 일부입니다. 가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자...</p>
+            </div>
+            <div class="card-foot d-flex-sb-c">
+              <span class="date">2022-10-13</span>
+              <span class="view-cnt">246</span>
+            </div>
+            <button class="book-mark active" onclick="caseBookMark(this);">
+              <span class="is-blind">북마크</span>
+            </button>
+          </div>      
         </div>
         <!-- mypage-body end -->
       </div>
@@ -454,6 +411,7 @@
 
   </div>
 
+<script src="../assets/js/swiper.min.js"></script>
 <script>
   // 사이드 네비
   $('.nav-head-btn').on('click', function (e) {
@@ -466,6 +424,28 @@
       $(this).addClass('active').next().stop().slideDown(200);
     }
   });
+
+  var caseSwiper = new Swiper(".mp-tab-swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 8,
+    navigation: {
+      nextEl: ".mp-tab .button-next",
+      prevEl: ".mp-tab .button-prev",
+    },
+    a11y: false,
+    observer: true,
+    observeParents: true
+  });
+
+  //해결사례 스와이프 탭
+  function mpTab (i) {
+    $('.mp-tab .btn-ctgr').removeClass('active').eq(i).addClass('active');
+  };  
+
+  //북마크
+  function caseBookMark() {
+    console.log('book mark')
+  }
 </script>
 </body>
 </html>

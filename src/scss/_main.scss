@@ -807,6 +807,10 @@
           width: 24px;
           height: 32px;
           background: url($imgCommon + 'book-mark.png') 0/100% no-repeat;
+
+          &.active {
+            background: url($imgCommon + 'book-mark-checked.png') 0/100% no-repeat;
+          }
         }
       }
     }

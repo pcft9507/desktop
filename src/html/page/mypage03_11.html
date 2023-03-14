@@ -1,0 +1,202 @@
+@@include('@@webRoot/include/head.html')
+
+<body>
+  <div class="wrap">
+
+    @@include('@@webRoot/include/header.html')
+
+    <div class="l-container">
+      <!-- mypage -->
+      <div class="mypage row-container">
+        <!-- mp-nav -->
+        <nav class="mp-nav">
+          <div class="nav-mp">
+            <span class="mp-title">마이페이지</span>
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a href="#" class="nav-list-btn">나의 상담후기</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-list-btn">찜한 전문가 보기</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-list-btn">책갈피 보기</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-bottom">
+            <ul class="nav-head-list">
+              <li class="nav-head-item">
+                <a href="#" class="nav-head-btn">상담사례 / 해결사례</a>
+                <ul class="nav-list">
+                  <li class="nav-list-item">
+                    <a href="#" class="nav-list-btn">상담사례</a>
+                  </li>
+                  <li class="nav-list-item">
+                    <a href="#" class="nav-list-btn">해결사례</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-head-item">
+                <a href="#" class="nav-head-btn">FAQ & 공지사항</a>
+                <ul class="nav-list">
+                  <li class="nav-list-item">
+                    <a href="#" class="nav-list-btn">자주 묻는 질문</a>
+                  </li>
+                  <li class="nav-list-item">
+                    <a href="#" class="nav-list-btn">공지사항</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- mp-nav end -->
+
+        <!-- mypage-body -->
+        <div class="mp-body">
+          <div class="sub-row-head">
+            <h3 class="sub-row-title">상담사례 & 해결사례</h3>
+            <div class="sch-box">
+              <input type="text" class="sch-inp" title="검색어입력">
+              <button class="btn-sch" title="검색하기">
+                <span class="is-blind">검색하기</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="mp-tab">
+            <div class="swiper mp-tab-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-active"><button class="btn-ctgr active" onclick="mpTab(0);">전체</button></div>
+                <div class="swiper-slide swiper-slide-next"><button class="btn-ctgr" onclick="mpTab(1);">변호사 분야1</button></div>
+                <div class="swiper-slide"><button class="btn-ctgr" onclick="mpTab(2);">변호사 분야2</button></div>
+                <div class="swiper-slide"><button class="btn-ctgr" onclick="mpTab(3);">변호사 분야3</button></div>
+                <div class="swiper-slide"><button class="btn-ctgr" onclick="mpTab(4);">변호사 분야4</button></div>
+                <div class="swiper-slide"><button class="btn-ctgr" onclick="mpTab(5);">변호사 분야5</button></div>
+                <div class="swiper-slide"><button class="btn-ctgr" onclick="mpTab(6);">변호사 분야6</button></div>
+                <div class="swiper-slide"><button class="btn-ctgr" onclick="mpTab(7);">변호사 분야7</button></div>
+                <div class="swiper-slide"><button class="btn-ctgr" onclick="mpTab(8);">변호사 분야8</button></div>
+                <div class="swiper-slide"><button class="btn-ctgr" onclick="mpTab(9);">변호사 분야9</button></div>
+                <div class="swiper-slide"><button class="btn-ctgr" onclick="mpTab(10);">변호사 분야10</button></div>
+              </div>
+            </div>
+            <div class="button-next"><img src="../assets/images/main/case-next.png" alt="다음"></div>
+            <div class="button-prev swiper-button-disabled"><img src="../assets/images/main/case-prev.png" alt="이전"></div>
+          </div>          
+
+          <ul class="case-card">
+            <li class="card-item">
+              <a href="#">
+                <div class="card-cont">
+                  <span class="title">변호사 분야1</span>
+                  <span class="subject">제목 노출란입니다. 가나다라마바사아자차카타파하가나다라</span>
+                  <p class="case-content">내용 일부입니다. 가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자가나다라</p>
+                </div>
+                <div class="card-foot d-flex-sb-c">
+                  <span class="date">2022-10-13</span>
+                  <span class="view-cnt">246</span>
+                </div>
+              </a>
+              <button class="book-mark active" onclick="caseBookMark(this);">
+                <span class="is-blind">북마크</span>
+              </button>
+            </li>
+            <li class="card-item">
+              <a href="#">
+                <div class="card-cont">
+                  <span class="title">변호사 분야1</span>
+                  <span class="subject">제목 노출란입니다. 가나다라마바사아자차카타파하가나다라</span>
+                  <p class="case-content">내용 일부입니다. 가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자가나다라</p>
+                </div>
+                <div class="card-foot d-flex-sb-c">
+                  <span class="date">2022-10-13</span>
+                  <span class="view-cnt">246</span>
+                </div>
+              </a>
+              <button class="book-mark" onclick="caseBookMark(this);">
+                <span class="is-blind">북마크</span>
+              </button>
+            </li>
+            <li class="card-item">
+              <a href="#">
+                <div class="card-cont">
+                  <span class="title">변호사 분야1</span>
+                  <span class="subject">제목 노출란입니다. 가나다라마바사아자차카타파하가나다라</span>
+                  <p class="case-content">내용 일부입니다. 가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자가나다라</p>
+                </div>
+                <div class="card-foot d-flex-sb-c">
+                  <span class="date">2022-10-13</span>
+                  <span class="view-cnt">246</span>
+                </div>
+              </a>
+              <button class="book-mark" onclick="caseBookMark(this);">
+                <span class="is-blind">북마크</span>
+              </button>
+            </li>
+            <li class="card-item">
+              <a href="#">
+                <div class="card-cont">
+                  <span class="title">변호사 분야1</span>
+                  <span class="subject">제목 노출란입니다. 가나다라마바사아자차카타파하가나다라</span>
+                  <p class="case-content">내용 일부입니다. 가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자가나다라</p>
+                </div>
+                <div class="card-foot d-flex-sb-c">
+                  <span class="date">2022-10-13</span>
+                  <span class="view-cnt">246</span>
+                </div>
+              </a>
+              <button class="book-mark" onclick="caseBookMark(this);">
+                <span class="is-blind">북마크</span>
+              </button>
+            </li>
+          </ul>          
+        </div>
+        <!-- mypage-body end -->
+      </div>
+      <!-- mypage end -->
+    </div>
+
+    <hr>
+
+    @@include('@@webRoot/include/footer.html')
+  </div>
+
+<script src="@@webRoot/assets/js/swiper.min.js"></script>
+<script>
+  // 사이드 네비
+  $('.nav-head-btn').on('click', function (e) {
+    e.preventDefault();
+    var chkActive = $(this).hasClass('active');
+    if (chkActive) {
+      $(this).removeClass('active').next().stop().slideUp(200);
+    }
+    else {
+      $(this).addClass('active').next().stop().slideDown(200);
+    }
+  });
+
+  var caseSwiper = new Swiper(".mp-tab-swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 8,
+    navigation: {
+      nextEl: ".mp-tab .button-next",
+      prevEl: ".mp-tab .button-prev",
+    },
+    a11y: false,
+    observer: true,
+    observeParents: true
+  });
+
+  //해결사례 스와이프 탭
+  function mpTab (i) {
+    $('.mp-tab .btn-ctgr').removeClass('active').eq(i).addClass('active');
+  };  
+
+  //북마크
+  function caseBookMark() {
+    console.log('book mark')
+  }
+</script>
+</body>
+</html>
