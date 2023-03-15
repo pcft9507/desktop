@@ -1,5 +1,16 @@
 .chkList {
-  margin-top: 60px;
+
+  &.no-mem {
+    
+    .chkList__item {
+      padding: 0 20px;
+      border-bottom: 0;
+    }
+
+    .chkList__checkbox {
+      right: 20px;
+    }
+  }
 
   &__title {
     display: flex;
