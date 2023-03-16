@@ -1,0 +1,32 @@
+.event {
+  padding-top: 60px;
+}
+
+.event .evt-title {
+  font-family: ROKAF Slab Serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  color: #152131;
+}
+
+.event .evt-title-sub {
+  margin: 12px 0 40px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+  color: #939393;
+}
+
+.event .evt-tab-row .conTab {
+  width: 720px;
+}
+
+.event .evt-tab-row .select-option {
+  width: 240px;
+  height: 42px;
+}
+
+.event .evt-list {
+  margin-top: 40px;
+}

@@ -1,0 +1,94 @@
+.event {
+  padding-top: 60px;
+
+  .evt-title {
+    font-family: ROKAF Slab Serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1;
+    color: #152131;
+
+    &-sub {
+      margin: 12px 0 40px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 23px;
+      color: #939393;
+    }
+  }
+
+  .evt-tab-row {
+
+    .conTab {
+      width: 720px;
+    }
+
+    .select-option {
+      width: 240px;
+      height: 42px;      
+    }
+  }
+
+  .evt-list {
+
+    .evt-item {
+      position: relative;
+      margin-top: 40px;
+
+      &.active {
+
+        .evt-desc {
+          display: block;
+        }
+      }
+
+      &.finished {
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: #fff;
+          opacity: 0.4;
+        }
+      }
+    }
+
+    .evt-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 64px;
+      margin-top: 10px;
+
+      .subject {
+        font-family: ROKAF Slab Serif;
+        font-size: 22px;
+        font-weight: 500;
+        color: #152131;
+      }
+
+      .date {
+        font-size: 18px;
+        font-weight: 500;
+        color: $themeColor01;
+      }
+    }
+
+    .evt-desc {
+      display: none;
+      padding: 20px;
+      background: #f7f7f7;
+
+      .desc-txt {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.75;
+        color: #152131;
+      }
+    }
+  }
+}
