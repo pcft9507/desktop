@@ -1,0 +1,285 @@
+.service {
+  padding-top: 60px;
+
+  .section-card {
+    display: flex;
+    justify-content: space-between;
+
+    .big-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 620px;
+      height: 585px;
+      background: url($imgBg + 'bg-service1.png') 50%/cover no-repeat;
+
+      .txt1 {
+        font-size: 24px;
+        line-height: 1.75;
+        text-align: center;
+        color: #fefefe;
+      }
+
+      .txt2 {
+        margin-top: 42px;
+        font-family: ROKAF Slab Serif;
+        font-size: 37px;
+        font-weight: bold;
+        line-height: 1;
+        color: #cc9d76;
+      }
+
+      .txt3 {
+        position: relative;
+        margin-top: 78px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.85;
+        text-align: center;
+        color: #939393;
+
+        em {
+          color: $themeColor01;
+          font-size: 1em;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: -35px;
+          left: 50%;
+          width: 22px;
+          height: 1px;
+          background: #939393;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    .card-box {
+      display: flex;
+      width: 620px;
+      flex-wrap: wrap;
+      
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 310px;
+        height: 292px;
+
+        &:nth-of-type(1) {
+          background: #0b2b5c;
+          border-right: 1px solid #fff;
+        }
+
+        &:nth-of-type(2) {
+          background: #003535;
+        }
+
+        &:nth-of-type(3) {
+          background: #4c0a15;
+          border-right: 1px solid #fff;
+        }
+
+        &:nth-of-type(4) {
+          background: #152131;
+        }
+
+        .card-txt {
+          font-family: ROKAF Slab Serif;
+          font-size: 28px;
+          font-weight: 500;
+          line-height: 1.5;
+          text-align: center;
+          color: #fefefe;
+        }
+      }
+    }
+  }
+
+  .down-doc {
+    margin-top: 60px;
+    background-color: #f7f7f7;
+
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 322px;
+      padding: 0 150px 0 120px;
+    }
+
+    .title {
+      font-family: ROKAF Slab Serif;
+      font-size: 37px;
+      font-weight: 500;
+      line-height: 1;
+      color: #152131;
+    }
+
+    .btn-col {
+
+      .btn-down {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        height: 64px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fefefe;
+        border-radius: 200px;
+        box-shadow: 0 2px 4px 0 rgba(5, 5, 5, 0.2);
+
+        &.customer {
+          background: #939393;
+        }
+
+        &.expt {
+          margin-top: 20px;
+          background: $themeColor01;
+        }
+      }
+    }
+  }
+
+  .sv-desc {
+    margin-top: 120px;
+
+    .tit-txt {
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 67px;
+      text-align: center;
+      color: #000;
+    }
+
+    .tit-txt-sub {
+      margin: 30px 0 80px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 2;
+      text-align: center;
+      color: #939393;
+    }
+
+    .sv-row {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+
+      .img-txt {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        width: 360px;
+        height: 300px;
+        color: #fefefe;
+        font-weight: 600;
+        font-size: 36px;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &.bg1 {
+          background-image: url($imgBg + 'bg-service2.png');
+        }
+
+        &.bg2 {
+          background-image: url($imgBg + 'bg-service3.png');
+        }
+
+        &.bg3 {
+          background-image: url($imgBg + 'bg-service4.png');
+        }
+      }
+
+      .row-txt {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 420px);
+        margin-left: 60px;
+
+        .chk-txt {
+          margin-top: 24px;
+          padding-left: 52px;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 36px;
+          color: #000919;
+          background: url($imgBg + 'bg-chk.png') 0/36px no-repeat;
+
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+
+        .txt {
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 36px;
+          color: #000919;
+        }
+
+        .title {
+          margin-bottom: 40px;
+          color: $themeColor01;
+          font-weight: 600;
+          font-size: 32px;
+          line-height: 44px;
+        }
+      }
+    }
+  }
+
+  .service-ban {
+    margin-top: 80px;
+
+    .inner {
+      display: flex;
+      justify-content: center;
+      margin: 0 -10px;
+    }
+
+    .banner {
+      width: 100%;
+      height: 180px;
+      margin: 0 10px;
+      padding: 74px 0 0 20px;
+
+      &:nth-of-type(1) {
+        background: #0b2b5c;
+      }
+
+      &:nth-of-type(2) {
+        background: #003535;
+      }
+
+      &:nth-of-type(3) {
+        background: #4c0a15;
+      }
+
+      &:nth-of-type(4) {
+        background: #152131;
+      }
+
+      .main-txt {
+        font-family: ROKAF Slab Serif;
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 1;
+        color: #ffb96c;
+      }
+
+      .sub-txt {
+        margin-top: 20px;
+        font-family: ROKAF Slab Serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        color: #fefefe;
+      }
+    }
+  }
+}
