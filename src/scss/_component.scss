@@ -126,7 +126,16 @@
   }
 
   &__contact {
+    display: flex;
     margin-top: 12px;
+
+    .chip {
+      margin-right: 3px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
   &__dr {
