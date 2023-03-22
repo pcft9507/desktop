@@ -373,10 +373,6 @@
 
             &[role="button"] {
               cursor: pointer;
-
-              &:hover {
-                background: #f7f7f7;
-              }
             }
 
             &.review {
@@ -401,6 +397,10 @@
                 background: #f7f7f7;
                 text-align: left;
               }
+            }
+
+            &:hover {
+              background: #f7f7f7;
             }
           }
 
