@@ -1267,4 +1267,174 @@
       font-weight: 500;
     }
   }
+
+  .youtube-section {
+    position: relative;
+    padding: 95px 0 0;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 268px;
+      height: 2px;
+      background: #eee;
+      transform: translateX(-50%);
+    }
+  
+    .inner {
+      position: relative;
+      padding: 40px 0;
+    }
+  
+    .cont {
+      margin-top: 40px;
+      background: #303947;
+    }
+  
+    .title {
+      color: #050505;
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 1em;
+      text-align: center;
+    
+      &.light {
+        color: #fff;
+      }
+    }
+    
+    .sub-title {
+      margin-top: 30px;
+      color: #787e85;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1em;
+      text-align: center;
+    
+      &.light {
+        color: #fff;
+      }
+    }
+
+    .box {
+      position: relative;
+      width: 900px;
+      margin: 0 auto;
+      background: #fff;
+    }
+  
+    .vod-swiper {
+      width: 792px;
+      margin: 0 auto;
+      padding-top: 20px;
+
+      .swiper-slide {
+        height: 452px;
+        background: #000;
+      }
+    }
+  
+    .vod-move {
+      position: absolute;
+      top: 50%;
+      width: 24px;
+      height: 39px;
+      background-image: url($imgMain + 'ico-main-vod-arrow.png');
+      background-repeat: no-repeat;
+      background-size: 48px;
+      cursor: pointer;
+      transform: translateY(-50%);
+  
+      &.next {
+        right: 100px;
+        background-position: -24px 0;
+
+        &:hover {
+          background-position: -24px -39px;
+        }
+      }
+  
+      &.prev {
+        left: 100px;
+        background-position: 0 0;
+
+        &:hover {
+          background-position: 0 -39px;
+        }
+      }
+    }
+  
+    .vod-pagenation {
+      position: absolute;
+      bottom: -56px !important;
+  
+      .swiper-pagination-bullet {
+        width: 16px;
+        height: 16px;
+  
+        &-active {
+          background: $themeColor03;
+        }
+      }
+    }
+  
+    .btn-list {
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px 55px;
+    }
+  
+    .btn-item {
+      margin-left: 16px;
+  
+      &:first-child {
+        .link-btn {
+          span {
+            &:nth-of-type(6) {
+              width: 8px;
+            }
+          }
+        }
+      }
+  
+      &:last-child {
+  
+        .link-btn {
+          
+          span {
+            &:nth-of-type(3) {
+              width: 8px;
+            }
+          }
+        }
+      }
+    }
+  
+    // 메인비주얼 무료상담 받기 버튼 효과
+    .link-btn {
+      display: flex;
+      align-items: center;
+      height: 46px;
+      padding: 0 24px;
+      text-align: center;
+      box-shadow: 0px 2px 2px 0 rgba(5, 5, 5, 0.2);
+      background-color: #1b2432;
+      color: #fff;
+      white-space: nowrap;
+      border-radius: 8px;
+      font-size: 20px;
+      outline: none;
+      text-decoration: none;
+      div {
+        span {
+          color: #fff;
+        }
+      }
+      &:hover {
+        background: $themeColor03;
+      }
+    }
+  }
 }
